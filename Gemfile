@@ -34,13 +34,30 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'travis'
+gem 'faraday'
+gem 'react-rails'
+gem 'active_model_serializers'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
-  gem 'rspec-rails'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'shoulda-matchers'
+  gem 'faker'
+  gem 'factory_bot_rails'
+  gem 'database_cleaner'
+  gem 'pry'
+  gem 'webmock'
+  gem 'simplecov'
+  gem 'webdrivers'
+  gem 'selenium-webdriver'
 end
 
 group :development do
