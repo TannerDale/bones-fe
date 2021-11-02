@@ -4,3 +4,6 @@
 //
 // By default, this file is loaded for server-side rendering.
 // It should require your components and any dependencies.
+var componentRequireContext = require.context("components", true);
+var ReactRailsUJS = require("react_ujs");
+ReactRailsUJS.useContext(componentRequireContext);
