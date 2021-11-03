@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'Dogs New Page', :vcr do
-  let(:user) { User.create!(name: 'a', email: 'b', token: 'c', google_id: 'd') }
+  let(:user) { create :user }
   before :each do
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
     visit new_dog_path
