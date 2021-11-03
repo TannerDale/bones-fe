@@ -41,7 +41,7 @@ gem 'webpacker'
 gem 'travis'
 gem 'faraday'
 gem 'react-rails'
-gem 'active_model_serializers'
+gem 'jsonapi-serializers'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
