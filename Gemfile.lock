@@ -373,7 +373,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
   webdrivers
   webmock
-  webpacker
+  webpacker (~> 5.2)
 
 RUBY VERSION
    ruby 2.7.2p137
