@@ -19,4 +19,11 @@ describe BackendClient, :vcr do
 
     expect(result).to be_empty
   end
+
+  it 'can get data' do
+    result = BackendClient.fetch('/api/v1/pets')
+
+    expect(result).to be_a Hash
+    expect(result).not_to be_empty
+  end
 end
