@@ -3,7 +3,7 @@ class BackendClient
     def fetch(url); end
 
     def create_dog(json)
-      post('dogs', json).body
+      post('pets', json).body
     end
 
     private

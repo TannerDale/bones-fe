@@ -63,6 +63,7 @@ group :test do
   gem 'simplecov'
   gem 'webdrivers'
   gem 'selenium-webdriver'
+  gem 'vcr'
 end
 
 group :development do
