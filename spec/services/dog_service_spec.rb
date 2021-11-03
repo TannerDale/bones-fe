@@ -21,7 +21,7 @@ describe DogService, :vcr do
   end
 
   it 'can get dogs and remove the data' do
-    result = DogService.fetch_dogs
+    result = DogService.fetch_dogs(1)
 
     expect(result).to be_an Array
     expect(result.first).to be_a Hash

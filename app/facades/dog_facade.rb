@@ -4,8 +4,8 @@ class DogFacade
       DogService.create_dog(json)
     end
 
-    def dogs
-      DogService.fetch_dogs.map do |dog|
+    def dogs(page)
+      DogService.fetch_dogs(page).map do |dog|
         DogPoro.new(dog)
       end
     end

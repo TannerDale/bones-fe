@@ -21,7 +21,7 @@ describe DogFacade, :vcr do
   end
 
   it 'can get an array of dog poros' do
-    result = DogFacade.dogs
+    result = DogFacade.dogs(1)
     all_poros = result.all? { |i| i.is_a? DogPoro }
 
     expect(result).to be_an Array

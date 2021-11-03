@@ -21,7 +21,7 @@ describe BackendClient, :vcr do
   end
 
   it 'can get data' do
-    result = BackendClient.fetch('/api/v1/pets')
+    result = BackendClient.fetch('/api/v1/pets?page=1')
 
     expect(result).to be_a Hash
     expect(result).not_to be_empty

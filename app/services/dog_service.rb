@@ -4,8 +4,8 @@ class DogService
       BackendClient.create_dog(json)
     end
 
-    def fetch_dogs
-      BackendClient.fetch('/api/v1/pets')[:data]
+    def fetch_dogs(page)
+      BackendClient.fetch("/api/v1/pets?page=#{page}")[:data]
     end
   end
 end
