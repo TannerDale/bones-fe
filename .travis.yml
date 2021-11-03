@@ -2,18 +2,18 @@ language: ruby
 rbenv:
 - 2.7.2
 before_install:
-  - yes | gem update --system --force
-  - gem install bundler -v 2.2.30
+- yes | gem update --system --force
+- gem install bundler -v 2.2.30
 addons:
   postgresql: 9.6
 script:
 - bundle exec rails db:{create,migrate} RAILS_ENV=test
 - bundle exec rspec
-# deploy:
-#   provider:
-#   api_key:
-#     secure:
-#   app:
-#   run:
-#   on:
-#     branch: main
+deploy:
+  provider: heroku
+  api_key:
+    secure: Xms6Fo/ZIEJk6YQlc39Tf4Mt9bfvp2WJB/Au1tLlbBKOTaA9NT4jiUknCbUSDssk62SJR7PU6czaI/x9vh2KQTa0z31XH/vvO1HRUJ448x8cbXD2e7gBuqWHT1CyKmAiIKNQn/yeDPqur2IAGiOUHKLBd6lMR7elDYUPdEq4CZEeFanj3BBYQJEvamH0UGDFTWlxDS2DNYeVsbYDqXSSNOIvl2NVdvTuAsyUBLSBQrHZv1P6UdlECEoLfGuwc6H+PJFsBJVJiJQ94xLxFrY31lMDJDABGlHTxeNdtECyXF9fwAlzlKfe0eira67qgzR/Q/RoIwknLRryp7SBChcRGv3q4LcQ3EzTAGscdc1g9/QMYZj78sAt0MG0Opo2duOFPOW5YZlDYdxwpOrivuHa4Po19CwhjB3FM4/rJrZF2qYRPz32WbXCVAwkUdUIZ9rZHoX5V4j7NNDXxP3Ajsv2sVOq1Z7peMffaVxFl1yZGIu+nn/BQtyw1s/60MzTiJYHPOGzAOfCZMsohKtL7Ns4q3GROztrIFQ1SWuUztJ7JJgDhvDgm1b8BXAWFpYUaa7hnB/yPGawCC2UooaZmwXRdKUKo5kjiwHEZ7mMFZcGRzMBEkwO4H+heZQc62thJ5klD3zDgZbNCyoCDbhSQHNKU74hNwd0iCwsTrTj9sY96rM=
+  app: bonez
+  run:
+  on:
+    branch: main
