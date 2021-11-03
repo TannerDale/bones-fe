@@ -15,7 +15,8 @@ class SessionsController < ApplicationController
   end
 
   def user_params
-    {google_id: auth_hash['uid'],
+    {
+      google_id: auth_hash['uid'],
       email: auth_hash['info']['email'],
       token: auth_hash['credentials']['token']
     }
