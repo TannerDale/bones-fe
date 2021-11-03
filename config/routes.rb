@@ -3,4 +3,7 @@ Rails.application.routes.draw do
   root to: 'welcome#index'
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
+
+  resources :dogs
+  get '/dashboard', to: 'users#show'
 end

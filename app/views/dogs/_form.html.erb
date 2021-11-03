@@ -1,0 +1,31 @@
+<%= form_with url: dogs_path, method: method, local: true do |f| %>
+  <div class="form-floating mb-3">
+    <%= f.text_field :name, class: 'form-control', id: 'name', placeholder: 'Name' %>
+    <%= f.label 'Name', for: 'name' %>
+  </div>
+  <div class="form-floating mb-3">
+    <%= f.number_field :age, class: 'form-control', id: 'age', placeholder: 'Age', min: 1, max: 20 %>
+    <%= f.label 'Age', for: 'age' %>
+  </div>
+  <div class="form-floating mb-3">
+    <%= f.text_field :breed, class: 'form-control', id: 'breed', placeholder: 'Breed' %>
+    <%= f.label 'Breed', for: 'breed' %>
+  </div>
+  <div class="form-floating mb-3">
+    <%= f.text_field :size, class: 'form-control', id: 'size', placeholder: 'Size' %>
+    <%= f.label 'Size', for: 'size' %>
+  </div>
+  <div class="form-floating mb-3">
+    <%= f.text_field :sex, class: 'form-control', id: 'sex', placeholder: 'Male/Female' %>
+    <%= f.label 'Sex', for: 'sex' %>
+  </div>
+  <div class="form-check form-switch">
+    <%= f.check_box :vaccinated, class: 'form-check-input', type: 'checkbox', role: 'switch', id: 'vaccinated' %>
+    <%= f.label 'Vaccinated?', class: 'form-check-label' %>
+  </div>
+  <div class="form-check form-switch">
+    <%= f.check_box :trained, class: 'form-check-input', type: 'checkbox', role: 'switch', id: 'trained' %>
+    <%= f.label 'Trained?', class: 'form-check-label' %>
+  </div>
+  <%= f.submit 'Add Dog', class: 'btn btn-outline-success' %>
+<% end %>
