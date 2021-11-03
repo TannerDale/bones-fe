@@ -19,4 +19,11 @@ describe DogService, :vcr do
 
     expect(result).to be_empty
   end
+
+  it 'can get dogs and remove the data' do
+    result = DogService.fetch_dogs
+
+    expect(result).to be_an Array
+    expect(result.first).to be_a Hash
+  end
 end
