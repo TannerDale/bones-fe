@@ -47,6 +47,7 @@ gem 'jsonapi-serializers'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
+  gem 'pry'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -58,7 +59,6 @@ group :test do
   gem 'faker'
   gem 'factory_bot_rails'
   gem 'database_cleaner'
-  gem 'pry'
   gem 'webmock'
   gem 'simplecov'
   gem 'webdrivers'
