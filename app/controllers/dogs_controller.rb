@@ -1,5 +1,8 @@
 class DogsController < ApplicationController
-  def index; end
+  def index
+    @page = params[:page]&.to_i || 1
+    @dogs = DogFacade.dogs(@page)
+  end
 
   def show; end
 

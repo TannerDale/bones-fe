@@ -1,35 +1,29 @@
 require 'rails_helper'
 
-describe BackendClient do
-  let(:json) do
+describe BackendClient, :vcr do
+  let(:params) do
     {
-      data: {
-        name: 'a',
-        breed: 'b',
-        age: 1,
-        size: 'c',
-        vaccinated: '1',
-        trained: '2',
-        user_id: 3
-      }
-    }.to_json
+      name: 'a',
+      breed: 'b',
+      age: 1,
+      size: 1,
+      vaccinated: 0,
+      trained: 1,
+      user_id: 3
+    }
   end
 
   it 'forwards the request to the client' do
-    stub_request(:post, "http://localhost:5000/api/v1/dogs")
-         .with(
-           body: {"data"=>{"name"=>"a", "breed"=>"b", "age"=>1, "size"=>"c", "vaccinated"=>"1", "trained"=>"2", "user_id"=>3}},
-           headers: {
-          'Accept'=>'*/*',
-          'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-          'Content-Type'=>'application/json',
-          'User-Agent'=>'Faraday v1.8.0'
-           })
-         .to_return(status: 200, body: "", headers: {})
-
-
+    json = DogSerializer.new(params).to_json
     result = BackendClient.create_dog(json)
 
     expect(result).to be_empty
+  end
+
+  it 'can get data' do
+    result = BackendClient.fetch('/api/v1/pets?page=1')
+
+    expect(result).to be_a Hash
+    expect(result).not_to be_empty
   end
 end

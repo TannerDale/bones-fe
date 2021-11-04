@@ -1,9 +1,11 @@
 class BackendClient
   class << self
-    def fetch(url); end
+    def fetch(url)
+      parse_data(conn.get(url))
+    end
 
     def create_dog(json)
-      post('dogs', json).body
+      post('pets', json).body
     end
 
     private

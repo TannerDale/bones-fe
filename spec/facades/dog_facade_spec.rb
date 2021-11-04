@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe DogService, :vcr do
+describe DogFacade, :vcr do
   let(:params) do
     {
       name: 'a',
@@ -15,15 +15,16 @@ describe DogService, :vcr do
 
   it 'forwards the request to the client' do
     json = DogSerializer.new(params).to_json
-    result = DogService.create_dog(json)
+    result = DogFacade.create_dog(json)
 
     expect(result).to be_empty
   end
 
-  it 'can get dogs and remove the data' do
-    result = DogService.fetch_dogs(1)
+  it 'can get an array of dog poros' do
+    result = DogFacade.dogs(1)
+    all_poros = result.all? { |i| i.is_a? DogPoro }
 
     expect(result).to be_an Array
-    expect(result.first).to be_a Hash
+    expect(all_poros).to be true
   end
 end

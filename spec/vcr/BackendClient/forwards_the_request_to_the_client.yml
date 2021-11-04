@@ -1,0 +1,33 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:5000/api/v1/pets
+    body:
+      encoding: UTF-8
+      string: '{"object":{"name":"a","breed":"b","age":1,"size":1,"vaccinated":0,"trained":1,"user_id":3},"options":{},"context":{},"base_url":null,"_fields":{},"_include_linkages":[]}'
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 7c873d06-d262-4600-aff7-dd4d900ac9af
+      X-Runtime:
+      - '0.019998'
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Wed, 03 Nov 2021 22:58:31 GMT
+recorded_with: VCR 6.0.0

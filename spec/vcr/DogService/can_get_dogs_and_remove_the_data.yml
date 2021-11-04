@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/pets?page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"18f3e9b2f349847c7108fd5e319200ba"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6efa423d-bb14-4885-b607-ba10fb6bf38d
+      X-Runtime:
+      - '0.003312'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"true","sex":"male","trained":"yes","user_id":3,"description":null}},{"id":"2","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"false","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"3","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"4","type":"pet","attributes":{"name":"a..z","size":"medium","age":0,"breed":"a..z
+        Dog","vaccinated":"true","sex":"male","trained":"no","user_id":0,"description":null}},{"id":"5","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"6","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"false","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"7","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"8","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}}]}'
+  recorded_at: Wed, 03 Nov 2021 22:58:32 GMT
+recorded_with: VCR 6.0.0
