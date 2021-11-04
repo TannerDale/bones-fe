@@ -20,6 +20,21 @@ describe 'Dogs Index' do
       expect(page).to have_content(dog.sex)
       expect(page).to have_content(dog.trained)
       expect(page).to have_content(dog.vaccinated)
+      expect(page).to have_button("Schedule Playdate with #{dog.name}")
     end
+  end
+
+  it 'does not have previous page button on page 1' do
+    expect(page).not_to have_button 'Previous Page'
+  end
+
+  it 'can change pages' do
+    click_button 'Next Page'
+
+    expect(page).to have_content 'Page 2'
+
+    click_button 'Previous Page'
+
+    expect(page).to have_content 'Page 1'
   end
 end

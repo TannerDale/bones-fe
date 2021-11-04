@@ -20,6 +20,6 @@
   <li><%= dog.breed %></li>
   <li><%= dog.trained %></li>
   <li><%= dog.vaccinated %></li>
-  <li><%= button_to 'Schedule Play Date', new_play_date_path, params: { dog: dog.id }, method: :get, class: 'btn btn-outline-primary btn-sm' %></li>
+  <li><%= button_to "Schedule Playdate with #{dog.name}", new_play_date_path, params: { dog: dog.id }, method: :get, class: 'btn btn-outline-primary btn-sm' %></li>
 </ul>
 <% end %>
