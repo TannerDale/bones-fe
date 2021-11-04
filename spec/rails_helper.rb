@@ -35,6 +35,7 @@ rescue ActiveRecord::PendingMigrationError => e
 end
 
 VCR.configure do |c|
+  c.ignore_hosts '127.0.0.1'
   c.cassette_library_dir = 'spec/vcr'
   c.hook_into :webmock
   c.configure_rspec_metadata!
@@ -42,6 +43,8 @@ VCR.configure do |c|
     match_requests_on: %i[method host path]
   }
 end
+WebMock.allow_net_connect!(net_http_connect_on_start: true)
+Capybara.javascript_driver = :selenium_chrome_headless
 
 SimpleCov.start
 
