@@ -15,6 +15,8 @@ Required:
 
 # [Bones Front-End](https://github.com/TannerDale/bones-fe)
 
+[![Build Status][travis-image]][travis-url]
+
 #### [Bones Back-End](https://github.com/TannerDale/bones-be)
 
 ## Table of contents
@@ -128,8 +130,8 @@ More details can be found [here](https://backend.turing.edu/module3/projects/con
 
 
 <!-- Markdown link & img dfn's -->
-[travis-image]: https://api.travis-ci.com/
-[travis-url]: https://app.travis-ci.com/github/
+[travis-image]: https://app.travis-ci.com/TannerDale/bones-fe.svg?branch=main
+[travis-url]: https://app.travis-ci.com/TannerDale/bones-fe
 [Github-img]: https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
 
 <!-- #### Development -->
