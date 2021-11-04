@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: http://localhost:5000/api/v1/pets
+    uri: http://bones-be.herokuapp.com/api/v1/pets
     body:
       encoding: UTF-8
-      string: '{"object":{"name":"Peg","breed":"Chow","age":11,"size":"medium","vaccinated":1,"trained":1,"user_id":3},"options":{},"context":{},"base_url":null,"_fields":{},"_include_linkages":[]}'
+      string: '{"object":{"name":"Delbert","breed":"Beagle","age":14,"size":"small","vaccinated":1,"trained":1,"user_id":3},"options":{},"context":{},"base_url":null,"_fields":{},"_include_linkages":[]}'
     headers:
       User-Agent:
       - Faraday v1.8.0
@@ -20,14 +20,24 @@ http_interactions:
       code: 204
       message: No Content
     headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 04 Nov 2021 02:34:39 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 307ab674-ce5f-43c8-8907-7b520c8de233
+      - 5232b0cc-d5b2-4d0a-b092-aa44d30ec442
       X-Runtime:
-      - '0.005743'
+      - '0.013133'
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Thu, 04 Nov 2021 01:50:35 GMT
+  recorded_at: Thu, 04 Nov 2021 02:34:40 GMT
 recorded_with: VCR 6.0.0
