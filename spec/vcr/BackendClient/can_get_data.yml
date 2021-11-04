@@ -21,25 +21,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 04 Nov 2021 02:34:39 GMT
+      - Thu, 04 Nov 2021 15:41:18 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"d6bc2120c8bc284da9cda2f5a58da0d7"
+      - W/"1e34bb5684b3ce4ea12d4f00feb90c5b"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 78ad5b04-e004-4eaf-919c-0c96a83e11db
+      - 1852bad3-b8e7-4560-853f-ee00cc836287
       X-Runtime:
-      - '0.014494'
+      - '0.008074'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"pet","attributes":{"name":"Delbert","size":"small","age":14,"breed":"Beagle","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}}]}'
-  recorded_at: Thu, 04 Nov 2021 02:34:39 GMT
+      string: '{"data":[{"id":"1","type":"pet","attributes":{"name":"Delbert","size":"small","age":14,"breed":"Beagle","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"2","type":"pet","attributes":{"name":"Delbert","size":"small","age":14,"breed":"Beagle","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"3","type":"pet","attributes":{"name":"Delbert","size":"small","age":14,"breed":"Beagle","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"4","type":"pet","attributes":{"name":"Edwina","size":"small","age":15,"breed":"Bull
+        Mastiff","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}}]}'
+  recorded_at: Thu, 04 Nov 2021 15:41:19 GMT
 recorded_with: VCR 6.0.0
