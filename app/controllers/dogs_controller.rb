@@ -1,7 +1,13 @@
 class DogsController < ApplicationController
   def index
     @page = params[:page]&.to_i || 1
-    @dogs = DogFacade.dogs(@page)
+    dogs = DogFacade.dogs(@page)
+    @dogs = DogSerializer.new(dogs)
+
+    respond_to do |f|
+      f.html
+      f.json { render json: { dogs: @dogs } }
+    end
   end
 
   def show; end
