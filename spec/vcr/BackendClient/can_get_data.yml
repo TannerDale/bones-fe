@@ -21,18 +21,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"5accc0ac333a9f00e718fe85d64f2575"
+      - W/"cdb568b240f3d1d5df2b49550bc0e0d2"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - cb8cab79-5e78-43c7-bc74-93a09418ae25
+      - 6128e425-c364-4693-bca7-fb8a10bfd36c
       X-Runtime:
-      - '0.004556'
+      - '0.003811'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"true","sex":"male","trained":"yes","user_id":3,"description":null}},{"id":"2","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"false","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"3","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"4","type":"pet","attributes":{"name":"a..z","size":"medium","age":0,"breed":"a..z
-        Dog","vaccinated":"true","sex":"male","trained":"no","user_id":0,"description":null}},{"id":"5","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"6","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"false","sex":null,"trained":"yes","user_id":3,"description":null}}]}'
-  recorded_at: Wed, 03 Nov 2021 22:58:31 GMT
+      string: '{"data":[{"id":"59","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"60","type":"pet","attributes":{"name":"Linwood","size":"small","age":6,"breed":"Weimaraner","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"61","type":"pet","attributes":{"name":"Linwood","size":"small","age":6,"breed":"Weimaraner","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"62","type":"pet","attributes":{"name":"Linwood","size":"small","age":6,"breed":"Weimaraner","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"63","type":"pet","attributes":{"name":"Peg","size":"medium","age":11,"breed":"Chow","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"56","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"false","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"57","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"58","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}}]}'
+  recorded_at: Thu, 04 Nov 2021 01:50:35 GMT
 recorded_with: VCR 6.0.0

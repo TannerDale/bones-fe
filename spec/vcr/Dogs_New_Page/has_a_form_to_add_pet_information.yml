@@ -5,7 +5,7 @@ http_interactions:
     uri: http://localhost:5000/api/v1/pets
     body:
       encoding: UTF-8
-      string: '{"object":{"name":"Chuck","age":"11","breed":"great dane","size":"large","sex":"male","vaccinated":"1","trained":"1","user_id":2},"options":{},"context":{},"base_url":null,"_fields":{},"_include_linkages":[]}'
+      string: '{"object":{"name":"Peg","age":"11","breed":"Chow","size":"medium","sex":"female","vaccinated":"1","trained":"1","user_id":4},"options":{},"context":{},"base_url":null,"_fields":{},"_include_linkages":[]}'
     headers:
       User-Agent:
       - Faraday v1.8.0
@@ -23,9 +23,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       X-Request-Id:
-      - cbcd3458-74f5-4fd2-9455-da9a510ca02f
+      - 9cd26975-f8ea-4a55-a3c1-0bde05a9c713
       X-Runtime:
-      - '0.014669'
+      - '0.015337'
       Content-Length:
       - '13184'
     body:
@@ -168,5 +168,5 @@ http_interactions:
         lib/puma/server.rb:476:in `process_client''"},{"id":67,"trace":"puma (3.12.6)
         lib/puma/server.rb:334:in `block in run''"},{"id":68,"trace":"puma (3.12.6)
         lib/puma/thread_pool.rb:135:in `block in spawn_thread''"}]}}'
-  recorded_at: Wed, 03 Nov 2021 22:58:32 GMT
+  recorded_at: Thu, 04 Nov 2021 01:50:41 GMT
 recorded_with: VCR 6.0.0

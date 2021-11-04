@@ -5,7 +5,7 @@ http_interactions:
     uri: http://localhost:5000/api/v1/pets
     body:
       encoding: UTF-8
-      string: '{"object":{"name":"a","breed":"b","age":1,"size":1,"vaccinated":0,"trained":1,"user_id":3},"options":{},"context":{},"base_url":null,"_fields":{},"_include_linkages":[]}'
+      string: '{"object":{"name":"Peg","breed":"Chow","age":11,"size":"medium","vaccinated":1,"trained":1,"user_id":3},"options":{},"context":{},"base_url":null,"_fields":{},"_include_linkages":[]}'
     headers:
       User-Agent:
       - Faraday v1.8.0
@@ -23,11 +23,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 7c873d06-d262-4600-aff7-dd4d900ac9af
+      - 362e3044-6895-4f2d-8fac-c1d4c09a33b6
       X-Runtime:
-      - '0.019998'
+      - '0.019122'
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Wed, 03 Nov 2021 22:58:31 GMT
+  recorded_at: Thu, 04 Nov 2021 01:50:35 GMT
 recorded_with: VCR 6.0.0
