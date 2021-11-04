@@ -3,6 +3,6 @@
 <%= link_to 'Find a Playdate for Your Pupper!', dogs_path, class: 'link-dark' %>
 <br/>
 <%= 'My Dogs' %>
-<% @pets&.each do |pet| %>
+<% @dogs&.each do |pet| %>
   <%= pet.name %>
 <% end %>

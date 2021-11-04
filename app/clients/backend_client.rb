@@ -5,7 +5,7 @@ class BackendClient
     end
 
     def create_dog(json)
-      post('pets', json).body
+      post('dogs', json).body
     end
 
     private
@@ -19,8 +19,8 @@ class BackendClient
     end
 
     def conn
-      Faraday.new('http://bones-be.herokuapp.com')
-      # Faraday.new('http://localhost:5000')
+      # Faraday.new('http://bones-be.herokuapp.com')
+      Faraday.new('http://localhost:5000')
     end
 
     def parse_data(response)

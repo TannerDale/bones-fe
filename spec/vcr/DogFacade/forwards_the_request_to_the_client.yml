@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: http://bones-be.herokuapp.com/api/v1/pets
+    uri: http://localhost:5000/api/v1/dogs
     body:
       encoding: UTF-8
-      string: '{"object":{"name":"Edwina","breed":"Bull Mastiff","age":15,"size":"small","vaccinated":1,"trained":1,"user_id":3},"options":{},"context":{},"base_url":null,"_fields":{},"_include_linkages":[]}'
+      string: '{"object":{"name":"Alva","breed":"Staffordshire Bullterrier","age":9,"size":"large","vaccinated":1,"trained":1,"user_id":3},"options":{},"context":{},"base_url":null,"_fields":{},"_include_linkages":[]}'
     headers:
       User-Agent:
       - Faraday v1.8.0
@@ -20,24 +20,14 @@ http_interactions:
       code: 204
       message: No Content
     headers:
-      Server:
-      - Cowboy
-      Date:
-      - Thu, 04 Nov 2021 15:41:18 GMT
-      Content-Length:
-      - '0'
-      Connection:
-      - keep-alive
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - e4596ae4-97a7-4c2a-87d9-3825e4bb35d4
+      - 98ddbf98-15f7-4991-ad35-bbccf1252e7d
       X-Runtime:
-      - '0.009974'
-      Via:
-      - 1.1 vegur
+      - '0.003379'
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Thu, 04 Nov 2021 15:41:19 GMT
+  recorded_at: Thu, 04 Nov 2021 17:05:05 GMT
 recorded_with: VCR 6.0.0

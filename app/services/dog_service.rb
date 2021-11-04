@@ -5,11 +5,11 @@ class DogService
     end
 
     def fetch_dogs(page)
-      BackendClient.fetch("/api/v1/pets?page=#{page}")[:data]
+      BackendClient.fetch("/api/v1/dogs?page=#{page}")[:data]
     end
 
     def user_dogs(id)
-      BackendClient.fetch("/api/v1/user_pets?user_id=#{id}")[:data]
+      BackendClient.fetch("/api/v1/user_dogs?user_id=#{id}")[:data]
     end
   end
 end
