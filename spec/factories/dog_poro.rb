@@ -3,7 +3,7 @@ FactoryBot.define do
     attributes = {
       id: [1..100].sample,
       attributes: {
-        name: Faker::Name.first_name,
+        name: Faker::Name.unique.first_name,
         size: %w[small medium large].sample,
         age: (1..15).to_a.sample,
         breed: Faker::Creature::Dog.breed,
