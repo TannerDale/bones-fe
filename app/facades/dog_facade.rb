@@ -9,5 +9,11 @@ class DogFacade
         DogPoro.new(dog)
       end
     end
+
+    def user_dogs(id)
+      DogService.user_dogs(id).map do |dog|
+        DogPoro.new(dog)
+      end
+    end
   end
 end
