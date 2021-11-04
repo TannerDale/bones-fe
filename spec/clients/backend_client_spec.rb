@@ -1,13 +1,14 @@
 require 'rails_helper'
 
 describe BackendClient, :vcr do
+  let(:dog) { build :dog_poro }
   let(:params) do
     {
-      name: 'a',
-      breed: 'b',
-      age: 1,
-      size: 1,
-      vaccinated: 0,
+      name: dog.name,
+      breed: dog.breed,
+      age: dog.age,
+      size: dog.size,
+      vaccinated: 1,
       trained: 1,
       user_id: 3
     }
