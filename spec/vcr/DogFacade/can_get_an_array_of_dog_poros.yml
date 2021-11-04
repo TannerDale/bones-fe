@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/dogs?page=1
+    uri: http://bones-be.herokuapp.com/api/v1/dogs?page=1
     body:
       encoding: US-ASCII
       string: ''
@@ -18,33 +18,33 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 04 Nov 2021 17:10:55 GMT
+      Connection:
+      - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"5166b8beb8ce758a81a0320befaa0bfd"
+      - W/"e207687911f300c9ad0ef87231e2f29f"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 37ea823a-3d4a-47c9-adb0-490654e3a6bc
+      - 4995f6ae-b085-415d-ba2c-c34cf284db61
       X-Runtime:
-      - '0.003055'
+      - '0.007323'
       Transfer-Encoding:
       - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"59","type":"dog","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"60","type":"dog","attributes":{"name":"Linwood","size":"small","age":6,"breed":"Weimaraner","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"61","type":"dog","attributes":{"name":"Linwood","size":"small","age":6,"breed":"Weimaraner","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"62","type":"dog","attributes":{"name":"Linwood","size":"small","age":6,"breed":"Weimaraner","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"63","type":"dog","attributes":{"name":"Peg","size":"medium","age":11,"breed":"Chow","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"64","type":"dog","attributes":{"name":"Peg","size":"medium","age":11,"breed":"Chow","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"65","type":"dog","attributes":{"name":"Peg","size":"medium","age":11,"breed":"Chow","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"66","type":"dog","attributes":{"name":"Hello","size":"large","age":1,"breed":"great
-        dane","vaccinated":"true","sex":"female","trained":"yes","user_id":1,"description":null}},{"id":"67","type":"dog","attributes":{"name":"Hello","size":"large","age":1,"breed":"great
-        dane","vaccinated":"true","sex":"female","trained":"yes","user_id":1,"description":null}},{"id":"68","type":"dog","attributes":{"name":"Hello","size":"large","age":1,"breed":"great
-        dane","vaccinated":"true","sex":"female","trained":"yes","user_id":1,"description":null}},{"id":"69","type":"dog","attributes":{"name":"Hello","size":"large","age":1,"breed":"great
-        dane","vaccinated":"true","sex":"female","trained":"yes","user_id":1,"description":null}},{"id":"70","type":"dog","attributes":{"name":"Hello","size":"large","age":1,"breed":"great
-        dane","vaccinated":"true","sex":"female","trained":"yes","user_id":1,"description":null}},{"id":"71","type":"dog","attributes":{"name":"Hello","size":"large","age":1,"breed":"great
-        dane","vaccinated":"true","sex":"female","trained":"yes","user_id":1,"description":null}},{"id":"72","type":"dog","attributes":{"name":"Hello","size":"large","age":1,"breed":"great
-        dane","vaccinated":"true","sex":"female","trained":"yes","user_id":1,"description":null}},{"id":"73","type":"dog","attributes":{"name":"Hello","size":"large","age":1,"breed":"great
-        dane","vaccinated":"true","sex":"female","trained":"yes","user_id":1,"description":null}},{"id":"74","type":"dog","attributes":{"name":"Hello","size":"large","age":1,"breed":"great
-        dane","vaccinated":"true","sex":"female","trained":"yes","user_id":1,"description":null}},{"id":"75","type":"dog","attributes":{"name":"Hello","size":"large","age":1,"breed":"great
-        dane","vaccinated":"true","sex":"female","trained":"yes","user_id":1,"description":null}},{"id":"76","type":"dog","attributes":{"name":"Hello","size":"large","age":1,"breed":"great
-        dane","vaccinated":"true","sex":"female","trained":"yes","user_id":1,"description":null}},{"id":"77","type":"dog","attributes":{"name":"Hello","size":"large","age":1,"breed":"great
-        dane","vaccinated":"true","sex":"female","trained":"yes","user_id":1,"description":null}},{"id":"78","type":"dog","attributes":{"name":"Hello","size":"large","age":1,"breed":"great
-        dane","vaccinated":"true","sex":"female","trained":"yes","user_id":1,"description":null}}]}'
-  recorded_at: Thu, 04 Nov 2021 17:05:05 GMT
+      string: '{"data":[{"id":"1","type":"dog","attributes":{"name":"Delbert","size":"small","age":14,"breed":"Beagle","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"2","type":"dog","attributes":{"name":"Delbert","size":"small","age":14,"breed":"Beagle","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"3","type":"dog","attributes":{"name":"Delbert","size":"small","age":14,"breed":"Beagle","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"4","type":"dog","attributes":{"name":"Edwina","size":"small","age":15,"breed":"Bull
+        Mastiff","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"5","type":"dog","attributes":{"name":"Edwina","size":"small","age":15,"breed":"Bull
+        Mastiff","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"6","type":"dog","attributes":{"name":"Edwina","size":"small","age":15,"breed":"Bull
+        Mastiff","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"7","type":"dog","attributes":{"name":"Synthia","size":"small","age":5,"breed":"Cocker
+        Spaniel","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"8","type":"dog","attributes":{"name":"Synthia","size":"small","age":5,"breed":"Cocker
+        Spaniel","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}}]}'
+  recorded_at: Thu, 04 Nov 2021 17:10:56 GMT
 recorded_with: VCR 6.0.0
