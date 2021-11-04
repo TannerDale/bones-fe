@@ -19,7 +19,8 @@ class BackendClient
     end
 
     def conn
-      Faraday.new('http://localhost:5000')
+      Faraday.new('http://bones-be.herokuapp.com')
+      # Faraday.new('http://localhost:5000')
     end
 
     def parse_data(response)

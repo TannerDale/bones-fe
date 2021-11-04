@@ -1,25 +1,4 @@
 <h1>Dogs!</h1>
 
-<p>Page <%= @page %></p>
-<% if !@dogs.empty? %>
-  <%= button_to 'Next Page', dogs_path, params: { page: @page + 1 }, method: :get, class: 'btn btn-outline-success btn-sm' %>
-<% else %>
-  <br/>
-<% end %>
-<% if @page > 1 %>
-  <%= button_to 'Previous Page', dogs_path, params: { page: @page - 1 }, method: :get, class: 'btn btn-outline-danger btn-sm' %>
-<% else %>
-  <br/>
-<% end %>
-<% @dogs.each do |dog| %>
-<p><%= dog.name %></p>
-<ul>
-  <li><%= dog.age %></li>
-  <li><%= dog.size %></li>
-  <li><%= dog.sex %></li>
-  <li><%= dog.breed %></li>
-  <li><%= dog.trained %></li>
-  <li><%= dog.vaccinated %></li>
-  <li><%= button_to "Schedule Playdate with #{dog.name}", new_play_date_path, params: { dog: dog.id }, method: :get, class: 'btn btn-outline-primary btn-sm' %></li>
-</ul>
-<% end %>
+
+<%= react_component('DogList', { dogs: @dogs, page: @page }) %>

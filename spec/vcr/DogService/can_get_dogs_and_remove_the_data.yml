@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/pets?page=1
+    uri: http://bones-be.herokuapp.com/api/v1/pets?page=1
     body:
       encoding: US-ASCII
       string: ''
@@ -18,21 +18,31 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 04 Nov 2021 15:41:29 GMT
+      Connection:
+      - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"18f3e9b2f349847c7108fd5e319200ba"
+      - W/"e306a75d5fb0bc8d7a475246e28ccfe9"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6efa423d-bb14-4885-b607-ba10fb6bf38d
+      - c90af427-c1e4-41f4-8245-51828f5735b0
       X-Runtime:
-      - '0.003312'
+      - '0.005412'
       Transfer-Encoding:
       - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"true","sex":"male","trained":"yes","user_id":3,"description":null}},{"id":"2","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"false","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"3","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"4","type":"pet","attributes":{"name":"a..z","size":"medium","age":0,"breed":"a..z
-        Dog","vaccinated":"true","sex":"male","trained":"no","user_id":0,"description":null}},{"id":"5","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"6","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"false","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"7","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"8","type":"pet","attributes":{"name":"a","size":"medium","age":1,"breed":"b","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}}]}'
-  recorded_at: Wed, 03 Nov 2021 22:58:32 GMT
+      string: '{"data":[{"id":"1","type":"pet","attributes":{"name":"Delbert","size":"small","age":14,"breed":"Beagle","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"2","type":"pet","attributes":{"name":"Delbert","size":"small","age":14,"breed":"Beagle","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"3","type":"pet","attributes":{"name":"Delbert","size":"small","age":14,"breed":"Beagle","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"4","type":"pet","attributes":{"name":"Edwina","size":"small","age":15,"breed":"Bull
+        Mastiff","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"5","type":"pet","attributes":{"name":"Edwina","size":"small","age":15,"breed":"Bull
+        Mastiff","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"6","type":"pet","attributes":{"name":"Edwina","size":"small","age":15,"breed":"Bull
+        Mastiff","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}}]}'
+  recorded_at: Thu, 04 Nov 2021 15:41:29 GMT
 recorded_with: VCR 6.0.0
