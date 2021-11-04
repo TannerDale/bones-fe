@@ -2,17 +2,18 @@ require 'rails_helper'
 
 describe 'Dogs New Page', :vcr do
   let(:user) { create :user }
+  let(:dog) { build :dog_poro }
   before :each do
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
     visit new_dog_path
   end
 
   it 'has a form to add pet information' do
-    fill_in 'Name', with: 'Chuck'
-    fill_in 'Age', with: 11
-    fill_in 'Breed', with: 'great dane'
-    fill_in 'Size', with: 'large'
-    fill_in 'Sex', with: 'male'
+    fill_in 'Name', with: dog.name
+    fill_in 'Age', with: dog.age
+    fill_in 'Breed', with: dog.breed
+    fill_in 'Size', with: dog.size
+    fill_in 'Sex', with: dog.sex
     check 'vaccinated'
     check 'trained'
     click_button 'Add Dog'
