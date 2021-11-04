@@ -73,17 +73,19 @@ More details can be found [here](https://backend.turing.edu/module3/projects/con
 
 #### Development
 ![Atom][Atom-img]
-![Bcrypt][Bcrypt-img]
+<!-- ![OAuth][Bcrypt-img] -->
 ![Bootstrap][Bootstrap-img]
 ![Figaro][Figaro-img]
 ![Git][Git-img]
 ![Github][Github-img]
 ![Markdown][Markdown-img]
 ![PostgreSQL][PostgreSQL-img]
-![Postico][Postico-img]
 ![Postman][Postman-img]
 ![Rubocop][Rubocop-img]
 ![Ruby on Rails][Ruby on Rails-img]
+React
+js
+
 
 #### Languages
 ![ActiveRecord][ActiveRecord-img]
