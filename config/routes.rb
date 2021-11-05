@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'users#show'
 
   resources :play_dates, only: :new
+
+  resources :locations, only: :index
 end
