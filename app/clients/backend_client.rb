@@ -8,6 +8,10 @@ class BackendClient
       post('dogs', json).body
     end
 
+    def create_play_date(json)
+      post('playdates', json).body
+    end
+
     private
 
     def post(url, json)
