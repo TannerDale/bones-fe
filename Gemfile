@@ -58,12 +58,12 @@ group :test do
   gem 'shoulda-matchers'
   gem 'faker'
   gem 'factory_bot_rails'
-  gem 'database_cleaner'
   gem 'webmock'
   gem 'simplecov'
   gem 'webdrivers'
-  gem 'selenium-webdriver'
   gem 'vcr'
+  gem 'selenium-webdriver'
+  # gem 'capybara-webkit'
 end
 
 group :development do

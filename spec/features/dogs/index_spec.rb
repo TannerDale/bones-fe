@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'Dogs Index', :vcr do
-  let!(:dogs) { build_list :dog_poro, 40 }
+  let(:dogs) { build_list :dog_poro, 40 }
   let(:user) { create :user }
 
   before :each do
@@ -12,6 +12,8 @@ describe 'Dogs Index', :vcr do
   end
 
   it 'has all the dogs', js: true do
+  
+    save_and_open_page
     dogs[..19].each do |dog|
       expect(page).to have_content(dog.name)
       expect(page).to have_content(dog.age)

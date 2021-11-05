@@ -1,7 +1,7 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
-require 'database_cleaner'
 require 'simplecov'
+require 'selenium/webdriver'
 
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../config/environment', __dir__)
@@ -36,6 +36,7 @@ end
 
 VCR.configure do |c|
   c.ignore_hosts '127.0.0.1'
+
   c.cassette_library_dir = 'spec/vcr'
   c.hook_into :webmock
   c.configure_rspec_metadata!
@@ -52,16 +53,7 @@ RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
   config.include FactoryBot::Syntax::Methods
-  config.before(:suite) do
-    DatabaseCleaner.clean_with(:truncation)
-    DatabaseCleaner.strategy = :transaction
-  end
 
-  config.around(:each) do |example|
-    DatabaseCleaner.cleaning do
-      example.run
-    end
-  end
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
   # instead of true.

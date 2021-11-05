@@ -6,7 +6,7 @@ class PlayDatesController < ApplicationController
 
   def create
     json = PlayDateSerializer.new(playdate_params.merge({ invited_dog_id: cookies[:invited_dog] }))
-    PlayDateFacade.create_play_date(json)
+    PlayDateFacade.create_play_date(json.to_json)
 
     clear_invited_dog
     redirect_to dashboard_path

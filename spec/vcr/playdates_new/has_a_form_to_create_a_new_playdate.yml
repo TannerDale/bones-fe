@@ -1,0 +1,127 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/user_dogs?user_id=110
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 05 Nov 2021 22:28:32 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 58cdedbf-109e-41e7-86a0-427e77f14485
+      X-Runtime:
+      - '0.005904'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Fri, 05 Nov 2021 22:28:33 GMT
+- request:
+    method: post
+    uri: http://bones-be.herokuapp.com/api/v1/playdates
+    body:
+      encoding: UTF-8
+      string: '{"object":{"date":"2021/10/20","time":"05:00 AM","location_id":"","invited_dog_id":null},"options":{},"context":{},"base_url":null,"_fields":{},"_include_linkages":[]}'
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 05 Nov 2021 22:28:33 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html; charset=UTF-8
+      X-Request-Id:
+      - 1e12680d-3e3e-4688-a55d-886e6e94d35e
+      X-Runtime:
+      - '0.001452'
+      Content-Length:
+      - '0'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Fri, 05 Nov 2021 22:28:33 GMT
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/user_dogs?user_id=110
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 05 Nov 2021 22:28:33 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 16a70fdb-602e-4562-9f6b-15ac10fc129e
+      X-Runtime:
+      - '0.005417'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Fri, 05 Nov 2021 22:28:33 GMT
+recorded_with: VCR 6.0.0

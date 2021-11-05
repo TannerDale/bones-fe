@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-RSpec.describe 'playdates#new' do
+RSpec.describe 'playdates#new', :vcr do
   let!(:locations) { build_list :location_poro, 20 }
   let(:user) { create :user }
-  let(:host_dog) { create :dog }
-  let(:invited_dog) { create :dog }
+  let(:host_dog) { build :dog_poro }
+  let(:invited_dog) { build :dog_poro }
 
   before :each do
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
