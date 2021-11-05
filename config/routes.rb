@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :dogs
   get '/dashboard', to: 'users#show'
 
-  resources :play_dates, only: :new
+  resources :play_dates, only: [:new, :create]
 
   resources :locations, only: :index
 end
