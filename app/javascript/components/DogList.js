@@ -45,7 +45,7 @@ class DogList extends React.Component {
       <li>Size: { dog.size }</li>
       <li>Training Status: { dog.trained }</li>
       <li>Vaccination Status: { dog.vaccinated }</li>
-      <a href={ `/play_dates/new?dog_id=${dog.id}` } className="btn btn-outline-primary btn-sm">Schedule Playdate with { dog.name }</a>
+      <a href={ `/locations?dog_id=${dog.id}` } className="btn btn-outline-primary btn-sm">Schedule Playdate with { dog.name }</a>
       <p></p>
       </>
     )
