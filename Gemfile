@@ -64,6 +64,7 @@ group :test do
   gem 'webdrivers'
   gem 'selenium-webdriver'
   gem 'vcr'
+  gem 'show_me_the_cookies'
 end
 
 group :development do
