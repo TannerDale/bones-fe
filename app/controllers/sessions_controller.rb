@@ -8,6 +8,13 @@ class SessionsController < ApplicationController
     redirect_to root_path
   end
 
+  def destroy
+    current_user.update_attribute(:token, nil)
+
+    session[:user_id] = nil
+    redirect_to root_path
+  end
+
   private
 
   def auth_hash
