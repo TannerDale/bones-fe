@@ -22,10 +22,20 @@ describe DogFacade, :vcr do
   end
 
   it 'can get an array of dog poros' do
-    result = DogFacade.dogs(1)
+    page = 1
+    result = DogFacade.dogs(page)
     all_poros = result.all? { |i| i.is_a? DogPoro }
 
     expect(result).to be_an Array
+    expect(all_poros).to be true
+  end
+
+  it 'can get an array of a users dogs' do
+    result = DogFacade.user_dogs(params[:user_id])
+    all_poros = result.all? { |i| i.is_a? DogPoro }
+
+    expect(result).to be_an Array
+    expect(result.count).to eq(1)
     expect(all_poros).to be true
   end
 end
