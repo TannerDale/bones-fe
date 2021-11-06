@@ -57,6 +57,8 @@ RSpec.configure do |config|
     DatabaseCleaner.strategy = :transaction
   end
 
+  config.include ShowMeTheCookies, :type => :feature
+
   config.around(:each) do |example|
     DatabaseCleaner.cleaning do
       example.run

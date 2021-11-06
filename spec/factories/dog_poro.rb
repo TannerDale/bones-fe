@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :dog_poro do
     attributes = {
-      id: [1..100].sample,
+      id: (1..100).to_a.sample,
       attributes: {
         name: Faker::Name.unique.first_name,
         size: %w[small medium large].sample,
