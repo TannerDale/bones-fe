@@ -8,10 +8,14 @@ class PlayDatesController < ApplicationController
 
   def create
     json = PlayDateSerializer.new(playdate_params.merge({ invited_dog_id: cookies[:invited_dog] }))
-    PlayDateFacade.create_play_date(json.to_json)
+    response = PlayDateFacade.create_play_date(json.to_json)
 
-    clear_invited_dog
-    redirect_to dashboard_path
+    if response.empty?
+      clear_invited_dog
+      redirect_to dashboard_path, success: 'Playdate created, bring your poop bags!'
+    else
+      invalid_redirect('Invalid dog id')
+    end
   end
 
   private
@@ -33,8 +37,10 @@ class PlayDatesController < ApplicationController
   end
 
   def validate_params
-    if !(valid_date? && required_params?)
-      redirect_to new_play_date_path, alert: 'Invalid params'
-    end
+    invalid_redirect('Invalid params') unless required_params? && valid_date?
+  end
+
+  def invalid_redirect(message)
+    redirect_to new_play_date_path, alert: message
   end
 end
