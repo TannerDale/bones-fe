@@ -9,7 +9,8 @@ class PlayDatesController < ApplicationController
   def create
     json = PlayDateSerializer.serialize(playdate_params.merge(playdate_extra_params))
     response = PlayDateFacade.create_play_date(json)
-    require "pry"; binding.pry
+
+    binding.pry
     if response.key?(:error)
       invalid_redirect('Invalid dog id')
     else
