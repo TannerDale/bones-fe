@@ -17,7 +17,7 @@
     <div class="col-lg-4">
       <div class="card">
         <div class="card-body">
-         <h5 class="card-title">Dog Name</h5>
+         <h5 class="card-title"><%= link_to "#{dog.name}", dog_path(dog) %></h5>
           <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
           <a href="#" class="btn btn-primary">Play with me!</a>
         </div>
@@ -34,7 +34,6 @@
 <div class="container mt-5">
  <div class="row">
  	<div class="col"><%= link_to 'Add new dog', new_dog_path, class: 'nav-link' %></div>
-    <div class="col"><a class="nav-link" href="#">My Playdates</a></div>
-    <div class="col"><a class="nav-link" href="#">Find playdate dogs</a></div>
+    <div class="col"><a class="nav-link" href="#">Pending Invites</a></div>
  </div>
 </div>
