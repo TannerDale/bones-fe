@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: http://bones-be.herokuapp.com/api/v1/play_dates
+    uri: http://localhost:5000/api/v1/play_dates
     body:
       encoding: UTF-8
-      string: '{"object":{"date":"2021-11-09","time":"05:00 AM","creator_dog_id":"1","location_id":"sadfgjh","invited_dog_id":"2"},"token":"a..z","email":"ed_schamberger@turner.info"}'
+      string: '{"object":{"date":"2021-11-09","time":"05:00 AM","creator_dog_id":"1","location_id":"sadfgjh","invited_dog_id":"2"},"token":"a..z","email":"merle@halvorson.name"}'
     headers:
       User-Agent:
       - Faraday v1.8.0
@@ -20,24 +20,14 @@ http_interactions:
       code: 204
       message: No Content
     headers:
-      Server:
-      - Cowboy
-      Date:
-      - Mon, 08 Nov 2021 18:37:44 GMT
-      Content-Length:
-      - '0'
-      Connection:
-      - keep-alive
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - dac4494e-a90f-411b-9101-419558acdab5
+      - f37d2046-2a85-4fdb-ad2d-37e2eadfd657
       X-Runtime:
-      - '0.011810'
-      Via:
-      - 1.1 vegur
+      - '0.007145'
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Mon, 08 Nov 2021 18:37:44 GMT
+  recorded_at: Mon, 08 Nov 2021 23:50:53 GMT
 recorded_with: VCR 6.0.0

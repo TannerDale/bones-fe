@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://bones-be.herokuapp.com/api/v1/user_dogs?user_id=2
+    uri: http://localhost:5000/api/v1/user_dogs?user_id=14
     body:
       encoding: US-ASCII
       string: ''
@@ -18,12 +18,6 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - Cowboy
-      Date:
-      - Mon, 08 Nov 2021 20:18:08 GMT
-      Connection:
-      - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
@@ -31,15 +25,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4389bc55-97bd-488d-bf83-4665a7db2174
+      - 56529b99-9764-4a93-b3ef-62844f1ca36c
       X-Runtime:
-      - '0.103384'
+      - '0.002328'
       Transfer-Encoding:
       - chunked
-      Via:
-      - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Mon, 08 Nov 2021 20:18:09 GMT
+  recorded_at: Mon, 08 Nov 2021 23:50:53 GMT
 recorded_with: VCR 6.0.0

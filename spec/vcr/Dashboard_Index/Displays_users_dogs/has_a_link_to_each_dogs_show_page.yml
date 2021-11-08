@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://bones-be.herokuapp.com/api/v1/user_dogs?user_id=13
+    uri: http://localhost:5000/api/v1/dogs/69
     body:
       encoding: US-ASCII
       string: ''
@@ -18,28 +18,21 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - Cowboy
-      Date:
-      - Mon, 08 Nov 2021 20:47:03 GMT
-      Connection:
-      - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      - W/"ff93284e3da687ebbb2f68cf74169a57"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a18b48ee-f4e0-4b6d-be8e-d61425867515
+      - 3fed39ca-d2b2-4ac3-b620-02fd1e217652
       X-Runtime:
-      - '0.057606'
+      - '0.004325'
       Transfer-Encoding:
       - chunked
-      Via:
-      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[]}'
-  recorded_at: Mon, 08 Nov 2021 20:47:03 GMT
+      string: '{"data":{"id":"69","type":"dog_with_playdates","attributes":{"name":"Cooper","size":"large","age":11,"breed":"Germanshepherd","vaccinated":"false","sex":"Male","trained":"yes","user_id":4,"description":"boop
+        the snoot","accepted_play_dates":[],"pending_play_dates":[]}}}'
+  recorded_at: Mon, 08 Nov 2021 23:50:53 GMT
 recorded_with: VCR 6.0.0
