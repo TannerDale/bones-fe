@@ -1,0 +1,227 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:5000/api/v1/dogs
+    body:
+      encoding: UTF-8
+      string: '{"object":{"name":"Shanell","age":"14","breed":"Beagle","size":"large","sex":"male","vaccinated":"1","trained":"1","user_id":4},"options":{},"context":{},"base_url":null,"_fields":{},"_include_linkages":[]}'
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Request-Id:
+      - 776b369a-bf11-4275-aebe-8df6f3eab3c7
+      X-Runtime:
+      - '0.017033'
+      Content-Length:
+      - '13182'
+    body:
+      encoding: UTF-8
+      string: '{"status":500,"error":"Internal Server Error","exception":"#\u003cArgumentError:
+        ''1'' is not a valid vaccinated\u003e","traces":{"Application Trace":[{"id":16,"trace":"app/controllers/api/v1/dogs_controller.rb:7:in
+        `create''"}],"Framework Trace":[{"id":0,"trace":"activerecord (5.2.6) lib/active_record/enum.rb:140:in
+        `assert_valid_value''"},{"id":1,"trace":"activemodel (5.2.6) lib/active_model/attribute.rb:71:in
+        `with_value_from_user''"},{"id":2,"trace":"activemodel (5.2.6) lib/active_model/attribute_set.rb:57:in
+        `write_from_user''"},{"id":3,"trace":"activerecord (5.2.6) lib/active_record/attribute_methods/write.rb:51:in
+        `_write_attribute''"},{"id":4,"trace":"activerecord (5.2.6) lib/active_record/attribute_methods/write.rb:24:in
+        `__temp__6716363696e616475646=''"},{"id":5,"trace":"activemodel (5.2.6) lib/active_model/attribute_assignment.rb:51:in
+        `public_send''"},{"id":6,"trace":"activemodel (5.2.6) lib/active_model/attribute_assignment.rb:51:in
+        `_assign_attribute''"},{"id":7,"trace":"activemodel (5.2.6) lib/active_model/attribute_assignment.rb:44:in
+        `block in _assign_attributes''"},{"id":8,"trace":"activemodel (5.2.6) lib/active_model/attribute_assignment.rb:43:in
+        `each''"},{"id":9,"trace":"activemodel (5.2.6) lib/active_model/attribute_assignment.rb:43:in
+        `_assign_attributes''"},{"id":10,"trace":"activerecord (5.2.6) lib/active_record/attribute_assignment.rb:23:in
+        `_assign_attributes''"},{"id":11,"trace":"activemodel (5.2.6) lib/active_model/attribute_assignment.rb:35:in
+        `assign_attributes''"},{"id":12,"trace":"activerecord (5.2.6) lib/active_record/core.rb:315:in
+        `initialize''"},{"id":13,"trace":"activerecord (5.2.6) lib/active_record/inheritance.rb:66:in
+        `new''"},{"id":14,"trace":"activerecord (5.2.6) lib/active_record/inheritance.rb:66:in
+        `new''"},{"id":15,"trace":"activerecord (5.2.6) lib/active_record/persistence.rb:52:in
+        `create!''"},{"id":17,"trace":"actionpack (5.2.6) lib/action_controller/metal/basic_implicit_render.rb:6:in
+        `send_action''"},{"id":18,"trace":"actionpack (5.2.6) lib/abstract_controller/base.rb:194:in
+        `process_action''"},{"id":19,"trace":"actionpack (5.2.6) lib/action_controller/metal/rendering.rb:30:in
+        `process_action''"},{"id":20,"trace":"actionpack (5.2.6) lib/abstract_controller/callbacks.rb:42:in
+        `block in process_action''"},{"id":21,"trace":"activesupport (5.2.6) lib/active_support/callbacks.rb:98:in
+        `run_callbacks''"},{"id":22,"trace":"actionpack (5.2.6) lib/abstract_controller/callbacks.rb:41:in
+        `process_action''"},{"id":23,"trace":"actionpack (5.2.6) lib/action_controller/metal/rescue.rb:22:in
+        `process_action''"},{"id":24,"trace":"actionpack (5.2.6) lib/action_controller/metal/instrumentation.rb:34:in
+        `block in process_action''"},{"id":25,"trace":"activesupport (5.2.6) lib/active_support/notifications.rb:168:in
+        `block in instrument''"},{"id":26,"trace":"activesupport (5.2.6) lib/active_support/notifications/instrumenter.rb:23:in
+        `instrument''"},{"id":27,"trace":"activesupport (5.2.6) lib/active_support/notifications.rb:168:in
+        `instrument''"},{"id":28,"trace":"actionpack (5.2.6) lib/action_controller/metal/instrumentation.rb:32:in
+        `process_action''"},{"id":29,"trace":"actionpack (5.2.6) lib/action_controller/metal/params_wrapper.rb:256:in
+        `process_action''"},{"id":30,"trace":"activerecord (5.2.6) lib/active_record/railties/controller_runtime.rb:24:in
+        `process_action''"},{"id":31,"trace":"actionpack (5.2.6) lib/abstract_controller/base.rb:134:in
+        `process''"},{"id":32,"trace":"actionpack (5.2.6) lib/action_controller/metal.rb:191:in
+        `dispatch''"},{"id":33,"trace":"actionpack (5.2.6) lib/action_controller/metal.rb:252:in
+        `dispatch''"},{"id":34,"trace":"actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:52:in
+        `dispatch''"},{"id":35,"trace":"actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:34:in
+        `serve''"},{"id":36,"trace":"actionpack (5.2.6) lib/action_dispatch/journey/router.rb:52:in
+        `block in serve''"},{"id":37,"trace":"actionpack (5.2.6) lib/action_dispatch/journey/router.rb:35:in
+        `each''"},{"id":38,"trace":"actionpack (5.2.6) lib/action_dispatch/journey/router.rb:35:in
+        `serve''"},{"id":39,"trace":"actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:840:in
+        `call''"},{"id":40,"trace":"rack (2.2.3) lib/rack/etag.rb:27:in `call''"},{"id":41,"trace":"rack
+        (2.2.3) lib/rack/conditional_get.rb:40:in `call''"},{"id":42,"trace":"rack
+        (2.2.3) lib/rack/head.rb:12:in `call''"},{"id":43,"trace":"activerecord (5.2.6)
+        lib/active_record/migration.rb:559:in `call''"},{"id":44,"trace":"actionpack
+        (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call''"},{"id":45,"trace":"activesupport
+        (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks''"},{"id":46,"trace":"actionpack
+        (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call''"},{"id":47,"trace":"actionpack
+        (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"id":48,"trace":"actionpack
+        (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call''"},{"id":49,"trace":"actionpack
+        (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call''"},{"id":50,"trace":"railties
+        (5.2.6) lib/rails/rack/logger.rb:38:in `call_app''"},{"id":51,"trace":"railties
+        (5.2.6) lib/rails/rack/logger.rb:26:in `block in call''"},{"id":52,"trace":"activesupport
+        (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged''"},{"id":53,"trace":"activesupport
+        (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged''"},{"id":54,"trace":"activesupport
+        (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged''"},{"id":55,"trace":"railties
+        (5.2.6) lib/rails/rack/logger.rb:26:in `call''"},{"id":56,"trace":"actionpack
+        (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call''"},{"id":57,"trace":"actionpack
+        (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call''"},{"id":58,"trace":"rack
+        (2.2.3) lib/rack/runtime.rb:22:in `call''"},{"id":59,"trace":"activesupport
+        (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"id":60,"trace":"actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in
+        `call''"},{"id":61,"trace":"actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in
+        `call''"},{"id":62,"trace":"rack (2.2.3) lib/rack/sendfile.rb:110:in `call''"},{"id":63,"trace":"railties
+        (5.2.6) lib/rails/engine.rb:524:in `call''"},{"id":64,"trace":"puma (3.12.6)
+        lib/puma/configuration.rb:227:in `call''"},{"id":65,"trace":"puma (3.12.6)
+        lib/puma/server.rb:706:in `handle_request''"},{"id":66,"trace":"puma (3.12.6)
+        lib/puma/server.rb:476:in `process_client''"},{"id":67,"trace":"puma (3.12.6)
+        lib/puma/server.rb:334:in `block in run''"},{"id":68,"trace":"puma (3.12.6)
+        lib/puma/thread_pool.rb:135:in `block in spawn_thread''"}],"Full Trace":[{"id":0,"trace":"activerecord
+        (5.2.6) lib/active_record/enum.rb:140:in `assert_valid_value''"},{"id":1,"trace":"activemodel
+        (5.2.6) lib/active_model/attribute.rb:71:in `with_value_from_user''"},{"id":2,"trace":"activemodel
+        (5.2.6) lib/active_model/attribute_set.rb:57:in `write_from_user''"},{"id":3,"trace":"activerecord
+        (5.2.6) lib/active_record/attribute_methods/write.rb:51:in `_write_attribute''"},{"id":4,"trace":"activerecord
+        (5.2.6) lib/active_record/attribute_methods/write.rb:24:in `__temp__6716363696e616475646=''"},{"id":5,"trace":"activemodel
+        (5.2.6) lib/active_model/attribute_assignment.rb:51:in `public_send''"},{"id":6,"trace":"activemodel
+        (5.2.6) lib/active_model/attribute_assignment.rb:51:in `_assign_attribute''"},{"id":7,"trace":"activemodel
+        (5.2.6) lib/active_model/attribute_assignment.rb:44:in `block in _assign_attributes''"},{"id":8,"trace":"activemodel
+        (5.2.6) lib/active_model/attribute_assignment.rb:43:in `each''"},{"id":9,"trace":"activemodel
+        (5.2.6) lib/active_model/attribute_assignment.rb:43:in `_assign_attributes''"},{"id":10,"trace":"activerecord
+        (5.2.6) lib/active_record/attribute_assignment.rb:23:in `_assign_attributes''"},{"id":11,"trace":"activemodel
+        (5.2.6) lib/active_model/attribute_assignment.rb:35:in `assign_attributes''"},{"id":12,"trace":"activerecord
+        (5.2.6) lib/active_record/core.rb:315:in `initialize''"},{"id":13,"trace":"activerecord
+        (5.2.6) lib/active_record/inheritance.rb:66:in `new''"},{"id":14,"trace":"activerecord
+        (5.2.6) lib/active_record/inheritance.rb:66:in `new''"},{"id":15,"trace":"activerecord
+        (5.2.6) lib/active_record/persistence.rb:52:in `create!''"},{"id":16,"trace":"app/controllers/api/v1/dogs_controller.rb:7:in
+        `create''"},{"id":17,"trace":"actionpack (5.2.6) lib/action_controller/metal/basic_implicit_render.rb:6:in
+        `send_action''"},{"id":18,"trace":"actionpack (5.2.6) lib/abstract_controller/base.rb:194:in
+        `process_action''"},{"id":19,"trace":"actionpack (5.2.6) lib/action_controller/metal/rendering.rb:30:in
+        `process_action''"},{"id":20,"trace":"actionpack (5.2.6) lib/abstract_controller/callbacks.rb:42:in
+        `block in process_action''"},{"id":21,"trace":"activesupport (5.2.6) lib/active_support/callbacks.rb:98:in
+        `run_callbacks''"},{"id":22,"trace":"actionpack (5.2.6) lib/abstract_controller/callbacks.rb:41:in
+        `process_action''"},{"id":23,"trace":"actionpack (5.2.6) lib/action_controller/metal/rescue.rb:22:in
+        `process_action''"},{"id":24,"trace":"actionpack (5.2.6) lib/action_controller/metal/instrumentation.rb:34:in
+        `block in process_action''"},{"id":25,"trace":"activesupport (5.2.6) lib/active_support/notifications.rb:168:in
+        `block in instrument''"},{"id":26,"trace":"activesupport (5.2.6) lib/active_support/notifications/instrumenter.rb:23:in
+        `instrument''"},{"id":27,"trace":"activesupport (5.2.6) lib/active_support/notifications.rb:168:in
+        `instrument''"},{"id":28,"trace":"actionpack (5.2.6) lib/action_controller/metal/instrumentation.rb:32:in
+        `process_action''"},{"id":29,"trace":"actionpack (5.2.6) lib/action_controller/metal/params_wrapper.rb:256:in
+        `process_action''"},{"id":30,"trace":"activerecord (5.2.6) lib/active_record/railties/controller_runtime.rb:24:in
+        `process_action''"},{"id":31,"trace":"actionpack (5.2.6) lib/abstract_controller/base.rb:134:in
+        `process''"},{"id":32,"trace":"actionpack (5.2.6) lib/action_controller/metal.rb:191:in
+        `dispatch''"},{"id":33,"trace":"actionpack (5.2.6) lib/action_controller/metal.rb:252:in
+        `dispatch''"},{"id":34,"trace":"actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:52:in
+        `dispatch''"},{"id":35,"trace":"actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:34:in
+        `serve''"},{"id":36,"trace":"actionpack (5.2.6) lib/action_dispatch/journey/router.rb:52:in
+        `block in serve''"},{"id":37,"trace":"actionpack (5.2.6) lib/action_dispatch/journey/router.rb:35:in
+        `each''"},{"id":38,"trace":"actionpack (5.2.6) lib/action_dispatch/journey/router.rb:35:in
+        `serve''"},{"id":39,"trace":"actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:840:in
+        `call''"},{"id":40,"trace":"rack (2.2.3) lib/rack/etag.rb:27:in `call''"},{"id":41,"trace":"rack
+        (2.2.3) lib/rack/conditional_get.rb:40:in `call''"},{"id":42,"trace":"rack
+        (2.2.3) lib/rack/head.rb:12:in `call''"},{"id":43,"trace":"activerecord (5.2.6)
+        lib/active_record/migration.rb:559:in `call''"},{"id":44,"trace":"actionpack
+        (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call''"},{"id":45,"trace":"activesupport
+        (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks''"},{"id":46,"trace":"actionpack
+        (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call''"},{"id":47,"trace":"actionpack
+        (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"id":48,"trace":"actionpack
+        (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call''"},{"id":49,"trace":"actionpack
+        (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call''"},{"id":50,"trace":"railties
+        (5.2.6) lib/rails/rack/logger.rb:38:in `call_app''"},{"id":51,"trace":"railties
+        (5.2.6) lib/rails/rack/logger.rb:26:in `block in call''"},{"id":52,"trace":"activesupport
+        (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged''"},{"id":53,"trace":"activesupport
+        (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged''"},{"id":54,"trace":"activesupport
+        (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged''"},{"id":55,"trace":"railties
+        (5.2.6) lib/rails/rack/logger.rb:26:in `call''"},{"id":56,"trace":"actionpack
+        (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call''"},{"id":57,"trace":"actionpack
+        (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call''"},{"id":58,"trace":"rack
+        (2.2.3) lib/rack/runtime.rb:22:in `call''"},{"id":59,"trace":"activesupport
+        (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"id":60,"trace":"actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in
+        `call''"},{"id":61,"trace":"actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in
+        `call''"},{"id":62,"trace":"rack (2.2.3) lib/rack/sendfile.rb:110:in `call''"},{"id":63,"trace":"railties
+        (5.2.6) lib/rails/engine.rb:524:in `call''"},{"id":64,"trace":"puma (3.12.6)
+        lib/puma/configuration.rb:227:in `call''"},{"id":65,"trace":"puma (3.12.6)
+        lib/puma/server.rb:706:in `handle_request''"},{"id":66,"trace":"puma (3.12.6)
+        lib/puma/server.rb:476:in `process_client''"},{"id":67,"trace":"puma (3.12.6)
+        lib/puma/server.rb:334:in `block in run''"},{"id":68,"trace":"puma (3.12.6)
+        lib/puma/thread_pool.rb:135:in `block in spawn_thread''"}]}}'
+  recorded_at: Mon, 08 Nov 2021 17:08:13 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/user_dogs?user_id=4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"58f5601c2dd9ea86c52c70f88f43ef08"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 16392b27-8268-48e5-aea4-043400094437
+      X-Runtime:
+      - '0.003363'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"7","type":"dog","attributes":{"name":"Shadow","size":"small","age":20,"breed":"Komondor","vaccinated":"false","sex":"Female","trained":"yes","user_id":4,"description":"smol
+        pupperino"}},{"id":"8","type":"dog","attributes":{"name":"Roxy","size":"small","age":19,"breed":"Weimaraner","vaccinated":"false","sex":"Female","trained":"no","user_id":4,"description":"11/10"}},{"id":"19","type":"dog","attributes":{"name":"Jack","size":"large","age":12,"breed":"Saluki","vaccinated":"true","sex":"Female","trained":"yes","user_id":4,"description":"thicc
+        doggo"}},{"id":"20","type":"dog","attributes":{"name":"Marley","size":"small","age":19,"breed":"Chesapeake
+        Retriever","vaccinated":"true","sex":"Female","trained":"yes","user_id":4,"description":"long
+        boi"}},{"id":"34","type":"dog","attributes":{"name":"Harvey","size":"medium","age":13,"breed":"Silky
+        Terrier","vaccinated":"true","sex":"Male","trained":"yes","user_id":4,"description":"long
+        boi"}},{"id":"35","type":"dog","attributes":{"name":"Bruno","size":"large","age":12,"breed":"Keeshond","vaccinated":"true","sex":"Female","trained":"no","user_id":4,"description":"11/10"}},{"id":"40","type":"dog","attributes":{"name":"Harley","size":"small","age":15,"breed":"Miniature
+        Pinscher","vaccinated":"false","sex":"Female","trained":"yes","user_id":4,"description":"big
+        ol'' pupper"}},{"id":"41","type":"dog","attributes":{"name":"Casey","size":"large","age":19,"breed":"Entlebucher","vaccinated":"true","sex":"Male","trained":"no","user_id":4,"description":"big
+        ol'' pupper"}},{"id":"43","type":"dog","attributes":{"name":"Lily","size":"small","age":10,"breed":"Saluki","vaccinated":"false","sex":"Male","trained":"yes","user_id":4,"description":"11/10"}},{"id":"54","type":"dog","attributes":{"name":"Sparky","size":"small","age":17,"breed":"Golden
+        Retriever","vaccinated":"true","sex":"Male","trained":"no","user_id":4,"description":"zoom"}},{"id":"56","type":"dog","attributes":{"name":"Bandit","size":"large","age":21,"breed":"Sussex
+        Spaniel","vaccinated":"true","sex":"Male","trained":"no","user_id":4,"description":"zoom"}},{"id":"58","type":"dog","attributes":{"name":"Spike","size":"small","age":7,"breed":"Westhighland
+        Terrier","vaccinated":"false","sex":"Male","trained":"yes","user_id":4,"description":"thicc
+        doggo"}},{"id":"62","type":"dog","attributes":{"name":"Honey","size":"medium","age":21,"breed":"Chesapeake
+        Retriever","vaccinated":"false","sex":"Female","trained":"yes","user_id":4,"description":"11/10"}},{"id":"65","type":"dog","attributes":{"name":"Gizmo","size":"large","age":9,"breed":"Malamute","vaccinated":"true","sex":"Female","trained":"yes","user_id":4,"description":"boop
+        the snoot"}},{"id":"66","type":"dog","attributes":{"name":"Cookie","size":"medium","age":23,"breed":"Akita","vaccinated":"false","sex":"Female","trained":"yes","user_id":4,"description":"big
+        ol'' pupper"}},{"id":"70","type":"dog","attributes":{"name":"Bo","size":"small","age":14,"breed":"Giant
+        Schnauzer","vaccinated":"false","sex":"Male","trained":"yes","user_id":4,"description":"mlem"}},{"id":"72","type":"dog","attributes":{"name":"Jasper","size":"medium","age":2,"breed":"Shihtzu","vaccinated":"false","sex":"Male","trained":"no","user_id":4,"description":"mlem"}},{"id":"75","type":"dog","attributes":{"name":"Murphy","size":"large","age":21,"breed":"Groenendael","vaccinated":"false","sex":"Female","trained":"yes","user_id":4,"description":"thicc
+        doggo"}},{"id":"80","type":"dog","attributes":{"name":"Brutus","size":"small","age":12,"breed":"Afghan
+        Hound","vaccinated":"true","sex":"Male","trained":"no","user_id":4,"description":"mlem"}},{"id":"82","type":"dog","attributes":{"name":"Misty","size":"small","age":21,"breed":"Pug","vaccinated":"false","sex":"Male","trained":"yes","user_id":4,"description":"heck
+        no pal"}},{"id":"89","type":"dog","attributes":{"name":"Spike","size":"medium","age":14,"breed":"Eskimo","vaccinated":"false","sex":"Male","trained":"yes","user_id":4,"description":"boop
+        the snoot"}},{"id":"90","type":"dog","attributes":{"name":"Precious","size":"large","age":11,"breed":"Brabancon","vaccinated":"false","sex":"Female","trained":"yes","user_id":4,"description":"mlem"}}]}'
+  recorded_at: Mon, 08 Nov 2021 17:08:13 GMT
+recorded_with: VCR 6.0.0

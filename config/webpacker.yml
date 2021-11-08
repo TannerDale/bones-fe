@@ -33,7 +33,6 @@ default: &default
     - .woff2
 
   extensions:
-    - .jsx
     - .mjs
     - .js
     - .sass
@@ -84,10 +83,10 @@ production:
   <<: *default
 
   # Production depends on precompilation of packs prior to booting for performance.
-  compile: true
+  compile: false
 
   # Extract and emit a css file
   extract_css: true
 
   # Cache manifest.json for performance
-  cache_manifest: false
+  cache_manifest: true

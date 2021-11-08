@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/user_dogs?user_id=3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a5d04e7183bcab858ec250355a1c86ec"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b115f703-1650-4988-a741-7e786fbcefdd
+      X-Runtime:
+      - '0.006180'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"3","type":"dog","attributes":{"name":"Tyson","size":"large","age":23,"breed":"Pyrenees","vaccinated":"false","sex":"Male","trained":"yes","user_id":3,"description":"heck
+        no pal"}},{"id":"6","type":"dog","attributes":{"name":"Shadow","size":"large","age":1,"breed":"Silky
+        Terrier","vaccinated":"true","sex":"Female","trained":"no","user_id":3,"description":"big
+        ol'' pupper"}},{"id":"9","type":"dog","attributes":{"name":"Sasha","size":"small","age":19,"breed":"Borzoi","vaccinated":"true","sex":"Female","trained":"yes","user_id":3,"description":"heck
+        no pal"}},{"id":"14","type":"dog","attributes":{"name":"Buddy","size":"large","age":6,"breed":"Miniature
+        Schnauzer","vaccinated":"true","sex":"Female","trained":"yes","user_id":3,"description":"long
+        boi"}},{"id":"15","type":"dog","attributes":{"name":"Scooter","size":"small","age":4,"breed":"Malamute","vaccinated":"true","sex":"Male","trained":"no","user_id":3,"description":"smol
+        pupperino"}},{"id":"25","type":"dog","attributes":{"name":"Sassy","size":"large","age":5,"breed":"French
+        Bulldog","vaccinated":"false","sex":"Female","trained":"no","user_id":3,"description":"heck
+        no pal"}},{"id":"30","type":"dog","attributes":{"name":"Princess","size":"medium","age":11,"breed":"Malinois","vaccinated":"false","sex":"Female","trained":"yes","user_id":3,"description":"smol
+        pupperino"}},{"id":"39","type":"dog","attributes":{"name":"Oreo","size":"large","age":24,"breed":"Basset
+        Hound","vaccinated":"true","sex":"Female","trained":"yes","user_id":3,"description":"blep"}},{"id":"48","type":"dog","attributes":{"name":"Spike","size":"medium","age":12,"breed":"Basset
+        Hound","vaccinated":"false","sex":"Female","trained":"no","user_id":3,"description":"long
+        boi"}},{"id":"68","type":"dog","attributes":{"name":"Jake","size":"medium","age":11,"breed":"Miniature
+        Pinscher","vaccinated":"true","sex":"Male","trained":"no","user_id":3,"description":"smol
+        pupperino"}},{"id":"71","type":"dog","attributes":{"name":"Lexi","size":"medium","age":5,"breed":"Newfoundland","vaccinated":"true","sex":"Female","trained":"no","user_id":3,"description":"heck
+        no pal"}},{"id":"78","type":"dog","attributes":{"name":"Charlie","size":"small","age":19,"breed":"Briard","vaccinated":"true","sex":"Female","trained":"no","user_id":3,"description":"blep"}},{"id":"81","type":"dog","attributes":{"name":"Sparky","size":"large","age":15,"breed":"Japanese
+        Spaniel","vaccinated":"false","sex":"Female","trained":"no","user_id":3,"description":"11/10"}},{"id":"83","type":"dog","attributes":{"name":"Rosie","size":"small","age":15,"breed":"Yorkshire
+        Terrier","vaccinated":"false","sex":"Male","trained":"no","user_id":3,"description":"smol
+        pupperino"}},{"id":"85","type":"dog","attributes":{"name":"Rex","size":"medium","age":17,"breed":"Brittany
+        Spaniel","vaccinated":"false","sex":"Female","trained":"yes","user_id":3,"description":"11/10"}},{"id":"88","type":"dog","attributes":{"name":"Blue","size":"small","age":15,"breed":"Akita","vaccinated":"false","sex":"Female","trained":"yes","user_id":3,"description":"thicc
+        doggo"}},{"id":"91","type":"dog","attributes":{"name":"Lady","size":"medium","age":19,"breed":"Irish
+        Setter","vaccinated":"false","sex":"Male","trained":"yes","user_id":3,"description":"smol
+        pupperino"}},{"id":"92","type":"dog","attributes":{"name":"Jack","size":"small","age":15,"breed":"Scottish
+        Terrier","vaccinated":"true","sex":"Male","trained":"yes","user_id":3,"description":"they''re
+        good dogs Brent"}},{"id":"93","type":"dog","attributes":{"name":"Bo","size":"small","age":19,"breed":"Briard","vaccinated":"true","sex":"Male","trained":"yes","user_id":3,"description":"big
+        ol'' pupper"}},{"id":"94","type":"dog","attributes":{"name":"Lilly","size":"small","age":13,"breed":"Italian
+        Greyhound","vaccinated":"true","sex":"Male","trained":"yes","user_id":3,"description":"smol
+        pupperino"}},{"id":"96","type":"dog","attributes":{"name":"Charlie","size":"large","age":4,"breed":"Pomeranian","vaccinated":"true","sex":"Male","trained":"no","user_id":3,"description":"mlem"}},{"id":"98","type":"dog","attributes":{"name":"Bo","size":"medium","age":15,"breed":"Sealyham
+        Terrier","vaccinated":"false","sex":"Female","trained":"yes","user_id":3,"description":"mlem"}},{"id":"99","type":"dog","attributes":{"name":"Sadie","size":"large","age":17,"breed":"Boston
+        Bulldog","vaccinated":"true","sex":"Male","trained":"no","user_id":3,"description":"heck
+        no pal"}},{"id":"102","type":"dog","attributes":{"name":"Evita","size":"small","age":6,"breed":"Rhodesian
+        Ridgeback","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"103","type":"dog","attributes":{"name":"Kirk","size":"small","age":1,"breed":"Irish
+        Setter","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}}]}'
+  recorded_at: Mon, 08 Nov 2021 17:08:11 GMT
+recorded_with: VCR 6.0.0
