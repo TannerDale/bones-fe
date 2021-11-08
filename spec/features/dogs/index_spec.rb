@@ -29,7 +29,7 @@ describe 'Dogs Index', :vcr do
   end
 
   it 'can change pages', js: true do
-    click_button 'Next Page'
+    click_on 'Next Page'
     expect(page).to have_content 'Page: 2'
 
     click_button 'Previous Page'
