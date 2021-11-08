@@ -5,6 +5,15 @@ class SessionsController < ApplicationController
 
     session[:user_id] = user.id
 
+    SessionsFacade.sign_in(auth_hash)
+
+    redirect_to root_path
+  end
+
+  def destroy
+    current_user.update_attribute(:token, nil)
+
+    session[:user_id] = nil
     redirect_to root_path
   end
 

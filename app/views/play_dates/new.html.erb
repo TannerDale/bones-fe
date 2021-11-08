@@ -1,1 +1,16 @@
-<h1>New Play Date!</h1>
+<h1>New Playdate!</h1>
+
+<%= form_with url: play_dates_path, local: true do |f| %>
+  <%= f.hidden_field :location_id, value: @location %>
+
+  <%= f.label :date, "Date of Playdate" %>
+  <%= f.date_field :date %><br>
+
+  <%= f.label :time, "Time of Playdate" %>
+  <%= f.time_field :time %><br>
+
+  <%= f.label 'Who is the playdate for?' %>
+  <%= f.collection_select :creator_dog_id, @user_dogs, :id, :name %>
+
+  <%= f.submit "Create Playdate" %><br>
+<% end %>

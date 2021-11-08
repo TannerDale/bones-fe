@@ -40,7 +40,7 @@ VCR.configure do |c|
   c.hook_into :webmock
   c.configure_rspec_metadata!
   c.default_cassette_options = {
-    match_requests_on: %i[method host path]
+    match_requests_on: %i[method path]
   }
 end
 WebMock.allow_net_connect!(net_http_connect_on_start: true)
@@ -56,6 +56,8 @@ RSpec.configure do |config|
     DatabaseCleaner.clean_with(:truncation)
     DatabaseCleaner.strategy = :transaction
   end
+
+  config.include ShowMeTheCookies, :type => :feature
 
   config.around(:each) do |example|
     DatabaseCleaner.cleaning do

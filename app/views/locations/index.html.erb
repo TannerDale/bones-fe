@@ -1,0 +1,9 @@
+<h1>Locations</h1>
+
+<% @locations.each do |l| %>
+  <p>Name: <%= l.name %></p>
+  <p>Address: <%= l.address %></p>
+  <p>Phone: <%= l.phone %></p>
+  <p>Rating: <%= l.rating %></p>
+  <%= button_to "Select #{l.name} for your playdate!", new_play_date_path, params: { location_id: l.id },  method: :get %>
+<% end %>
