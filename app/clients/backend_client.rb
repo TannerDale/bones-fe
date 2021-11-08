@@ -12,10 +12,6 @@ class BackendClient
       post('play_dates', json).body
     end
 
-    def sign_in(id)
-      post('/sessions', id)
-    end
-
     private
 
     def post(url, json)
