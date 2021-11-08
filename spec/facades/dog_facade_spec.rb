@@ -35,7 +35,6 @@ describe DogFacade, :vcr do
     all_poros = result.all? { |i| i.is_a? DogPoro }
 
     expect(result).to be_an Array
-    expect(result.count).to eq(1)
     expect(all_poros).to be true
   end
 end
