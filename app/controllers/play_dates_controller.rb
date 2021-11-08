@@ -45,7 +45,7 @@ class PlayDatesController < ApplicationController
   end
 
   def validate_params
-    # invalid_redirect('Invalid params') unless required_params? && valid_date?
+    invalid_redirect('Invalid params') unless required_params? && valid_date?
   end
 
   def invalid_redirect(message)
