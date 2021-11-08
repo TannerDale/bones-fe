@@ -15,5 +15,9 @@ class DogFacade
         DogPoro.new(dog)
       end
     end
+
+    def find_dog(id)
+      DogWithPlayDatesPoro.new(DogService.find_dog(id))
+    end
   end
 end
