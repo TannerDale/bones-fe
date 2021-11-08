@@ -15,7 +15,7 @@ describe PlayDateFacade, :vcr do
   end
 
   it 'forwards the request to the client' do
-    json = PlayDateSerializer.new(params).to_json
+    json = PlayDateSerializer.serialize(params)
     result = PlayDateFacade.create_play_date(json)
 
     expect(result).to be_empty
