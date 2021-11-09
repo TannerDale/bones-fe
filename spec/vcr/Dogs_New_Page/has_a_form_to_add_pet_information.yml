@@ -5,7 +5,7 @@ http_interactions:
     uri: http://bones-be.herokuapp.com/api/v1/dogs
     body:
       encoding: UTF-8
-      string: '{"object":{"name":"Emerald","age":"4","breed":"Toy Terrier","size":"medium","sex":"female","vaccinated":"1","trained":"1","user_id":4},"options":{},"context":{},"base_url":null,"_fields":{},"_include_linkages":[]}'
+      string: '{"object":{"name":"Sanda","age":"13","breed":"English Sheepdog","size":"large","sex":"female","vaccinated":"1","trained":"1","user_id":4},"options":{},"context":{},"base_url":null,"_fields":{},"_include_linkages":[]}'
     headers:
       User-Agent:
       - Faraday v1.8.0
@@ -23,15 +23,15 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 01:22:35 GMT
+      - Tue, 09 Nov 2021 01:40:27 GMT
       Connection:
       - keep-alive
       Content-Type:
       - text/html; charset=UTF-8
       X-Request-Id:
-      - b27a8e15-0318-4af9-96cb-a503a496d13c
+      - 4962e841-9ade-4250-8c91-65b057828ffe
       X-Runtime:
-      - '0.002164'
+      - '0.003541'
       Content-Length:
       - '0'
       Via:
@@ -39,7 +39,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Tue, 09 Nov 2021 01:22:36 GMT
+  recorded_at: Tue, 09 Nov 2021 01:40:28 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/user_dogs?user_id=4
@@ -61,7 +61,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 01:22:35 GMT
+      - Tue, 09 Nov 2021 01:40:28 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -71,9 +71,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - bd95e998-71b0-46a4-88ed-c69b85a211c7
+      - 431a8d6a-3d81-4724-96ec-40562465046f
       X-Runtime:
-      - '0.004837'
+      - '0.005331'
       Transfer-Encoding:
       - chunked
       Via:
@@ -81,5 +81,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Tue, 09 Nov 2021 01:22:36 GMT
+  recorded_at: Tue, 09 Nov 2021 01:40:28 GMT
 recorded_with: VCR 6.0.0
