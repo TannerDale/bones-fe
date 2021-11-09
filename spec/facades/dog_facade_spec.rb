@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe DogFacade, :vcr do
   let(:dog) { build :dog_poro }
-  let(:dog2) { DogFacade.dogs.first.id }
+  let(:dog2) { DogFacade.dogs(1)[17].id }
   let(:dog1) { build :dog_with_play_dates_poro }
   let(:params) do
     {
@@ -44,9 +44,9 @@ describe DogFacade, :vcr do
     result = DogFacade.find_dog(dog2)
 
     expect(result).to be_an DogWithPlayDatesPoro
-    expect(result.accepted_play_dates).to be_an Array
-    expect(result.accepted_play_dates.first).to be_a PlayDatePoro
     expect(result.pending_play_dates).to be_an Array
     expect(result.pending_play_dates.first).to be_a PlayDatePoro
+    expect(result.accepted_play_dates).to be_an Array
+    expect(result.accepted_play_dates.first).to be_a PlayDatePoro
   end
 end
