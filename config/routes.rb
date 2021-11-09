@@ -7,9 +7,12 @@ Rails.application.routes.draw do
   resources :dogs
   get '/dashboard', to: 'users#show'
 
+  resources :users, only: [:edit, :update]
+
   resources :play_dates, only: [:new, :create]
 
   delete 'logout', to: 'sessions#destroy'
 
   resources :locations, only: :index
+
 end

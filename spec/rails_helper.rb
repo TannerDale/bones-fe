@@ -35,12 +35,12 @@ rescue ActiveRecord::PendingMigrationError => e
 end
 
 VCR.configure do |c|
-  c.ignore_hosts '127.0.0.1'
+  c.ignore_localhost = true
   c.cassette_library_dir = 'spec/vcr'
   c.hook_into :webmock
   c.configure_rspec_metadata!
   c.default_cassette_options = {
-    match_requests_on: %i[method path]
+    match_requests_on: %i[method]
   }
 end
 WebMock.allow_net_connect!(net_http_connect_on_start: true)

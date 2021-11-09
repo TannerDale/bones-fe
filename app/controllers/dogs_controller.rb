@@ -10,7 +10,10 @@ class DogsController < ApplicationController
     end
   end
 
-  def show; end
+  def show
+    @dog = DogFacade.find_dog(params[:id])
+
+  end
 
   def new; end
 

@@ -2,6 +2,8 @@ require 'rails_helper'
 
 describe DogFacade, :vcr do
   let(:dog) { build :dog_poro }
+  let!(:dog2) { DogFacade.dogs(1)[17].id }
+  let(:dog1) { build :dog_with_play_dates_poro }
   let(:params) do
     {
       name: dog.name,
@@ -36,5 +38,14 @@ describe DogFacade, :vcr do
 
     expect(result).to be_an Array
     expect(all_poros).to be true
+  end
+
+  it 'can get dog info' do
+    result = DogFacade.find_dog(dog2)
+
+    expect(result).to be_an DogWithPlayDatesPoro
+    expect(result.pending_play_dates).to be_an Array
+    expect(result.accepted_play_dates).to be_an Array
+
   end
 end

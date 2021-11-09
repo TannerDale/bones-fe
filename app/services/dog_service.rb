@@ -11,5 +11,9 @@ class DogService
     def user_dogs(id)
       BackendClient.fetch("/api/v1/user_dogs?user_id=#{id}")[:data]
     end
+
+    def find_dog(id)
+      BackendClient.fetch("/api/v1/dogs/#{id}")[:data]
+    end
   end
 end

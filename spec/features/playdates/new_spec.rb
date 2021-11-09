@@ -3,20 +3,22 @@ require 'rails_helper'
 RSpec.describe 'playdates#new', :vcr do
   let!(:locations) { build_list :location_poro, 20 }
   let(:user) { create :user }
-  let(:host_dog) { build :dog_poro, id: 1 }
+  let!(:dogs) { DogFacade.dogs(1) }
+  let(:invited_dog) { dogs.first }
+  let(:host_dog) { dogs.last }
 
   before :each do
     allow(DogFacade).to receive(:user_dogs).and_return([host_dog])
 
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
-    create_cookie(:invited_dog, 2)
+    create_cookie(:invited_dog, invited_dog.id)
 
     visit new_play_date_path(location_id: 'sadfgjh')
   end
 
   it 'has a form to create a new playdate' do
-    expect(page).to have_content("New Playdate!")
+    expect(page).to have_content('New Playdate!')
     expect(page).to have_field(:date)
     expect(page).to have_field(:time)
 

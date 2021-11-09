@@ -1,7 +1,7 @@
 class LocationsController < ApplicationController
   def index
     @page = params[:page]&.to_i || 1
-    @locations = LocationFacade.nearby_locations
+    @locations = LocationFacade.nearby_locations(current_user.location)
     cookies[:invited_dog] = params[:dog_id]
     # @locations = LocationSerializer.new(locations)
     #
