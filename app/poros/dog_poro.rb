@@ -1,5 +1,5 @@
 class DogPoro
-  attr_reader :id, :name, :breed, :size, :age, :vaccinated, :trained, :user_id, :sex
+  attr_reader :id, :name, :breed, :size, :age, :vaccinated, :trained, :user_id, :sex, :description
 
   def initialize(data)
     @id = data[:id]
@@ -11,5 +11,6 @@ class DogPoro
     @trained = data[:attributes][:trained]
     @sex = data[:attributes][:sex]
     @user_id = data[:attributes][:user_id]
+    @description = data[:attributes][:description]
   end
 end
