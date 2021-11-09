@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/yelp_locations?location=Denver
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 09 Nov 2021 18:14:00 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4448d1b1e151e030510cc8b549ed40cb"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2910b0f2-78fa-4333-8ea4-1dc40bcb78a9
+      X-Runtime:
+      - '0.518640'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"MWFGHr6NOg7pAoLgbgFdsQ","name":"Doppio Coffee","address":"1245
+        E Colfax Ave, Ste 105, Denver, CO 80218","phone":"(303) 537-7794","rating":4.5,"categories":["Coffee
+        \u0026 Tea","Breakfast \u0026 Brunch","Sandwiches"],"image_url":"https://s3-media3.fl.yelpcdn.com/bphoto/Y3nLL8rizY1-z7_PG6ja0A/o.jpg"},{"id":"FfwLdr5-TBINeZbR4ey_WQ","name":"Irish
+        Snug","address":"1201 E Colfax Ave, Denver, CO 80218","phone":"(303) 839-1394","rating":4.0,"categories":["Venues
+        \u0026 Event Spaces","Irish Pub","Burgers"],"image_url":"https://s3-media4.fl.yelpcdn.com/bphoto/4Tfw-AgjlGw6ZM9LDSLU0g/o.jpg"},{"id":"-7AgflI0MNLAimyFb6T5tQ","name":"Good
+        Times Burgers \u0026 Frozen Custard","address":"808 E Colfax Ave, Denver,
+        CO 80218","phone":"(303) 830-8060","rating":3.0,"categories":["Fast Food","Burgers","Ice
+        Cream \u0026 Frozen Yogurt"],"image_url":"https://s3-media1.fl.yelpcdn.com/bphoto/egcncqdw79ndZ5f3nVVVyQ/o.jpg"},{"id":"HA6_8IsyxUr6eItoMpQYLg","name":"Illegal
+        Pete''s - Colfax","address":"2001 E Colfax Ave, Denver, CO 80206","phone":"(720)
+        723-2703","rating":4.0,"categories":["Bars","Mexican","Breakfast \u0026 Brunch"],"image_url":"https://s3-media4.fl.yelpcdn.com/bphoto/X-sD1GncE3uJzp8r0KeubA/o.jpg"},{"id":"VryvMiOjGlSTyR6EbopvMg","name":"The
+        District","address":"1320 E 17th Ave, Denver, CO 80218","phone":"(303) 813-6688","rating":3.5,"categories":["American
+        (Traditional)","Bars","Breakfast \u0026 Brunch"],"image_url":"https://s3-media2.fl.yelpcdn.com/bphoto/eowRQnjyzkfi1p-3S6ciYg/o.jpg"},{"id":"jsux4d-27MbCymwksz9RZg","name":"Waffle
+        Brothers Pub Style","address":"1707 Lafayette St, Denver, CO 80218","phone":"(720)
+        708-5150","rating":4.0,"categories":["Breakfast \u0026 Brunch","Waffles","Chicken
+        Shop"],"image_url":"https://s3-media1.fl.yelpcdn.com/bphoto/SJDAKaDYwLbOVapwr4kY5w/o.jpg"},{"id":"o-i3q1AA1QFCK9EmaQc52w","name":"Sullivan
+        Scrap Kitchen","address":"1740 E 17th Ave, Denver, CO 80218","phone":"(720)
+        242-6292","rating":4.5,"categories":["American (Traditional)","Sandwiches","Burgers"],"image_url":"https://s3-media4.fl.yelpcdn.com/bphoto/eFIseqKUaLpAKdACX7FlZQ/o.jpg"},{"id":"43eXot0v07sAtP-CLtSRfA","name":"SubCulture","address":"1300
+        Pennsylvania St, Ste 102, Denver, CO 80203","phone":"(303) 420-3232","rating":4.0,"categories":["Sandwiches","Delis","Salad"],"image_url":"https://s3-media3.fl.yelpcdn.com/bphoto/U1aB7BWXI55kxV8WXGN-Yg/o.jpg"},{"id":"kRiwvntcXKDPdtpYKcGPhg","name":"Onefold","address":"1420
+        E 18th Ave, Denver, CO 80218","phone":"(303) 954-0877","rating":4.5,"categories":["Breakfast
+        \u0026 Brunch","Cafes"],"image_url":"https://s3-media4.fl.yelpcdn.com/bphoto/s4ncc00yizhXGRQvhiMbhA/o.jpg"},{"id":"zgvqw-I07hQYhIQwSSCiQg","name":"Brothers
+        BBQ","address":"568 N Washington St, Denver, CO 80203","phone":"(720) 570-4227","rating":3.5,"categories":["Barbeque","Southern"],"image_url":"https://s3-media1.fl.yelpcdn.com/bphoto/RQMpMHPUCG9-5XQ7CjNqqA/o.jpg"},{"id":"1Tfuh19QtBcCu5p970nDuw","name":"Roostercat
+        Coffee House","address":"1045 Lincoln St, Denver, CO 80203","phone":"(720)
+        388-0356","rating":4.0,"categories":["Coffee \u0026 Tea","Cafes","Breakfast
+        \u0026 Brunch"],"image_url":"https://s3-media3.fl.yelpcdn.com/bphoto/jR8fiUtFdOi5XTuNLBExhA/o.jpg"},{"id":"IhdFeUHNdlmN22Yv3xLHEA","name":"100%
+        de Agave","address":"975 Lincoln St, Denver, CO 80203","phone":"(303) 731-1100","rating":3.5,"categories":["Mexican","Bars"],"image_url":"https://s3-media4.fl.yelpcdn.com/bphoto/GU1b7N6kXC4x_g0QoE3nBQ/o.jpg"},{"id":"3asUEG-iok2bunLBp1O_mw","name":"Lowdown
+        Brewery + Kitchen","address":"800 Lincoln St, Denver, CO 80203","phone":"(720)
+        524-8065","rating":4.5,"categories":["Breweries","American (New)","Pizza"],"image_url":"https://s3-media2.fl.yelpcdn.com/bphoto/4BVCLbTZXqdo_rDVwc5Ezg/o.jpg"},{"id":"7IOQ3CX1OXc6TjC59WbUNw","name":"BurgerFi","address":"1147
+        Broadway, Unit 101, Denver, CO 80203","phone":"(720) 390-5046","rating":3.5,"categories":["Hot
+        Dogs","Burgers","American (Traditional)"],"image_url":"https://s3-media1.fl.yelpcdn.com/bphoto/3mR9kLD5K_ebJAho2ere6w/o.jpg"},{"id":"rPQtcHEKEGCjjL8pXyYKSw","name":"Amethyst
+        Coffee Company","address":"1111 Broadway St, Ste 101, Denver, CO 80203","phone":"","rating":4.0,"categories":["Cafes","Coffee
+        \u0026 Tea"],"image_url":"https://s3-media2.fl.yelpcdn.com/bphoto/r_-W8768kqEcALpzQjN0QQ/o.jpg"},{"id":"qtRNJsz1MYEZVidYIft1Tw","name":"Illegal
+        Burger - Capitol Hill","address":"609 Grant St, Denver, CO 80203","phone":"(303)
+        831-1300","rating":4.0,"categories":["Burgers","Beer Bar"],"image_url":"https://s3-media3.fl.yelpcdn.com/bphoto/7DodwAN4XwdutLR6W8CIeQ/o.jpg"},{"id":"ZVRZablopgmiT7Z04DJAeA","name":"Cafe
+        Miriam","address":"2217 E 21st Ave, Denver, CO 80205","phone":"(720) 325-9027","rating":5.0,"categories":["Breakfast
+        \u0026 Brunch","Creperies","Moroccan"],"image_url":"https://s3-media4.fl.yelpcdn.com/bphoto/O-4JfXlEOt6BNoFGEi2kKw/o.jpg"},{"id":"FcyalVpVWzOHCYJnQDTLPw","name":"Leven
+        Deli","address":"123 W 12th Ave, Denver, CO 80204","phone":"(303) 325-5691","rating":4.5,"categories":["Delis","Sandwiches","Wine
+        Bars"],"image_url":"https://s3-media2.fl.yelpcdn.com/bphoto/gLVMeAjAx-SlgRABvG8CBA/o.jpg"},{"id":"d2kYHOYfT0I-7_kJUMJ7ow","name":"Curtis
+        Park Delicatessen - Cherry Creek","address":"2700 E 6th Ave, Unit B, Denver,
+        CO 80206","phone":"(303) 900-9028","rating":5.0,"categories":["Sandwiches","Delis","Coffee
+        \u0026 Tea"],"image_url":"https://s3-media2.fl.yelpcdn.com/bphoto/8V_hDmngbyLcM1YJM8in0Q/o.jpg"},{"id":"tlDXLBsObRWmoxC3qTHMoQ","name":"Annie''s
+        Cafe and Bar","address":"3100 E Colfax Ave, Denver, CO 80206","phone":"(303)
+        355-8197","rating":3.5,"categories":["Breakfast \u0026 Brunch","Cocktail Bars","Diners"],"image_url":"https://s3-media3.fl.yelpcdn.com/bphoto/5naNq2iBTDlP-Ockx7yYuw/o.jpg"}]}'
+  recorded_at: Tue, 09 Nov 2021 18:14:00 GMT
+recorded_with: VCR 6.0.0
