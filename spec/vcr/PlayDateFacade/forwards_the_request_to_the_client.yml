@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 01:40:19 GMT
+      - Tue, 09 Nov 2021 16:48:36 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5337d168-ce7d-4b42-b49b-52e3a151a03c
+      - 33038068-b3e9-4f80-9814-aa1a6d2a5e28
       X-Runtime:
-      - '0.012869'
+      - '0.012368'
       Transfer-Encoding:
       - chunked
       Via:
@@ -52,13 +52,13 @@ http_interactions:
         Terrier","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"13","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"14","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"15","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"16","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"17","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"18","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"19","type":"dog","attributes":{"name":"Neal","size":"small","age":11,"breed":"Japanese
         Spaniel","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"20","type":"dog","attributes":{"name":"Neal","size":"small","age":11,"breed":"Japanese
         Spaniel","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}}]}'
-  recorded_at: Tue, 09 Nov 2021 01:40:20 GMT
+  recorded_at: Tue, 09 Nov 2021 16:48:37 GMT
 - request:
     method: post
     uri: http://bones-be.herokuapp.com/api/v1/play_dates
     body:
       encoding: UTF-8
-      string: '{"object":{"date":"2021-11-08","time":"05:00 AM","creator_dog_id":"20","location_id":9,"invited_dog_id":"1"},"token":null,"email":null}'
+      string: '{"object":{"date":"2021-11-09","time":"05:00 AM","creator_dog_id":"20","location_id":69,"invited_dog_id":"1"},"token":null,"email":null}'
     headers:
       User-Agent:
       - Faraday v1.8.0
@@ -76,7 +76,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 01:40:20 GMT
+      - Tue, 09 Nov 2021 16:48:36 GMT
       Content-Length:
       - '0'
       Connection:
@@ -84,13 +84,13 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 2f9cc123-199d-432e-a8b7-b602bd8d0159
+      - f7051496-d048-46c0-bb09-29cdad5fb004
       X-Runtime:
-      - '0.030542'
+      - '0.024888'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Tue, 09 Nov 2021 01:40:20 GMT
+  recorded_at: Tue, 09 Nov 2021 16:48:37 GMT
 recorded_with: VCR 6.0.0

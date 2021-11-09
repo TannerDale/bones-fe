@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://bones-be.herokuapp.com/api/v1/user_dogs?user_id=15
+    uri: http://bones-be.herokuapp.com/api/v1/yelp_locations?location=Denver
     body:
       encoding: US-ASCII
       string: ''
@@ -15,31 +15,27 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 500
+      message: Internal Server Error
     headers:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 16:48:44 GMT
+      - Tue, 09 Nov 2021 16:43:46 GMT
       Connection:
       - keep-alive
       Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"8fe32e407a1038ee38753b70e5374b3a"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      - text/html; charset=UTF-8
       X-Request-Id:
-      - f5965187-4414-47f7-9cec-164039adcee0
+      - fdf5f2ec-ecfe-4a22-a4c7-d2806c577f54
       X-Runtime:
-      - '0.011301'
-      Transfer-Encoding:
-      - chunked
+      - '0.038580'
+      Content-Length:
+      - '0'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[]}'
-  recorded_at: Tue, 09 Nov 2021 16:48:45 GMT
+      string: ''
+  recorded_at: Tue, 09 Nov 2021 16:43:47 GMT
 recorded_with: VCR 6.0.0
