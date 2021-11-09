@@ -43,6 +43,5 @@ describe 'Dashboard Index', :vcr do
   end
 
   describe 'Displays pending playdate invites' do
-    it '
   end
 end
