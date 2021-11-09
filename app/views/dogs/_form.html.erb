@@ -12,20 +12,22 @@
     <%= f.label 'Breed', for: 'breed' %>
   </div>
   <div class="form-floating mb-3">
-    <%= f.text_field :size, class: 'form-control', id: 'size', placeholder: 'Size' %>
-    <%= f.label 'Size', for: 'size' %>
-  </div>
-  <div class="form-floating mb-3">
     <%= f.text_field :sex, class: 'form-control', id: 'sex', placeholder: 'Male/Female' %>
     <%= f.label 'Sex', for: 'sex' %>
   </div>
-  <div class="form-check form-switch">
-    <%= f.check_box :vaccinated, class: 'form-check-input', type: 'checkbox', role: 'switch', id: 'vaccinated' %>
-    <%= f.label 'Vaccinated?', class: 'form-check-label' %>
+  <div class="form-floating mb-3">
+    <%= f.text_field :description, class: 'form-control', id: 'description', placeholder: 'Tell us all about your pooch!' %>
+    <%= f.label 'Description', for: 'description' %>
   </div>
-  <div class="form-check form-switch">
-    <%= f.check_box :trained, class: 'form-check-input', type: 'checkbox', role: 'switch', id: 'trained' %>
-    <%= f.label 'Trained?', class: 'form-check-label' %>
-  </div>
+
+    <%= f.label :size %>
+    <%= f.select :size, ['small', 'medium', 'large']%>
+    <br>
+    <%= f.label :vaccinated %>
+    <%= f.select :vaccinated, [['no', 'false'], ['yes', 'true']]%>
+    <br>
+    <%= f.label :trained %>
+    <%= f.select :trained, ['no', 'yes']%>
+
   <%= f.submit 'Add Dog', class: 'btn btn-outline-success' %>
 <% end %>

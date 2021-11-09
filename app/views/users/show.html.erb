@@ -34,6 +34,14 @@
       </div>
     </div>
     <div class="col">
+      <% @pending_invites&.each do |invite| %>
+        Date: <%= invite.date %><br>
+        Time: <%= invite.time %><br>
+        <%= button_to 'Accept', play_date_path(invite.id), params: { status: 1 }, method: :patch %>
+        <%= button_to 'Reject', play_date_path(invite.id), params: { status: 2 }, method: :patch %>
+        <br>
+        <br>
+      <% end %>
     </div>
-  </div>  
+  </div>
 </div>
