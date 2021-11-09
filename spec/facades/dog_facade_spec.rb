@@ -46,6 +46,5 @@ describe DogFacade, :vcr do
     expect(result).to be_an DogWithPlayDatesPoro
     expect(result.pending_play_dates).to be_an Array
     expect(result.accepted_play_dates).to be_an Array
-
   end
 end
