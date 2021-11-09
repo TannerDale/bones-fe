@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 16:48:36 GMT
+      - Tue, 09 Nov 2021 18:13:48 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - cd9f6588-b3f2-4c41-bf6c-d6e91a578d4e
+      - d74962c2-506c-44c6-93dc-98e5e8533fce
       X-Runtime:
-      - '0.007327'
+      - '0.011630'
       Transfer-Encoding:
       - chunked
       Via:
@@ -52,7 +52,7 @@ http_interactions:
         Terrier","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"13","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"14","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"15","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"16","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"17","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"18","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"19","type":"dog","attributes":{"name":"Neal","size":"small","age":11,"breed":"Japanese
         Spaniel","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"20","type":"dog","attributes":{"name":"Neal","size":"small","age":11,"breed":"Japanese
         Spaniel","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}}]}'
-  recorded_at: Tue, 09 Nov 2021 16:48:36 GMT
+  recorded_at: Tue, 09 Nov 2021 18:13:49 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/dogs?page=1
@@ -74,7 +74,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 16:48:36 GMT
+      - Tue, 09 Nov 2021 18:13:48 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -84,9 +84,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4172e25e-ac9d-4689-808a-31a2d0ee56fe
+      - c4103e61-72aa-4c92-a554-0746858ea681
       X-Runtime:
-      - '0.009896'
+      - '0.010087'
       Transfer-Encoding:
       - chunked
       Via:
@@ -105,5 +105,5 @@ http_interactions:
         Terrier","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"13","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"14","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"15","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"16","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"17","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"18","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"19","type":"dog","attributes":{"name":"Neal","size":"small","age":11,"breed":"Japanese
         Spaniel","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"20","type":"dog","attributes":{"name":"Neal","size":"small","age":11,"breed":"Japanese
         Spaniel","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}}]}'
-  recorded_at: Tue, 09 Nov 2021 16:48:36 GMT
+  recorded_at: Tue, 09 Nov 2021 18:13:49 GMT
 recorded_with: VCR 6.0.0

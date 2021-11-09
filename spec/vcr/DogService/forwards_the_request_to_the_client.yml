@@ -5,7 +5,7 @@ http_interactions:
     uri: http://bones-be.herokuapp.com/api/v1/dogs
     body:
       encoding: UTF-8
-      string: '{"object":{"name":"Rudolph","breed":"Malinois","age":8,"size":"medium","vaccinated":1,"trained":1,"user_id":3},"options":{},"context":{},"base_url":null,"_fields":{},"_include_linkages":[]}'
+      string: '{"object":{"name":"Christopher","breed":"Dhole","age":6,"size":"medium","vaccinated":1,"trained":1,"user_id":3},"options":{},"context":{},"base_url":null,"_fields":{},"_include_linkages":[]}'
     headers:
       User-Agent:
       - Faraday v1.8.0
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 16:43:46 GMT
+      - Tue, 09 Nov 2021 18:13:58 GMT
       Content-Length:
       - '0'
       Connection:
@@ -31,13 +31,13 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 87587249-aab7-4496-a3b8-082db334844c
+      - dc47ab85-614f-4872-ac2b-39fffba5c525
       X-Runtime:
-      - '0.020280'
+      - '0.016234'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Tue, 09 Nov 2021 16:43:46 GMT
+  recorded_at: Tue, 09 Nov 2021 18:13:59 GMT
 recorded_with: VCR 6.0.0
