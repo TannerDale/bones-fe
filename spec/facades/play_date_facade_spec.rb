@@ -2,15 +2,16 @@ require 'rails_helper'
 
 describe PlayDateFacade, :vcr do
   let(:location) { build :location_poro }
-  let(:invited_dog) { build :dog_poro }
-  let(:host_dog) { build :dog_poro }
+  let!(:dogs) { DogFacade.dogs(1) }
+  let(:invited_dog) { dogs.first }
+  let(:host_dog) { dogs.last }
   let(:params) do
     {
       date: Date.today,
       time: "05:00 AM",
-      creator_dog_id: 1,
+      creator_dog_id: host_dog.id,
       location_id: location.id,
-      invited_dog_id: 2
+      invited_dog_id: invited_dog.id
     }
   end
 
