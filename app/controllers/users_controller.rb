@@ -5,6 +5,7 @@ class UsersController < ApplicationController
 
   def show
     @dogs = DogFacade.user_dogs(current_user.id)
+    @pending_invites = PlayDateFacade.find_for_user(current_user.id, 'invited')
   end
 
   def update

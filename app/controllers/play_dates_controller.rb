@@ -1,6 +1,10 @@
 class PlayDatesController < ApplicationController
   before_action :validate_params, only: :create
 
+  def index
+    @play_dates = PlayDateFacade.my_play_dates(current_user.id)
+  end
+
   def new
     @user_dogs = DogFacade.user_dogs(current_user.id)
     @location = params[:location_id]
@@ -14,9 +18,17 @@ class PlayDatesController < ApplicationController
       invalid_redirect('Invalid dog id')
     else
       clear_invited_dog
+
       redirect_to dashboard_path, success: 'Playdate created, bring your poop bags!'
     end
   end
+
+  def update
+    PlayDateFacade.update_play_date(params[:id], params[:status])
+
+    redirect_to dashboard_path
+  end
+
 
   private
 
