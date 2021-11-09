@@ -27,4 +27,10 @@ describe DogService, :vcr do
     expect(result).to be_an Array
     expect(result.first).to be_a Hash
   end
+
+  it 'can find information for one dog form id' do
+    result = DogService.find_dog(dog.id)
+
+    expect(result).to be_a Hash
+  end
 end
