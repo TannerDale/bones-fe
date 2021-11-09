@@ -83,8 +83,8 @@ More details can be found [here](https://backend.turing.edu/module3/projects/con
 ![Postman][Postman-img]
 ![Rubocop][Rubocop-img]
 ![Ruby on Rails][Ruby on Rails-img]
-React
-js
+![React][React-img]
+![JavaScript][JavaScript-img]
 
 
 #### Languages
@@ -119,14 +119,12 @@ js
 - [Christina Delpone](https://www.linkedin.com/in/christinadelpone)
 - [Jessica Jones](https://www.linkedin.com/in/justjj/)
 - [Kevin Mugele](https://www.linkedin.com/in/kevinmugele/)
-- [Luis Arroyo](https://www.linkedin.com/in/luis-arroyo-65a954181/)
 - [Tanner Dale](https://www.linkedin.com/in/tannerdale/)
 
 ![Github][Github-img]
 - [Christina Delpone](https://github.com/cdelpone)
 - [Jessica Jones](https://github.com/JeJones21)
 - [Kevin Mugele](https://github.com/KevinMugele)
-- [Luis Arroyo](https://github.com/dat1guyluigi)
 - [Tanner Dale](https://github.com/TannerDale)
 
 
@@ -155,7 +153,8 @@ js
 [CSS3-img]: https://img.shields.io/badge/CSS3-1572B6.svg?&style=flaste&logo=css3&logoColor=white
 [HTML5-img]: https://img.shields.io/badge/HTML5-0EB201.svg?&style=flaste&logo=html5&logoColor=white
 [Ruby-img]: https://img.shields.io/badge/Ruby-CC0000.svg?&style=flaste&logo=ruby&logoColor=white
-
+[React-img]: https://badges.aleen42.com/src/react.svg
+[JavaScript-img]: https://badges.aleen42.com/src/javascript.svg
 <!-- #### Deployment -->
 [Heroku-img]: https://img.shields.io/badge/Heroku-430098.svg?&style=flaste&logo=heroku&logoColor=white
 [Travis CI-img]: https://badgen.net/badge/icon/travis?icon=travis&label
