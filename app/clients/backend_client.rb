@@ -12,6 +12,10 @@ class BackendClient
       post('play_dates', json).body
     end
 
+    def update_play_date(url, body)
+      patch(url, body).body
+    end
+
     private
 
     def post(url, json)
@@ -29,6 +33,14 @@ class BackendClient
 
     def parse_data(response)
       JSON.parse(response.body, symbolize_names: true)
+    end
+
+    def patch(url, body)
+      conn.patch do |req|
+        req.url "/api/v1/#{url}"
+        req.headers['Content-Type'] = 'application/json'
+        req.body = body
+      end
     end
   end
 end
