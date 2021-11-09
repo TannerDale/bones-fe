@@ -1,1 +1,13 @@
-<h1>Welcome</h1>
+<%= @dog.name %>
+Breed: <%= @dog.breed %><br>
+Age: <%= @dog.age %><br>
+Sex: <%= @dog.sex %><br>
+Size: <%= @dog.size %><br>
+Trained? <%= @dog.trained %><br>
+Vaccinated? <%= @dog.vaccinated %><br>
+Playdates accepted: <% @dog.accepted_play_dates.each do |pd| %>
+Date: <%= pd.date %>
+<% end %><br>
+Pending playdates: <% @dog.pending_play_dates.each do |pd| %>
+Date: <%= pd.date %>
+<% end %><br>
