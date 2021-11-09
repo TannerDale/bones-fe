@@ -2,6 +2,7 @@ require 'rails_helper'
 
 describe DogService, :vcr do
   let(:dog) { build :dog_poro }
+  let(:dog2) { DogFacade.dogs(1)[17].id }
   let(:params) do
     {
       name: dog.name,
@@ -29,7 +30,7 @@ describe DogService, :vcr do
   end
 
   it 'can find information for one dog form id' do
-    result = DogService.find_dog(dog.id)
+    result = DogService.find_dog(dog2)
 
     expect(result).to be_a Hash
   end
