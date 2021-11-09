@@ -8,6 +8,7 @@ describe 'Dashboard Index', :vcr do
   before :each do
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
     allow(DogFacade).to receive(:user_dogs).and_return(dogs)
+    allow(DogFacade).to receive(:find_dog).and_return(dog1)
 
     visit dashboard_path
   end
