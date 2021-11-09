@@ -40,7 +40,7 @@ VCR.configure do |c|
   c.hook_into :webmock
   c.configure_rspec_metadata!
   c.default_cassette_options = {
-    match_requests_on: %i[method host]
+    match_requests_on: %i[method host path]
   }
 end
 WebMock.allow_net_connect!(net_http_connect_on_start: true)
