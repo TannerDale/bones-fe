@@ -5,7 +5,7 @@ class LocationService
     end
 
     def search_by_id(id)
-      BackendClient.fetch("/api/v3/businesses/#{id}")
+      BackendClient.fetch("/api/v1/yelp_location?id=#{id}")[:data]
     end
   end
 end
