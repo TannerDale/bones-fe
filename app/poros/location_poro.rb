@@ -1,5 +1,5 @@
 class LocationPoro
-  attr_reader :id, :name, :address, :phone, :rating
+  attr_reader :id, :name, :address, :phone, :rating, :image
 
   def initialize(data)
     @id = data[:id]
@@ -8,5 +8,6 @@ class LocationPoro
     @phone = data[:phone]
     @rating = data[:rating]
     @categories = data[:categories]
+    @image = data[:image_url]
   end
 end
