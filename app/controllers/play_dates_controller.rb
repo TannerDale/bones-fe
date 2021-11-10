@@ -6,7 +6,7 @@ class PlayDatesController < ApplicationController
   end
 
   def show
-    @play_date = PlayDateFacade.search_by_id(params[:id])
+    @play_date = PlayDateFacade.all_play_date_info(params[:id])
     @location = LocationFacade.search_by_id(@play_date.location_id)
   end
 
