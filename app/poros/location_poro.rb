@@ -7,5 +7,6 @@ class LocationPoro
     @address = data[:address]
     @phone = data[:phone]
     @rating = data[:rating]
+    @categories = data[:categories]
   end
 end
