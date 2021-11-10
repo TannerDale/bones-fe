@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/dog_facts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 10 Nov 2021 22:09:50 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4ef9e9657d05f5c235cfd03f01615fee"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6d672de2-eb56-4bab-8553-4ed847cc36ba
+      X-Runtime:
+      - '0.020089'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"fact":"The Saint Bernard gains its name from the \"Great St. Bernard
+        Hospice;\" the monastery where Barry and other mountain dogs was raised by
+        monks to rescue victims from the snowy Alps."}'
+  recorded_at: Wed, 10 Nov 2021 22:09:51 GMT
+recorded_with: VCR 6.0.0

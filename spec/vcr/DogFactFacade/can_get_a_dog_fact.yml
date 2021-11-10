@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/dog_facts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 10 Nov 2021 22:08:40 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"6a99201a24217b70b6bbeae885537040"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9ef20abb-fe2e-49a4-b826-90a5bedd02ca
+      X-Runtime:
+      - '0.018389'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"fact":"The Beatles song \"A day in the Life\" has an extra high-pitched
+        whistle, audible only to dogs. It was recorded by Paul McCartney for the enjoyment
+        of his Shetland sheepdog."}'
+  recorded_at: Wed, 10 Nov 2021 22:08:40 GMT
+recorded_with: VCR 6.0.0

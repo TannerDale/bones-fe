@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/yelp_location?id=MWFGHr6NOg7pAoLgbgFdsQ
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 10 Nov 2021 22:08:41 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"0d7a2cbbda92d8bcbe72afa5b55e7188"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 61bbfa21-ee5a-41fb-96d9-21a347bb94de
+      X-Runtime:
+      - '0.182437'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"MWFGHr6NOg7pAoLgbgFdsQ","name":"Doppio Coffee","address":"1245
+        E Colfax Ave, Ste 105, Denver, CO 80218","phone":"(303) 537-7794","rating":4.5,"categories":["Coffee
+        \u0026 Tea","Breakfast \u0026 Brunch","Sandwiches"],"image_url":"https://s3-media3.fl.yelpcdn.com/bphoto/Y3nLL8rizY1-z7_PG6ja0A/o.jpg"}}'
+  recorded_at: Wed, 10 Nov 2021 22:08:41 GMT
+recorded_with: VCR 6.0.0
