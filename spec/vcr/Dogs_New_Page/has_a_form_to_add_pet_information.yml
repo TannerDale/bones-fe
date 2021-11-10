@@ -5,7 +5,7 @@ http_interactions:
     uri: http://bones-be.herokuapp.com/api/v1/dogs
     body:
       encoding: UTF-8
-      string: '{"object":{"name":"Lavona","age":"4","breed":"Chow","size":"large","sex":"female","vaccinated":"true","trained":"yes","description":"","user_id":4},"options":{},"context":{},"base_url":null,"_fields":{},"_include_linkages":[]}'
+      string: '{"object":{"name":"Kelle","age":"3","breed":"Airedale","size":"small","sex":"female","vaccinated":"true","trained":"yes","description":"","user_id":4},"options":{},"context":{},"base_url":null,"_fields":{},"_include_linkages":[]}'
     headers:
       User-Agent:
       - Faraday v1.8.0
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 22:08:48 GMT
+      - Wed, 10 Nov 2021 23:26:17 GMT
       Content-Length:
       - '0'
       Connection:
@@ -31,15 +31,15 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - f493ad99-9d03-4b00-bae8-9a949f87cfa0
+      - d2ebec48-c0bc-4b1d-89d9-f7467e631b14
       X-Runtime:
-      - '0.011066'
+      - '0.010324'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Wed, 10 Nov 2021 22:08:48 GMT
+  recorded_at: Wed, 10 Nov 2021 23:26:17 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/user_dogs?user_id=4
@@ -61,19 +61,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 22:08:48 GMT
+      - Wed, 10 Nov 2021 23:26:17 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"8599ce2231f7264abedeccbbe8ef50cf"
+      - W/"b0d56a52cde16a0d6e0045171171f480"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 466f20a0-54ca-493e-b726-b17a66b66ea0
+      - f01c3d20-c486-4722-a1cb-7d8138ad12f9
       X-Runtime:
-      - '0.006191'
+      - '0.007867'
       Transfer-Encoding:
       - chunked
       Via:
@@ -88,8 +88,8 @@ http_interactions:
         Sheepdog","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}},{"id":"201","type":"dog","attributes":{"name":"Lachelle","size":"large","age":8,"breed":"Kerryblue
         Terrier","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}},{"id":"205","type":"dog","attributes":{"name":"Marcie","size":"large","age":4,"breed":"Basset
         Hound","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}},{"id":"209","type":"dog","attributes":{"name":"Heath","size":"medium","age":3,"breed":"Swiss
-        Mountain","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}},{"id":"213","type":"dog","attributes":{"name":"Lavona","size":"large","age":4,"breed":"Chow","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}}]}'
-  recorded_at: Wed, 10 Nov 2021 22:08:48 GMT
+        Mountain","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}},{"id":"213","type":"dog","attributes":{"name":"Lavona","size":"large","age":4,"breed":"Chow","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}},{"id":"215","type":"dog","attributes":{"name":"Alberto","size":"medium","age":8,"breed":"Pekinese","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}},{"id":"222","type":"dog","attributes":{"name":"Kelle","size":"small","age":3,"breed":"Airedale","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}}]}'
+  recorded_at: Wed, 10 Nov 2021 23:26:17 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/play_dates?status=invited&user_id=4
@@ -111,7 +111,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 22:08:48 GMT
+      - Wed, 10 Nov 2021 23:26:16 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -121,9 +121,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e15bd392-83cc-40ec-a6ad-26d5be38a2ab
+      - d50e8bb6-332c-4308-a404-af5ed13a01ff
       X-Runtime:
-      - '0.006654'
+      - '0.005247'
       Transfer-Encoding:
       - chunked
       Via:
@@ -131,7 +131,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Wed, 10 Nov 2021 22:08:48 GMT
+  recorded_at: Wed, 10 Nov 2021 23:26:17 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/dog_facts
@@ -153,26 +153,25 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 22:08:48 GMT
+      - Wed, 10 Nov 2021 23:26:17 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"7e6cfd32e255d943cb05f78f3eda327c"
+      - W/"dba289dedbce470feb4df7fa8495a2d1"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8372813d-ce55-43b5-80d4-10056f05316a
+      - '0006229f-c000-4b68-82d1-51ae5d0af160'
       X-Runtime:
-      - '0.016612'
+      - '0.016755'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJmYWN0IjoiRG9ncyBoYXZlIGJlZW4gdXNlZCBzaW5jZSB0aGUgMTcwMOKAmXMgZm9yIHRoZXJhcHkuIn0=
-  recorded_at: Wed, 10 Nov 2021 22:08:48 GMT
+      encoding: UTF-8
+      string: '{"fact":"Dogs know from which nostril a smell has entered."}'
+  recorded_at: Wed, 10 Nov 2021 23:26:17 GMT
 recorded_with: VCR 6.0.0

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://bones-be.herokuapp.com/api/v1/user_dogs?user_id=25
+    uri: http://bones-be.herokuapp.com/api/v1/dog_facts
     body:
       encoding: US-ASCII
       string: ''
@@ -21,30 +21,31 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 23:26:20 GMT
+      - Wed, 10 Nov 2021 23:25:45 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      - W/"45fa7d5343945565125fab7161508529"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0271b5e5-61bb-4dc7-89ae-ffb6af01c9e2
+      - 5e7f0331-3b1c-4a54-a50b-bb5cf7a921ce
       X-Runtime:
-      - '0.005590'
+      - '0.012656'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
-      encoding: UTF-8
-      string: '{"data":[]}'
-  recorded_at: Wed, 10 Nov 2021 23:26:21 GMT
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJmYWN0IjoiRG9n4oCZcyBkb27igJl0IHNlZSBpbiBibGFjay1hbmQtd2hpdGUsIHRoZXkgaGF2ZSAyIGNvbG9yIHJlY2VwdG9ycywgYW5kIGNhbiBzZWUgeWVsbG93IGFuZCBibHVlLiJ9
+  recorded_at: Wed, 10 Nov 2021 23:25:46 GMT
 - request:
     method: get
-    uri: http://bones-be.herokuapp.com/api/v1/play_dates?status=invited&user_id=25
+    uri: http://bones-be.herokuapp.com/api/v1/user_dogs?user_id=1
     body:
       encoding: US-ASCII
       string: ''
@@ -63,7 +64,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 23:26:20 GMT
+      - Wed, 10 Nov 2021 23:25:46 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -73,9 +74,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 71f3d397-5f60-452a-b4a5-986bfeab8948
+      - 63f60388-0e74-4c13-8837-c31b7a9c0f20
       X-Runtime:
-      - '0.005468'
+      - '0.004554'
       Transfer-Encoding:
       - chunked
       Via:
@@ -83,7 +84,49 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Wed, 10 Nov 2021 23:26:21 GMT
+  recorded_at: Wed, 10 Nov 2021 23:25:46 GMT
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/play_dates?status=invited&user_id=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 10 Nov 2021 23:25:46 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f85b59e0-0baa-45d1-b851-f5415ab51cee
+      X-Runtime:
+      - '0.005168'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Wed, 10 Nov 2021 23:25:46 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/dog_facts
@@ -105,26 +148,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 23:26:21 GMT
+      - Wed, 10 Nov 2021 23:25:46 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"7c4d621d3285bd93a610427cb820aef0"
+      - W/"3a0ac2ed16cd405251fd7ed447e3b305"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - bd7de5a1-4157-4241-98c6-594aa9d7e088
+      - 559fc372-f56e-464b-883b-33d0169296d0
       X-Runtime:
-      - '0.014526'
+      - '0.013201'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
-      encoding: UTF-8
-      string: '{"fact":"Spiked dog collars were invented in ancient Greece and were
-        originally designed to protect dogs throats from wolf attacks."}'
-  recorded_at: Wed, 10 Nov 2021 23:26:21 GMT
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJmYWN0IjoiSW4gMTk1NywgTGFpa2EgYmVjYW1lIHRoZSBmaXJzdCBsaXZpbmcgYmVpbmcgaW4gc3BhY2UgdmlhIGFuIGVhcnRoIHNhdGVsbGl0ZSBhbmQgSkZL4oCZcyB0ZXJyaWVyLCBDaGFybGllLCBmYXRoZXJlZCA0IHB1cHBpZXMgd2l0aCBMYWlrYeKAmXMgZGF1Z2h0ZXIuIn0=
+  recorded_at: Wed, 10 Nov 2021 23:25:46 GMT
 recorded_with: VCR 6.0.0

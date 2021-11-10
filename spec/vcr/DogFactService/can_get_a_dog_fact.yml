@@ -21,26 +21,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 22:08:52 GMT
+      - Wed, 10 Nov 2021 23:26:21 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"a518d703efe261222a425700ced82eee"
+      - W/"18d1d940d4895098b6884e04a7f46ec7"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c1506a3b-cdb7-4984-9ef2-df9e563ad8b4
+      - b04c935e-00f2-4029-b2bf-723489ea7a44
       X-Runtime:
-      - '0.012270'
+      - '0.012735'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"fact":"The Boy Scouts and Girl Scouts both offer merit badges in
-        dog care."}'
-  recorded_at: Wed, 10 Nov 2021 22:08:52 GMT
+      string: '{"fact":"Female wolves have been known to travel great distances to
+        regurgitate full meals for their hungry pups."}'
+  recorded_at: Wed, 10 Nov 2021 23:26:21 GMT
 recorded_with: VCR 6.0.0

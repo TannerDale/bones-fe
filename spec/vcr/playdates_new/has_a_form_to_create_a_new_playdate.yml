@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 22:08:49 GMT
+      - Wed, 10 Nov 2021 23:26:17 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 112479ec-a84a-4efe-b091-f28fedc65d52
+      - ea789d69-131b-4ca6-a786-92d9af0d0105
       X-Runtime:
-      - '0.008322'
+      - '0.006593'
       Transfer-Encoding:
       - chunked
       Via:
@@ -52,13 +52,13 @@ http_interactions:
         Terrier","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"13","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"14","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"15","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"16","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"17","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"18","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"19","type":"dog","attributes":{"name":"Neal","size":"small","age":11,"breed":"Japanese
         Spaniel","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"20","type":"dog","attributes":{"name":"Neal","size":"small","age":11,"breed":"Japanese
         Spaniel","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}}]}'
-  recorded_at: Wed, 10 Nov 2021 22:08:49 GMT
+  recorded_at: Wed, 10 Nov 2021 23:26:18 GMT
 - request:
     method: post
     uri: http://bones-be.herokuapp.com/api/v1/play_dates
     body:
       encoding: UTF-8
-      string: '{"object":{"date":"2021-11-11","time":"05:00 AM","creator_dog_id":"20","location_id":"sadfgjh","invited_dog_id":"1"},"token":"a..z","email":"vernon@funk-fay.com"}'
+      string: '{"object":{"date":"2021-11-11","time":"05:00 AM","creator_dog_id":"20","location_id":"sadfgjh","invited_dog_id":"1"},"token":"a..z","email":"marylouise@klein.org"}'
     headers:
       User-Agent:
       - Faraday v1.8.0
@@ -76,7 +76,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 22:08:48 GMT
+      - Wed, 10 Nov 2021 23:26:17 GMT
       Content-Length:
       - '0'
       Connection:
@@ -84,15 +84,15 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 84d96a33-6539-4153-93f5-b97634a323f2
+      - e25a0d09-2860-4f28-a08c-4aa6c442a079
       X-Runtime:
-      - '0.014669'
+      - '0.013168'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Wed, 10 Nov 2021 22:08:49 GMT
+  recorded_at: Wed, 10 Nov 2021 23:26:18 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/play_dates?status=invited&user_id=9
@@ -114,7 +114,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 22:08:49 GMT
+      - Wed, 10 Nov 2021 23:26:17 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -124,9 +124,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 23cf55f1-5973-4159-9bcd-281167f61d2a
+      - 6c2d9f4a-40b0-4e4d-b29a-c221d9d869eb
       X-Runtime:
-      - '0.005326'
+      - '0.005898'
       Transfer-Encoding:
       - chunked
       Via:
@@ -134,7 +134,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Wed, 10 Nov 2021 22:08:49 GMT
+  recorded_at: Wed, 10 Nov 2021 23:26:18 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/dog_facts
@@ -156,26 +156,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 22:08:49 GMT
+      - Wed, 10 Nov 2021 23:26:18 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"e3ec432965dcf0f81c039a52a2ffca67"
+      - W/"4ef9e9657d05f5c235cfd03f01615fee"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 46e40346-1719-4287-bb9c-598e0a30e9db
+      - f9a9f209-d213-43af-af58-9706a6910b6b
       X-Runtime:
-      - '0.014736'
+      - '0.017453'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"fact":"Pregnancy can be prevented by spaying the female dog, this
-        involves removing both the ovaries and the uterus."}'
-  recorded_at: Wed, 10 Nov 2021 22:08:49 GMT
+      string: '{"fact":"The Saint Bernard gains its name from the \"Great St. Bernard
+        Hospice;\" the monastery where Barry and other mountain dogs was raised by
+        monks to rescue victims from the snowy Alps."}'
+  recorded_at: Wed, 10 Nov 2021 23:26:18 GMT
 recorded_with: VCR 6.0.0

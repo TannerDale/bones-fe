@@ -21,28 +21,28 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 22:08:32 GMT
+      - Wed, 10 Nov 2021 23:25:47 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"7c4d621d3285bd93a610427cb820aef0"
+      - W/"1c9addc5ba0cdf40d2ac436c2672a49b"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c8bde018-a0f5-49cb-be76-49f20efb633a
+      - 250fb0ec-c534-443c-9ae0-b8fc4935ad57
       X-Runtime:
-      - '0.016869'
+      - '0.016171'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"fact":"Spiked dog collars were invented in ancient Greece and were
-        originally designed to protect dogs throats from wolf attacks."}'
-  recorded_at: Wed, 10 Nov 2021 22:08:32 GMT
+      string: '{"fact":"The Chihuahua was named after the state in Mexico where they
+        were discovered."}'
+  recorded_at: Wed, 10 Nov 2021 23:25:47 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/dog_facts
@@ -64,26 +64,28 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 22:08:32 GMT
+      - Wed, 10 Nov 2021 23:25:47 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"353ae190e94c99686895bcaecd53fdea"
+      - W/"e2083d61594a003a904757ce63136ac4"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - df3f9bfa-cd6d-40f5-893d-b412617a8238
+      - eac2c274-1a15-479a-918c-e9396a9d7540
       X-Runtime:
-      - '0.023354'
+      - '0.013238'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"fact":"It is not possible to know how many puppies a dog will have
-        just by looking. The appearance can be very deceptive."}'
-  recorded_at: Wed, 10 Nov 2021 22:08:33 GMT
+      string: '{"fact":"Dogs have a ligament in the neck which allows them to conserve
+        energy while running long distances following scent trails with their nose
+        to the ground. Many other species have a similar ligament and it is called
+        a Paddywhack."}'
+  recorded_at: Wed, 10 Nov 2021 23:25:48 GMT
 recorded_with: VCR 6.0.0

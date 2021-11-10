@@ -21,27 +21,25 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 22:08:40 GMT
+      - Wed, 10 Nov 2021 23:26:08 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"6a99201a24217b70b6bbeae885537040"
+      - W/"fefab25fb712134e6b64c078955d264c"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9ef20abb-fe2e-49a4-b826-90a5bedd02ca
+      - c0320d4a-1f02-417b-834b-16e8162b53c1
       X-Runtime:
-      - '0.018389'
+      - '0.015692'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"fact":"The Beatles song \"A day in the Life\" has an extra high-pitched
-        whistle, audible only to dogs. It was recorded by Paul McCartney for the enjoyment
-        of his Shetland sheepdog."}'
-  recorded_at: Wed, 10 Nov 2021 22:08:40 GMT
+      string: '{"fact":"Smaller breeds of dogs mature faster than larger breeds."}'
+  recorded_at: Wed, 10 Nov 2021 23:26:08 GMT
 recorded_with: VCR 6.0.0

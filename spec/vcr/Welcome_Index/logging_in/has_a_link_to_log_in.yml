@@ -21,27 +21,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 22:09:50 GMT
+      - Wed, 10 Nov 2021 23:25:44 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"4ef9e9657d05f5c235cfd03f01615fee"
+      - W/"58ed73e3637acb2baf60b427af1f90fc"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6d672de2-eb56-4bab-8553-4ed847cc36ba
+      - b5145642-91e3-440b-b53a-217585e96c2b
       X-Runtime:
-      - '0.020089'
+      - '0.016302'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"fact":"The Saint Bernard gains its name from the \"Great St. Bernard
-        Hospice;\" the monastery where Barry and other mountain dogs was raised by
-        monks to rescue victims from the snowy Alps."}'
-  recorded_at: Wed, 10 Nov 2021 22:09:51 GMT
+      string: '{"fact":"A bloodhound named Tigger holds the record for the longest
+        ears, each measuring more than 13 inches."}'
+  recorded_at: Wed, 10 Nov 2021 23:25:45 GMT
 recorded_with: VCR 6.0.0
