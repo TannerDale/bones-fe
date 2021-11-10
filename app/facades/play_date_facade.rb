@@ -14,7 +14,19 @@ class PlayDateFacade
       PlayDateService.update_play_date(id, status)
     end
 
+    def all_play_date_info(id)
+      play_date = PlayDateService.search_by_id(id)
+      PlayDateWithDogsPoro.new(play_date.merge(play_date_dogs(play_date)))
+    end
+
     private
+
+    def play_date_dogs(data)
+      {
+        creator_dog: DogFacade.find_dog(data[:creator_dog_id]),
+        invited_dog: DogFacade.find_dog(data[:invited_dog_id])
+      }
+    end
 
     def format_data(data)
       {
