@@ -14,6 +14,11 @@ class PlayDateFacade
       PlayDateService.update_play_date(id, status)
     end
 
+    def search_by_id(id)
+      play_date = PlayDateService.search_by_id(id)
+      PlayDatePoro.new(play_date)
+    end
+
     private
 
     def format_data(data)
