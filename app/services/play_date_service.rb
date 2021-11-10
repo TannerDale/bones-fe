@@ -16,5 +16,11 @@ class PlayDateService
 
       BackendClient.update_play_date(url, body)
     end
+
+    def search_by_id(id)
+      url = "/play_dates/#{id}"
+
+      BackendClient.fetch(url)[:data]
+    end
   end
 end
