@@ -3,6 +3,7 @@ require 'rails_helper'
 describe 'Dog Show Page', :vcr do
   let(:user) { create :user }
   let(:dog) { build :dog_with_play_dates_poro }
+
   before :each do
     allow(DogFacade).to receive(:find_dog).and_return(dog)
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
