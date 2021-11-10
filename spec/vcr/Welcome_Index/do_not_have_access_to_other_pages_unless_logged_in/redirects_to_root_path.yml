@@ -21,28 +21,28 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 22:08:32 GMT
+      - Wed, 10 Nov 2021 23:16:59 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"7c4d621d3285bd93a610427cb820aef0"
+      - W/"45e5308144673c4de76728a4a457be79"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c8bde018-a0f5-49cb-be76-49f20efb633a
+      - c6ee01bd-6a70-45b9-98a6-5eca4bfdaa01
       X-Runtime:
-      - '0.016869'
+      - '0.016218'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"fact":"Spiked dog collars were invented in ancient Greece and were
-        originally designed to protect dogs throats from wolf attacks."}'
-  recorded_at: Wed, 10 Nov 2021 22:08:32 GMT
+      string: '{"fact":"Bloodhounds are prized for their ability to single out and
+        identify a number of scents simultaneously."}'
+  recorded_at: Wed, 10 Nov 2021 23:17:00 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/dog_facts
@@ -64,26 +64,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 22:08:32 GMT
+      - Wed, 10 Nov 2021 23:16:59 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"353ae190e94c99686895bcaecd53fdea"
+      - W/"2aaef453da4b8f4b1d6675ccc825624c"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - df3f9bfa-cd6d-40f5-893d-b412617a8238
+      - 685e31bc-24f4-4875-a6f3-238ce973c371
       X-Runtime:
-      - '0.023354'
+      - '0.011901'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"fact":"It is not possible to know how many puppies a dog will have
-        just by looking. The appearance can be very deceptive."}'
-  recorded_at: Wed, 10 Nov 2021 22:08:33 GMT
+      string: '{"fact":"This pup, Nesbit, earned over one million Delta airline miles
+        in his life and had his own frequent flier card."}'
+  recorded_at: Wed, 10 Nov 2021 23:17:00 GMT
 recorded_with: VCR 6.0.0

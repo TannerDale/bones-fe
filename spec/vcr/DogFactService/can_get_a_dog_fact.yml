@@ -21,26 +21,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 22:08:52 GMT
+      - Wed, 10 Nov 2021 23:20:05 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"a518d703efe261222a425700ced82eee"
+      - W/"8862d397eac9f090b2019d49f14d7606"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c1506a3b-cdb7-4984-9ef2-df9e563ad8b4
+      - 48b623fe-f539-41ca-82d0-d89cb52df990
       X-Runtime:
-      - '0.012270'
+      - '0.015491'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"fact":"The Boy Scouts and Girl Scouts both offer merit badges in
-        dog care."}'
-  recorded_at: Wed, 10 Nov 2021 22:08:52 GMT
+      string: '{"fact":"It costs approximately $10,000 to train a federally certified
+        search and rescue dog."}'
+  recorded_at: Wed, 10 Nov 2021 23:20:06 GMT
 recorded_with: VCR 6.0.0

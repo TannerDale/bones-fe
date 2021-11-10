@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://bones-be.herokuapp.com/api/v1/user_dogs?user_id=25
+    uri: http://bones-be.herokuapp.com/api/v1/user_dogs?user_id=17
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 22:08:51 GMT
+      - Wed, 10 Nov 2021 23:16:59 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6c3e468d-5a08-4cb4-84fc-909779ad91dc
+      - 4adb6bf3-d20f-4663-9df2-eb2aed09a56e
       X-Runtime:
-      - '0.006209'
+      - '0.005211'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,10 +41,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Wed, 10 Nov 2021 22:08:52 GMT
+  recorded_at: Wed, 10 Nov 2021 23:16:59 GMT
 - request:
     method: get
-    uri: http://bones-be.herokuapp.com/api/v1/play_dates?status=invited&user_id=25
+    uri: http://bones-be.herokuapp.com/api/v1/play_dates?status=invited&user_id=17
     body:
       encoding: US-ASCII
       string: ''
@@ -63,7 +63,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 22:08:52 GMT
+      - Wed, 10 Nov 2021 23:16:58 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -73,9 +73,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c2a8e69c-91df-4d9d-9c1f-ff0c345ea934
+      - 26671c09-9be9-4792-a883-b62ea3ba73f7
       X-Runtime:
-      - '0.012287'
+      - '0.008918'
       Transfer-Encoding:
       - chunked
       Via:
@@ -83,7 +83,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Wed, 10 Nov 2021 22:08:52 GMT
+  recorded_at: Wed, 10 Nov 2021 23:16:59 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/dog_facts
@@ -105,25 +105,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 22:08:52 GMT
+      - Wed, 10 Nov 2021 23:16:59 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"56c7c7df5ad07cfee8979d5d99b7644d"
+      - W/"47dbc338ba07c0be078b0d2ad5fd7e2c"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 24f38e8b-515a-4ac8-a86d-b416f1ed7a95
+      - 1d0c4797-6a46-4645-8831-2b5739391791
       X-Runtime:
-      - '0.025849'
+      - '0.012554'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"fact":"Dogs are natural pack animals."}'
-  recorded_at: Wed, 10 Nov 2021 22:08:52 GMT
+      string: '{"fact":"A one year old dog is as physically mature as a 15 year old
+        human."}'
+  recorded_at: Wed, 10 Nov 2021 23:16:59 GMT
 recorded_with: VCR 6.0.0

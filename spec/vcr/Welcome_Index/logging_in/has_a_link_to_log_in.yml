@@ -21,27 +21,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 22:09:50 GMT
+      - Wed, 10 Nov 2021 23:16:58 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"4ef9e9657d05f5c235cfd03f01615fee"
+      - W/"889bb7a1a97866e80895f82771544440"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6d672de2-eb56-4bab-8553-4ed847cc36ba
+      - 1b275e48-3669-4efe-8c09-f831b0fb5c95
       X-Runtime:
-      - '0.020089'
+      - '0.014401'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"fact":"The Saint Bernard gains its name from the \"Great St. Bernard
-        Hospice;\" the monastery where Barry and other mountain dogs was raised by
-        monks to rescue victims from the snowy Alps."}'
-  recorded_at: Wed, 10 Nov 2021 22:09:51 GMT
+      string: '{"fact":"The most popular breed of domestic dog in the US and the UK
+        is the Labrador Retriever."}'
+  recorded_at: Wed, 10 Nov 2021 23:16:59 GMT
 recorded_with: VCR 6.0.0
