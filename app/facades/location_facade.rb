@@ -6,9 +6,9 @@ class LocationFacade
       end
     end
 
-    def find_by_id(location)
-
-
+    def search_by_id(id)
+      location = LocationService.search_by_id(id)
+      LocationPoro.new(location)
     end
   end
 end
