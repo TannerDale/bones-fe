@@ -18,8 +18,7 @@ describe 'Dashboard Index', :vcr do
   describe 'Profile information' do
     it 'has a link to edit user profile' do
       within '#location' do
-        expect(page).to have_link('Edit Profile')
-        click_link('Edit Profile')
+        click_link('Pawleese add your location!')
       end
 
       expect(current_path).to eq(edit_user_path(user.id))
@@ -54,5 +53,28 @@ describe 'Dashboard Index', :vcr do
   end
 
   describe 'test nav bar links' do
+    it "links to the dashboard" do
+      click_link('Dashboard')
+
+      expect(current_path).to eq(dashboard_path)
+    end
+
+    it "links to edit profile" do
+      click_link('Edit Profile')
+
+      expect(current_path).to eq(edit_user_path(user))
+    end
+
+    it "links to the homepage" do
+      click_link('Bones Logo')
+
+      expect(current_path).to eq(root_path)
+    end
+
+    it "has a log out option" do
+      click_link('Logout')
+
+      expect(current_path).to eq(root_path)
+    end
   end
 end
