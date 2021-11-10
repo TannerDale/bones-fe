@@ -44,4 +44,7 @@ describe 'Dashboard Index', :vcr do
 
   describe 'Displays pending playdate invites' do
   end
+
+  describe 'test nav bar links' do
+  end
 end
