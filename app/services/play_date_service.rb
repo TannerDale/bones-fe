@@ -16,11 +16,5 @@ class PlayDateService
 
       BackendClient.update_play_date(url, body)
     end
-
-    def my_play_dates(id)
-      url = "/api/v1/play_dates?user_id=#{id}"
-
-      BackendClient.fetch(url)[:data]
-    end
   end
 end
