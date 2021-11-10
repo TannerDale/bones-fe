@@ -2,7 +2,11 @@ class PlayDatesController < ApplicationController
   before_action :validate_params, only: :create
 
   def index
-    @play_dates = PlayDateFacade.my_play_dates(current_user.id)
+    @play_dates = PlayDateFacade.find_for_user(current_user.id)
+  end
+
+  def show
+    @play_date 
   end
 
   def new
@@ -17,7 +21,7 @@ class PlayDatesController < ApplicationController
     if !response.empty?
       invalid_redirect('Invalid dog id')
     else
-      clear_invited_dog
+      clear_invited_dog.
 
       redirect_to dashboard_path, success: 'Playdate created, bring your poop bags!'
     end
