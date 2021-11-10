@@ -6,7 +6,7 @@ class PlayDatesController < ApplicationController
   end
 
   def show
-    @play_date 
+    @play_date
   end
 
   def new
@@ -21,7 +21,7 @@ class PlayDatesController < ApplicationController
     if !response.empty?
       invalid_redirect('Invalid dog id')
     else
-      clear_invited_dog.
+      clear_invited_dog
 
       redirect_to dashboard_path, success: 'Playdate created, bring your poop bags!'
     end
@@ -32,7 +32,6 @@ class PlayDatesController < ApplicationController
 
     redirect_to dashboard_path
   end
-
 
   private
 
