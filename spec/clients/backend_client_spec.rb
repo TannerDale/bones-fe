@@ -14,7 +14,7 @@ describe BackendClient, :vcr do
     }
   end
 
-  it 'forwards the request to the client' do
+  it 'post data' do
     json = DogSerializer.new(params).to_json
     result = BackendClient.create_dog(json)
 
@@ -26,5 +26,14 @@ describe BackendClient, :vcr do
 
     expect(result).to be_a Hash
     expect(result).not_to be_empty
+  end
+
+  it 'can patch data' do
+    url = '/api/v1/play_date/1'
+    body = { status: 'accepted' }.to_json
+
+    result = BackendClient.update_play_date(url, body)
+
+    expect(result).to be_empty
   end
 end

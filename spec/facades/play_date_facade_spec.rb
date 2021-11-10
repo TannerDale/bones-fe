@@ -22,4 +22,13 @@ describe PlayDateFacade, :vcr do
     expect(result).to be_empty
     expect(result).to be_a String
   end
+
+  it 'finds the playdates for a user' do
+    result = PlayDateFacade.find_for_user(1)
+
+    expect(result).to be_an Array
+  end
+
+  it 'creates a poro from the returned data for a user' do
+  end
 end
