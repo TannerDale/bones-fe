@@ -11,10 +11,17 @@ RSpec.describe 'Welcome Index', :vcr do
       expect(page).to_not have_button('Sign Out with Google')
     end
 
-    xit 'redirects you to sign in with google oauth' do
-      click_button('Sign In with Google')
+    it 'allows you to login' do
+      login_with_oauth
 
-      save_and_open_page
+      expect(current_path).to eq(dashboard_path)
+    end
+
+    it 'does not display login page if logged in' do
+      login_with_oauth
+      visit root_path
+
+      expect(page).to_not have_content('Sign In with Google')
     end
   end
 
