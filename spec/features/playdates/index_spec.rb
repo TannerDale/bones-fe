@@ -25,12 +25,13 @@ RSpec.describe 'playdates#index', :vcr do
   end
 
   it 'has a link to each playdates show page' do
-    id = play_dates.first.invited_dog_id
+    id = play_dates.first.id
+
     play_dates.each do |pd|
-      expect(page).to have_content("Playdate with #{pd.invited_dog_id}")
+      expect(page).to have_content("Playdate with #{pd.id}")
     end
 
-    click_link "#{play_dates.first.invited_dog_id}"
+    click_link "#{play_dates.first.id}"
 
     expect(current_path).to eq(play_date_path(id))
   end
