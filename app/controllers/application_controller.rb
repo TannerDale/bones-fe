@@ -17,6 +17,6 @@ class ApplicationController < ActionController::Base
   end
 
   def dog_fact
-    @dog_fact = DogFactFacade.get_fact
+    DogFactFacade.get_fact
   end
 end
