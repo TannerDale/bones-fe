@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  helper_method :current_user
+  helper_method :current_user, :dog_fact
   add_flash_types :notice, :danger, :success
 
   private
@@ -14,5 +14,9 @@ class ApplicationController < ActionController::Base
 
   def permission_denied
     redirect_to root_path, alert: 'Please login or sign up.'
+  end
+
+  def dog_fact
+    @dog_fact = DogFactFacade.get_fact
   end
 end

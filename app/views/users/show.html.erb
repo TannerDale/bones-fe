@@ -2,14 +2,14 @@
 
 <div id="location">
   <% if current_user.location.nil? %>
-    <%= link_to 'Edit Profile', edit_user_path(current_user) %>
+    <%= link_to 'Pawleese add your location!', edit_user_path(current_user) %>
   <% else %>
     <%= link_to 'Find a Playdate for Your Pupper!', dogs_path, class: 'link-dark' %>
   <% end %>
 </div>
 
 <br/>
-
+<%= render 'shared/dogfact', cached: true %>
 <div class="container-fluid">
   <div class="row">
     <div class="col">
