@@ -12,10 +12,10 @@ describe 'Dogs New Page', :vcr do
     fill_in 'Name', with: dog.name
     fill_in 'Age', with: dog.age
     fill_in 'Breed', with: dog.breed
-    fill_in 'Size', with: dog.size
+    select dog.size, from: 'Size'
     fill_in 'Sex', with: dog.sex
-    check 'vaccinated'
-    check 'trained'
+    select 'yes', from: 'Vaccinated'
+    select 'yes', from: 'Trained'
     click_button 'Add Dog'
 
     expect(current_path).to eq(dashboard_path)

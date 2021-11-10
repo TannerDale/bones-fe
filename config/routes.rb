@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   resources :users, only: [:edit, :update]
 
-  resources :play_dates, only: [:new, :create]
+  resources :play_dates, except: :destroy
 
   delete 'logout', to: 'sessions#destroy'
 

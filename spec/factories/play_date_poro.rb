@@ -1,5 +1,6 @@
 FactoryBot.define do
   factory :play_date_poro do
+    id { (1..100).to_a.sample }
     invited_dog_id { (1..100).to_a.sample }
     creator_dog_id { (1..100).to_a.sample }
     date { Date.today + 1 }

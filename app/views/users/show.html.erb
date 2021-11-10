@@ -10,25 +10,38 @@
 
 <br/>
 
-<div class="container pt-5">
-  <% @dogs&.each_slice(2) do |group| %>
+<div class="container-fluid">
   <div class="row">
-    <% group.each do |dog| %>
-    <div class="col-lg-4">
-      <div class="card">
-        <div class="card-body">
-         <h5 class="card-title"><%= link_to "#{dog.name}", dog_path(dog.id) %></h5>
-          <p class="card-text">Click the link to check out all play dates for <%= dog.name %></p>
+    <div class="col">
+      <div class="container pt-5">
+        <% @dogs&.each_slice(2) do |group| %>
+        <div class="row">
+          <% group.each do |dog| %>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+               <h5 class="card-title"><%= link_to "#{dog.name}", dog_path(dog.id) %></h5>
+                <p class="card-text"><%= dog&.description %></p>
+              </div>
+            </div>
+          </div>
+          <% end %>
+        </div>
+        <% end %>
+        <div class="row">
+          <%= link_to 'Add new dog', new_dog_path, class: 'nav-link' %>
         </div>
       </div>
     </div>
-    <% end %>
+    <div class="col">
+      <% @pending_invites&.each do |invite| %>
+        Date: <%= invite.date %><br>
+        Time: <%= invite.time %><br>
+        <%= button_to 'Accept', play_date_path(invite.id), params: { status: 1 }, method: :patch %>
+        <%= button_to 'Reject', play_date_path(invite.id), params: { status: 2 }, method: :patch %>
+        <br>
+        <br>
+      <% end %>
+    </div>
   </div>
-  <% end %>
-</div>
-<div class="container mt-5">
- <div class="row">
- 	<div class="col"><%= link_to 'Add new dog', new_dog_path, class: 'nav-link' %></div>
-    <div class="col"><a class="nav-link" href="#">Pending Invites</a></div>
- </div>
 </div>
