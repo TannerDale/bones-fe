@@ -11,14 +11,14 @@ class PlayDateService
     end
 
     def update_play_date(id, status)
-      url = "/play_dates/#{id}"
+      url = "play_dates/#{id}"
       body = { status: status }.to_json
 
       BackendClient.update_play_date(url, body)
     end
 
     def search_by_id(id)
-      url = "/play_dates/#{id}"
+      url = "/api/v1/play_dates/#{id}"
 
       BackendClient.fetch(url)[:data]
     end
