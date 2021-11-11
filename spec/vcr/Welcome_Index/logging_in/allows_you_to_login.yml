@@ -21,28 +21,28 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:35 GMT
+      - Thu, 11 Nov 2021 01:37:24 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"da3a5ef0e15e92ce45be08a241627a70"
+      - W/"1ea2228241e5adb2856e2cccd1c4c57b"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a3112e14-56fa-4089-9764-17dbf9b52b2e
+      - 994bec34-b9e6-4b7e-a2c2-872156da61cb
       X-Runtime:
-      - '0.013173'
+      - '0.019033'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
-      encoding: UTF-8
-      string: '{"fact":"In 2002 alone, more people in the U.S. were killed by dogs
-        than by sharks in the past 100 years."}'
-  recorded_at: Thu, 11 Nov 2021 00:59:36 GMT
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJmYWN0IjoiVGhlIGxvbmdlciBhIGRvZ+KAmXMgbm9zZSwgdGhlIG1vcmUgZWZmZWN0aXZlIGl04oCZcyBpbnRlcm5hbCBjb29saW5nIHN5c3RlbS4ifQ==
+  recorded_at: Thu, 11 Nov 2021 01:37:25 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/user_dogs?user_id=18
@@ -64,7 +64,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:36 GMT
+      - Thu, 11 Nov 2021 01:37:25 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -74,9 +74,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7147fc99-a00b-4e71-a17e-093bb2291a07
+      - b57a4346-a701-4f5f-9603-4b77c383dac6
       X-Runtime:
-      - '0.004323'
+      - '0.005826'
       Transfer-Encoding:
       - chunked
       Via:
@@ -84,7 +84,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Thu, 11 Nov 2021 00:59:36 GMT
+  recorded_at: Thu, 11 Nov 2021 01:37:25 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/play_dates?status=invited&user_id=18
@@ -106,7 +106,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:36 GMT
+      - Thu, 11 Nov 2021 01:37:24 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -116,9 +116,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 03bee9db-d62e-46af-be89-d8db2d105455
+      - f51608f6-1643-441c-9a4f-edc077459a31
       X-Runtime:
-      - '0.004543'
+      - '0.006672'
       Transfer-Encoding:
       - chunked
       Via:
@@ -126,7 +126,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Thu, 11 Nov 2021 00:59:36 GMT
+  recorded_at: Thu, 11 Nov 2021 01:37:25 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/dog_facts
@@ -148,26 +148,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:36 GMT
+      - Thu, 11 Nov 2021 01:37:25 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"7c4d621d3285bd93a610427cb820aef0"
+      - W/"ad870e88bb3b498d1a8fce03541acf7f"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 874c74f1-154f-452a-ac92-3945d9674281
+      - 4ba20820-6806-4072-b4eb-872fb701169f
       X-Runtime:
-      - '0.013932'
+      - '0.021109'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"fact":"Spiked dog collars were invented in ancient Greece and were
-        originally designed to protect dogs throats from wolf attacks."}'
-  recorded_at: Thu, 11 Nov 2021 00:59:36 GMT
+      string: '{"fact":"The oldest dog on record was an Australian cattle dog named
+        Bluey who lived 29 years and 5 months. In human years, that is more than 160
+        years old."}'
+  recorded_at: Thu, 11 Nov 2021 01:37:25 GMT
 recorded_with: VCR 6.0.0

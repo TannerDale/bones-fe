@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:47 GMT
+      - Thu, 11 Nov 2021 01:37:09 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - da31c9e7-59a0-46d9-8413-bc0e18a4347d
+      - 91f7d219-eafa-4faa-8a39-fadf826d8c4c
       X-Runtime:
-      - '0.006398'
+      - '0.010099'
       Transfer-Encoding:
       - chunked
       Via:
@@ -52,7 +52,7 @@ http_interactions:
         Terrier","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"13","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"14","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"15","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"16","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"17","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"18","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"19","type":"dog","attributes":{"name":"Neal","size":"small","age":11,"breed":"Japanese
         Spaniel","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"20","type":"dog","attributes":{"name":"Neal","size":"small","age":11,"breed":"Japanese
         Spaniel","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}}]}'
-  recorded_at: Thu, 11 Nov 2021 00:59:47 GMT
+  recorded_at: Thu, 11 Nov 2021 01:37:10 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/user_dogs?user_id=3
@@ -74,19 +74,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:47 GMT
+      - Thu, 11 Nov 2021 01:37:10 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"264af090573b8948be1b0e48f9c482d0"
+      - W/"11abca7eda7650fe3b533e189c5ec07f"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f50ea3a5-f9c9-4a4f-8e8c-f09d7ec82de1
+      - 94a0efe7-2e3c-4c02-871a-da1ec6c16d9a
       X-Runtime:
-      - '0.037840'
+      - '0.053642'
       Transfer-Encoding:
       - chunked
       Via:
@@ -216,6 +216,8 @@ http_interactions:
         Retriever","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"248","type":"dog","attributes":{"name":"Loree","size":"large","age":13,"breed":"Bouvier","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"250","type":"dog","attributes":{"name":"Leeanna","size":"large","age":7,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"251","type":"dog","attributes":{"name":"Beau","size":"large","age":8,"breed":"Toy
         Terrier","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"252","type":"dog","attributes":{"name":"Orlando","size":"medium","age":7,"breed":"Entlebucher","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"254","type":"dog","attributes":{"name":"Chris","size":"large","age":3,"breed":"Basset
         Hound","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"256","type":"dog","attributes":{"name":"Branden","size":"large","age":15,"breed":"Fox
-        Terrier","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"257","type":"dog","attributes":{"name":"Andra","size":"small","age":7,"breed":"Redbone","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}}]}'
-  recorded_at: Thu, 11 Nov 2021 00:59:47 GMT
+        Terrier","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"257","type":"dog","attributes":{"name":"Andra","size":"small","age":7,"breed":"Redbone","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"258","type":"dog","attributes":{"name":"Karena","size":"small","age":8,"breed":"Norfolk
+        Terrier","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"260","type":"dog","attributes":{"name":"Ayako","size":"large","age":11,"breed":"Husky","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"261","type":"dog","attributes":{"name":"Domitila","size":"medium","age":6,"breed":"Italian
+        Greyhound","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}}]}'
+  recorded_at: Thu, 11 Nov 2021 01:37:10 GMT
 recorded_with: VCR 6.0.0

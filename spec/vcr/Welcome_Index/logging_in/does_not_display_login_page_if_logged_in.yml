@@ -21,28 +21,28 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:36 GMT
+      - Thu, 11 Nov 2021 01:37:25 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"cff49901dec1af7833e307f70decfec0"
+      - W/"1f41871c7293f3e2db52d8716973f3b8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 131260c9-a984-449e-a496-d41cc3ff4673
+      - 98520360-8e5d-45e6-a97c-e82097f0c1f4
       X-Runtime:
-      - '0.013471'
+      - '0.013468'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
-      encoding: UTF-8
-      string: '{"fact":"Dogs have three eyelids. The third lid, called a nictitating
-        membrane or \"haw,\" keeps the eye lubricated and protected."}'
-  recorded_at: Thu, 11 Nov 2021 00:59:36 GMT
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJmYWN0IjoiTW9zdCB2ZXRzIHJlY29tbWVuZCB0aGF0IGZlbWFsZSBkb2dzIGRvbuKAmXQgZ2V0IHByZWduYW50IHVudGlsIHRoZSB0aGlyZCBlc3RydXMuIn0=
+  recorded_at: Thu, 11 Nov 2021 01:37:25 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/user_dogs?user_id=19
@@ -64,7 +64,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:35 GMT
+      - Thu, 11 Nov 2021 01:37:25 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -74,9 +74,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - fee17286-b7e9-4f34-9e20-357d4b8885e0
+      - 556e140a-7ee2-4a9b-aff4-e071913a7eb5
       X-Runtime:
-      - '0.005490'
+      - '0.006046'
       Transfer-Encoding:
       - chunked
       Via:
@@ -84,7 +84,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Thu, 11 Nov 2021 00:59:36 GMT
+  recorded_at: Thu, 11 Nov 2021 01:37:26 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/play_dates?status=invited&user_id=19
@@ -106,7 +106,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:36 GMT
+      - Thu, 11 Nov 2021 01:37:25 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -116,9 +116,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 388ccfce-b6ab-474d-97b6-1fd1c2fd58fe
+      - f0025590-79ed-4c03-a6bc-ded0b2020a11
       X-Runtime:
-      - '0.004621'
+      - '0.006544'
       Transfer-Encoding:
       - chunked
       Via:
@@ -126,7 +126,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Thu, 11 Nov 2021 00:59:36 GMT
+  recorded_at: Thu, 11 Nov 2021 01:37:26 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/dog_facts
@@ -148,28 +148,29 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:36 GMT
+      - Thu, 11 Nov 2021 01:37:25 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"e2542788e57b9df58d701ddc1f6a4754"
+      - W/"caac43e5411512a085d34160bba29fda"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 17a327bb-6474-4469-ad9d-b319715a7c93
+      - 82c745c2-2d9f-4c88-aae9-bf3bf64a2b9b
       X-Runtime:
-      - '0.012316'
+      - '0.014832'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"fact":"The Beagle and Collie are the nosiest dogs, while the Akbash
-        Dog and the Basenji are the quietest."}'
-  recorded_at: Thu, 11 Nov 2021 00:59:36 GMT
+      string: '{"fact":"Chase that tail! Dogs chase their tails for a variety of reasons:
+        curiosity, exercise, anxiety, predatory instinct or, they might have fleas!
+        If your dog is chasing his tail excessively, talk with your vet."}'
+  recorded_at: Thu, 11 Nov 2021 01:37:26 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/dog_facts
@@ -191,27 +192,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:36 GMT
+      - Thu, 11 Nov 2021 01:37:26 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"e413e297d3a81571d9f01509abce8c3e"
+      - W/"df832ccca18e08de9af506eec9e08903"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d6f57e6e-73f8-4397-a3c7-e5b370af4741
+      - 2109c678-bb15-45b4-9e4d-f51ed4b72e99
       X-Runtime:
-      - '0.010890'
+      - '0.016044'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"fact":"Is it a duck... or a dog? The Newfoundland breed has a water
-        resistant coat and webbed feet. This dog was originally bred to help haul
-        nets for fishermen and rescuing people at risk of drowning."}'
-  recorded_at: Thu, 11 Nov 2021 00:59:36 GMT
+      string: '{"fact":"The Labrador Retriever has been the most popular dog breed
+        since 1991."}'
+  recorded_at: Thu, 11 Nov 2021 01:37:26 GMT
 recorded_with: VCR 6.0.0

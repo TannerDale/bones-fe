@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: patch
-    uri: http://bones-be.herokuapp.com/api/v1/play_dates/50
+    uri: http://bones-be.herokuapp.com/api/v1/play_dates/15
     body:
       encoding: UTF-8
       string: '{"status":"1"}'
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:34 GMT
+      - Thu, 11 Nov 2021 01:37:24 GMT
       Content-Length:
       - '0'
       Connection:
@@ -31,13 +31,13 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - e126759b-6e72-4db8-9580-01fb76a82f53
+      - 5dad5b56-66b8-4d13-9c61-d0b6df00f832
       X-Runtime:
-      - '0.009240'
+      - '0.018584'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Thu, 11 Nov 2021 00:59:35 GMT
+  recorded_at: Thu, 11 Nov 2021 01:37:25 GMT
 recorded_with: VCR 6.0.0

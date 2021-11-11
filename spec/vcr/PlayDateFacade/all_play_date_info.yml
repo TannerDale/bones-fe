@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:40:06 GMT
+      - Thu, 11 Nov 2021 01:37:12 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ca09f305-328f-43f2-91e0-52df8955d4d4
+      - c26b8f06-8c4f-4d36-be33-c3d07aff1c16
       X-Runtime:
-      - '0.006707'
+      - '0.008097'
       Transfer-Encoding:
       - chunked
       Via:
@@ -52,7 +52,7 @@ http_interactions:
         Terrier","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"13","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"14","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"15","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"16","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"17","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"18","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"19","type":"dog","attributes":{"name":"Neal","size":"small","age":11,"breed":"Japanese
         Spaniel","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"20","type":"dog","attributes":{"name":"Neal","size":"small","age":11,"breed":"Japanese
         Spaniel","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}}]}'
-  recorded_at: Thu, 11 Nov 2021 00:40:06 GMT
+  recorded_at: Thu, 11 Nov 2021 01:37:12 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/play_dates/3
@@ -74,7 +74,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:40:06 GMT
+      - Thu, 11 Nov 2021 01:37:12 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -84,9 +84,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d7332214-406b-488e-9dfc-27c8da5b3b73
+      - 278ccaab-f97e-42b9-b8e1-c9f4f1e0b918
       X-Runtime:
-      - '0.005101'
+      - '0.005567'
       Transfer-Encoding:
       - chunked
       Via:
@@ -94,7 +94,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"3","type":"play_date","attributes":{"location_id":"18","date":"2021-11-08","time":"2000-01-01T05:00:00.000Z","invite_status":"accepted"},"relationships":{"creator_dog":{"data":{"id":"1","type":"dog"}},"invited_dog":{"data":{"id":"2","type":"dog"}}}}}'
-  recorded_at: Thu, 11 Nov 2021 00:40:06 GMT
+  recorded_at: Thu, 11 Nov 2021 01:37:12 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/dogs/1
@@ -116,25 +116,67 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:40:06 GMT
+      - Thu, 11 Nov 2021 01:37:11 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"4a58f833a178dc825b1b14c7f78a2fb4"
+      - W/"f61ca7dd564b73a69ee4e930a815337d"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f112d14d-cc6d-4891-8a3c-0fb73f7c8173
+      - a914a15f-71ce-4bbf-9f20-1dc8d2ad5656
       X-Runtime:
-      - '0.016583'
+      - '0.020092'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"dog_with_playdates","attributes":{"name":"Delbert","size":"small","age":14,"breed":"Beagle","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null,"accepted_play_dates":[{"id":3,"creator_dog_id":1,"invited_dog_id":2,"location_id":"18","date":"2021-11-08","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-08T18:27:54.823Z","updated_at":"2021-11-10T23:58:41.919Z","invite_status":"accepted"},{"id":25,"creator_dog_id":20,"invited_dog_id":1,"location_id":"74","date":"2021-11-08","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-09T01:31:27.765Z","updated_at":"2021-11-10T22:31:35.566Z","invite_status":"accepted"},{"id":26,"creator_dog_id":20,"invited_dog_id":1,"location_id":"sadfgjh","date":"2021-11-09","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-09T01:31:35.383Z","updated_at":"2021-11-10T22:31:39.766Z","invite_status":"accepted"},{"id":29,"creator_dog_id":20,"invited_dog_id":1,"location_id":"48","date":"2021-11-08","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-09T01:32:08.686Z","updated_at":"2021-11-10T22:33:25.013Z","invite_status":"accepted"},{"id":30,"creator_dog_id":20,"invited_dog_id":1,"location_id":"sadfgjh","date":"2021-11-09","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-09T01:32:15.931Z","updated_at":"2021-11-10T22:33:25.832Z","invite_status":"accepted"},{"id":31,"creator_dog_id":20,"invited_dog_id":1,"location_id":"55","date":"2021-11-08","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-09T01:34:21.167Z","updated_at":"2021-11-10T22:33:26.539Z","invite_status":"accepted"},{"id":32,"creator_dog_id":20,"invited_dog_id":1,"location_id":"sadfgjh","date":"2021-11-09","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-09T01:34:28.527Z","updated_at":"2021-11-10T22:33:27.954Z","invite_status":"accepted"},{"id":33,"creator_dog_id":20,"invited_dog_id":1,"location_id":"96","date":"2021-11-08","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-09T01:36:14.383Z","updated_at":"2021-11-10T22:33:28.997Z","invite_status":"accepted"},{"id":34,"creator_dog_id":20,"invited_dog_id":1,"location_id":"sadfgjh","date":"2021-11-09","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-09T01:36:21.727Z","updated_at":"2021-11-10T22:33:30.518Z","invite_status":"accepted"},{"id":35,"creator_dog_id":20,"invited_dog_id":1,"location_id":"26","date":"2021-11-08","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-09T01:38:41.270Z","updated_at":"2021-11-10T22:33:31.893Z","invite_status":"accepted"},{"id":51,"creator_dog_id":20,"invited_dog_id":1,"location_id":"5","date":"2021-11-10","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-10T16:33:50.300Z","updated_at":"2021-11-10T23:16:59.211Z","invite_status":"accepted"}],"pending_play_dates":[]}}}'
-  recorded_at: Thu, 11 Nov 2021 00:40:06 GMT
+      string: '{"data":{"id":"1","type":"dog_with_playdates","attributes":{"name":"Delbert","size":"small","age":14,"breed":"Beagle","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null,"accepted_play_dates":[{"id":3,"creator_dog_id":1,"invited_dog_id":2,"location_id":"18","date":"2021-11-08","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-08T18:27:54.823Z","updated_at":"2021-11-10T23:58:41.919Z","invite_status":"accepted"},{"id":25,"creator_dog_id":20,"invited_dog_id":1,"location_id":"74","date":"2021-11-08","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-09T01:31:27.765Z","updated_at":"2021-11-10T22:31:35.566Z","invite_status":"accepted"},{"id":26,"creator_dog_id":20,"invited_dog_id":1,"location_id":"sadfgjh","date":"2021-11-09","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-09T01:31:35.383Z","updated_at":"2021-11-10T22:31:39.766Z","invite_status":"accepted"},{"id":29,"creator_dog_id":20,"invited_dog_id":1,"location_id":"48","date":"2021-11-08","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-09T01:32:08.686Z","updated_at":"2021-11-10T22:33:25.013Z","invite_status":"accepted"},{"id":30,"creator_dog_id":20,"invited_dog_id":1,"location_id":"sadfgjh","date":"2021-11-09","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-09T01:32:15.931Z","updated_at":"2021-11-10T22:33:25.832Z","invite_status":"accepted"},{"id":31,"creator_dog_id":20,"invited_dog_id":1,"location_id":"55","date":"2021-11-08","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-09T01:34:21.167Z","updated_at":"2021-11-10T22:33:26.539Z","invite_status":"accepted"},{"id":32,"creator_dog_id":20,"invited_dog_id":1,"location_id":"sadfgjh","date":"2021-11-09","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-09T01:34:28.527Z","updated_at":"2021-11-10T22:33:27.954Z","invite_status":"accepted"},{"id":33,"creator_dog_id":20,"invited_dog_id":1,"location_id":"96","date":"2021-11-08","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-09T01:36:14.383Z","updated_at":"2021-11-10T22:33:28.997Z","invite_status":"accepted"},{"id":34,"creator_dog_id":20,"invited_dog_id":1,"location_id":"sadfgjh","date":"2021-11-09","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-09T01:36:21.727Z","updated_at":"2021-11-10T22:33:30.518Z","invite_status":"accepted"},{"id":35,"creator_dog_id":20,"invited_dog_id":1,"location_id":"26","date":"2021-11-08","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-09T01:38:41.270Z","updated_at":"2021-11-10T22:33:31.893Z","invite_status":"accepted"},{"id":51,"creator_dog_id":20,"invited_dog_id":1,"location_id":"5","date":"2021-11-10","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-10T16:33:50.300Z","updated_at":"2021-11-10T23:16:59.211Z","invite_status":"accepted"},{"id":50,"creator_dog_id":20,"invited_dog_id":1,"location_id":"sadfgjh","date":"2021-11-10","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-09T18:13:57.871Z","updated_at":"2021-11-11T00:59:35.692Z","invite_status":"accepted"},{"id":99,"creator_dog_id":20,"invited_dog_id":1,"location_id":"51","date":"2021-11-10","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-11T00:59:49.164Z","updated_at":"2021-11-11T01:18:58.780Z","invite_status":"accepted"},{"id":98,"creator_dog_id":20,"invited_dog_id":1,"location_id":"sadfgjh","date":"2021-11-11","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-11T00:59:32.700Z","updated_at":"2021-11-11T01:19:01.694Z","invite_status":"accepted"}],"pending_play_dates":[{"id":101,"creator_dog_id":1,"invited_dog_id":1,"location_id":"No2VmMM6QchZSYtCk6k0vQ","date":"2021-11-19","time":"2000-01-01T18:22:00.000Z","created_at":"2021-11-11T01:20:44.678Z","updated_at":"2021-11-11T01:20:44.678Z","invite_status":"pending"},{"id":102,"creator_dog_id":1,"invited_dog_id":1,"location_id":"No2VmMM6QchZSYtCk6k0vQ","date":"2021-11-25","time":"2000-01-01T18:22:00.000Z","created_at":"2021-11-11T01:21:03.037Z","updated_at":"2021-11-11T01:21:03.037Z","invite_status":"pending"}]}}}'
+  recorded_at: Thu, 11 Nov 2021 01:37:12 GMT
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/dogs/2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 01:37:12 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"d82357c306bc8034ae0aae109fb18b83"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7054be34-ec61-4698-87fb-cad5ad4662e4
+      X-Runtime:
+      - '0.012990'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"2","type":"dog_with_playdates","attributes":{"name":"Delbert","size":"small","age":14,"breed":"Beagle","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null,"accepted_play_dates":[{"id":3,"creator_dog_id":1,"invited_dog_id":2,"location_id":"18","date":"2021-11-08","time":"2000-01-01T05:00:00.000Z","created_at":"2021-11-08T18:27:54.823Z","updated_at":"2021-11-10T23:58:41.919Z","invite_status":"accepted"}],"pending_play_dates":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 01:37:12 GMT
 recorded_with: VCR 6.0.0

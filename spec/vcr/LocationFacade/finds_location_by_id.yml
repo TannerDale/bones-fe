@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:48 GMT
+      - Thu, 11 Nov 2021 01:37:11 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 575f0959-dfbc-43f6-9828-e10aa6ca0e2a
+      - c3cd38b0-11e7-4452-9024-98320ab16160
       X-Runtime:
-      - '0.185543'
+      - '0.190994'
       Transfer-Encoding:
       - chunked
       Via:
@@ -43,5 +43,5 @@ http_interactions:
       string: '{"data":{"id":"MWFGHr6NOg7pAoLgbgFdsQ","name":"Doppio Coffee","address":"1245
         E Colfax Ave, Ste 105, Denver, CO 80218","phone":"(303) 537-7794","rating":4.5,"categories":["Coffee
         \u0026 Tea","Breakfast \u0026 Brunch","Sandwiches"],"image_url":"https://s3-media3.fl.yelpcdn.com/bphoto/Y3nLL8rizY1-z7_PG6ja0A/o.jpg"}}'
-  recorded_at: Thu, 11 Nov 2021 00:59:48 GMT
+  recorded_at: Thu, 11 Nov 2021 01:37:11 GMT
 recorded_with: VCR 6.0.0

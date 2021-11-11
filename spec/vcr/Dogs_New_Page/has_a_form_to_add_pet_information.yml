@@ -5,7 +5,7 @@ http_interactions:
     uri: http://bones-be.herokuapp.com/api/v1/dogs
     body:
       encoding: UTF-8
-      string: '{"object":{"name":"Aubrey","age":"11","breed":"Sussex Spaniel","size":"small","sex":"female","vaccinated":"true","trained":"yes","description":"","user_id":4},"options":{},"context":{},"base_url":null,"_fields":{},"_include_linkages":[]}'
+      string: '{"object":{"name":"Vicky","age":"13","breed":"Komondor","size":"medium","sex":"male","vaccinated":"true","trained":"yes","description":"","user_id":4},"options":{},"context":{},"base_url":null,"_fields":{},"_include_linkages":[]}'
     headers:
       User-Agent:
       - Faraday v1.8.0
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:31 GMT
+      - Thu, 11 Nov 2021 01:37:19 GMT
       Content-Length:
       - '0'
       Connection:
@@ -31,15 +31,15 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 9d49f82e-2e62-4358-97be-df5e991fa5f6
+      - c9d0e6d6-09c9-4d9e-a057-f0abec2b4100
       X-Runtime:
-      - '0.009033'
+      - '0.009288'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Thu, 11 Nov 2021 00:59:31 GMT
+  recorded_at: Thu, 11 Nov 2021 01:37:20 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/user_dogs?user_id=4
@@ -61,19 +61,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:30 GMT
+      - Thu, 11 Nov 2021 01:37:20 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"96465bfd6e8895196e1c105a117d1e7a"
+      - W/"02e8e22acee82ff0791e13371cb43acd"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a1c20c7f-5a9e-4ac6-9c10-458445df0491
+      - 19494804-04ee-4271-8642-9a832e0f4aea
       X-Runtime:
-      - '0.009750'
+      - '0.011569'
       Transfer-Encoding:
       - chunked
       Via:
@@ -91,8 +91,8 @@ http_interactions:
         Mountain","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}},{"id":"213","type":"dog","attributes":{"name":"Lavona","size":"large","age":4,"breed":"Chow","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}},{"id":"215","type":"dog","attributes":{"name":"Alberto","size":"medium","age":8,"breed":"Pekinese","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}},{"id":"222","type":"dog","attributes":{"name":"Kelle","size":"small","age":3,"breed":"Airedale","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}},{"id":"226","type":"dog","attributes":{"name":"Britta","size":"small","age":15,"breed":"Pomeranian","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}},{"id":"230","type":"dog","attributes":{"name":"Woodrow","size":"large","age":12,"breed":"Irish
         Setter","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}},{"id":"237","type":"dog","attributes":{"name":"Neville","size":"large","age":4,"breed":"Yorkshire
         Terrier","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}},{"id":"241","type":"dog","attributes":{"name":"Calandra","size":"small","age":14,"breed":"Pekinese","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}},{"id":"245","type":"dog","attributes":{"name":"Aurelio","size":"medium","age":5,"breed":"Bouvier","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}},{"id":"249","type":"dog","attributes":{"name":"Dawn","size":"small","age":10,"breed":"Dachshund","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}},{"id":"253","type":"dog","attributes":{"name":"Georgeanna","size":"medium","age":10,"breed":"Cairn","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}},{"id":"255","type":"dog","attributes":{"name":"Aubrey","size":"small","age":11,"breed":"Sussex
-        Spaniel","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}}]}'
-  recorded_at: Thu, 11 Nov 2021 00:59:31 GMT
+        Spaniel","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}},{"id":"262","type":"dog","attributes":{"name":"Vicky","size":"medium","age":13,"breed":"Komondor","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}}]}'
+  recorded_at: Thu, 11 Nov 2021 01:37:20 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/play_dates?status=invited&user_id=4
@@ -114,7 +114,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:31 GMT
+      - Thu, 11 Nov 2021 01:37:20 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -124,9 +124,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b919fd6b-c750-4160-816f-b6e0f7e5200a
+      - 2bf202fa-83da-4dce-958a-5106ea9a5e35
       X-Runtime:
-      - '0.005100'
+      - '0.007358'
       Transfer-Encoding:
       - chunked
       Via:
@@ -134,7 +134,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Thu, 11 Nov 2021 00:59:31 GMT
+  recorded_at: Thu, 11 Nov 2021 01:37:21 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/dog_facts
@@ -156,26 +156,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:31 GMT
+      - Thu, 11 Nov 2021 01:37:21 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"f9b20751a590defbc7b54158ae4ebc1e"
+      - W/"f332c189cd0fd2c9e549d53920cb8138"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4df88b2f-82fc-4fa3-850f-597065f4536d
+      - 39646639-3649-452b-89ad-145e0fac34ec
       X-Runtime:
-      - '0.015088'
+      - '0.017060'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"fact":"A Russian dog named Laika was the first animal in space, traveling
-        around Earth in 1957."}'
-  recorded_at: Thu, 11 Nov 2021 00:59:31 GMT
+      string: '{"fact":"Service dogs are recognized in the U.S. as \"necessary medical
+        equipment.\""}'
+  recorded_at: Thu, 11 Nov 2021 01:37:21 GMT
 recorded_with: VCR 6.0.0

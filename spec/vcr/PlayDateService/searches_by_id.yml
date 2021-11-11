@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 01:00:00 GMT
+      - Thu, 11 Nov 2021 01:37:26 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 603e4d97-26a1-4292-80c0-e8bb4744bc51
+      - eea16bce-e404-4d59-a84c-2f542ae24d4d
       X-Runtime:
-      - '0.004125'
+      - '0.004866'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,5 +41,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"4","type":"play_date","attributes":{"location_id":"sadfgjh","date":"2021-11-09","time":"2000-01-01T05:00:00.000Z","invite_status":null},"relationships":{"creator_dog":{"data":{"id":"1","type":"dog"}},"invited_dog":{"data":{"id":"2","type":"dog"}}}}}'
-  recorded_at: Thu, 11 Nov 2021 01:00:01 GMT
+  recorded_at: Thu, 11 Nov 2021 01:37:27 GMT
 recorded_with: VCR 6.0.0
