@@ -1,0 +1,98 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/dogs?page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 00:59:59 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8b84328f5d5873ba3a31e6dd9dad435c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e90f4005-4c17-41fe-9325-d91d635db9fd
+      X-Runtime:
+      - '0.008266'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"dog","attributes":{"name":"Delbert","size":"small","age":14,"breed":"Beagle","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"2","type":"dog","attributes":{"name":"Delbert","size":"small","age":14,"breed":"Beagle","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"3","type":"dog","attributes":{"name":"Delbert","size":"small","age":14,"breed":"Beagle","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"4","type":"dog","attributes":{"name":"Edwina","size":"small","age":15,"breed":"Bull
+        Mastiff","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"5","type":"dog","attributes":{"name":"Edwina","size":"small","age":15,"breed":"Bull
+        Mastiff","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"6","type":"dog","attributes":{"name":"Edwina","size":"small","age":15,"breed":"Bull
+        Mastiff","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"7","type":"dog","attributes":{"name":"Synthia","size":"small","age":5,"breed":"Cocker
+        Spaniel","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"8","type":"dog","attributes":{"name":"Synthia","size":"small","age":5,"breed":"Cocker
+        Spaniel","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"9","type":"dog","attributes":{"name":"Synthia","size":"small","age":5,"breed":"Cocker
+        Spaniel","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"10","type":"dog","attributes":{"name":"Twana","size":"small","age":10,"breed":"Westhighland
+        Terrier","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"11","type":"dog","attributes":{"name":"Twana","size":"small","age":10,"breed":"Westhighland
+        Terrier","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"12","type":"dog","attributes":{"name":"Twana","size":"small","age":10,"breed":"Westhighland
+        Terrier","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"13","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"14","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"15","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"16","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"17","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"18","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"19","type":"dog","attributes":{"name":"Neal","size":"small","age":11,"breed":"Japanese
+        Spaniel","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"20","type":"dog","attributes":{"name":"Neal","size":"small","age":11,"breed":"Japanese
+        Spaniel","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}}]}'
+  recorded_at: Thu, 11 Nov 2021 01:00:00 GMT
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/dogs/18
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 01:00:00 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"59428a705e5bfd99046ebaa57a5a8ff6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 76b8644a-cef6-4bcd-a194-a1aee7ff202c
+      X-Runtime:
+      - '0.011271'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"18","type":"dog_with_playdates","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null,"accepted_play_dates":[],"pending_play_dates":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 01:00:00 GMT
+recorded_with: VCR 6.0.0

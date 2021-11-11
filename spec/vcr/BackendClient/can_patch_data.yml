@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: patch
+    uri: http://bones-be.herokuapp.com/api/v1//api/v1/play_date/1
+    body:
+      encoding: UTF-8
+      string: '{"status":"accepted"}'
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 00:59:46 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html; charset=UTF-8
+      X-Request-Id:
+      - 28ffba8f-b187-495b-b993-8c8ebdd7bdc8
+      X-Runtime:
+      - '0.001191'
+      Content-Length:
+      - '0'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Thu, 11 Nov 2021 00:59:47 GMT
+recorded_with: VCR 6.0.0

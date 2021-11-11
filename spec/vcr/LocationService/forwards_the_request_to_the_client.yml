@@ -1,0 +1,83 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/yelp_locations?location=Denver
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 01:00:00 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"6dbc7c0730f5be72f9daa4c8600b470d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a8b078e7-59cb-4c51-9c73-167202e20642
+      X-Runtime:
+      - '0.553664'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"No2VmMM6QchZSYtCk6k0vQ","name":"DP Dough","address":"1228
+        E Colfax Ave, Denver, CO 80218","phone":"(303) 839-9663","rating":3.5,"categories":["Pizza","Italian"],"image_url":"https://s3-media1.fl.yelpcdn.com/bphoto/MBkGfvYy-rTgO8tVuYzdQQ/o.jpg"},{"id":"RTvR4W7K-59xFFZAUTMTbQ","name":"Lucky
+        Noodles","address":"1201 E Colfax Ave, Ste 102, Denver, CO 80218","phone":"(720)
+        917-1000","rating":4.5,"categories":["Thai","Noodles","Coffee \u0026 Tea"],"image_url":"https://s3-media4.fl.yelpcdn.com/bphoto/uoXE8rVcYAV4R6njOCxrpw/o.jpg"},{"id":"FfwLdr5-TBINeZbR4ey_WQ","name":"Irish
+        Snug","address":"1201 E Colfax Ave, Denver, CO 80218","phone":"(303) 839-1394","rating":4.0,"categories":["Venues
+        \u0026 Event Spaces","Irish Pub","Burgers"],"image_url":"https://s3-media4.fl.yelpcdn.com/bphoto/4Tfw-AgjlGw6ZM9LDSLU0g/o.jpg"},{"id":"whMF9UFpUrtalDgqr_yENw","name":"Kinga''s
+        Lounge","address":"1509 Marion St, Denver, CO 80218","phone":"(303) 830-6922","rating":3.5,"categories":["Lounges","Polish","Breakfast
+        \u0026 Brunch"],"image_url":"https://s3-media2.fl.yelpcdn.com/bphoto/NbU1S5qAAFz2g_4tjLeqFA/o.jpg"},{"id":"-7AgflI0MNLAimyFb6T5tQ","name":"Good
+        Times Burgers \u0026 Frozen Custard","address":"808 E Colfax Ave, Denver,
+        CO 80218","phone":"(303) 830-8060","rating":3.0,"categories":["Fast Food","Burgers","Ice
+        Cream \u0026 Frozen Yogurt"],"image_url":"https://s3-media1.fl.yelpcdn.com/bphoto/egcncqdw79ndZ5f3nVVVyQ/o.jpg"},{"id":"HA6_8IsyxUr6eItoMpQYLg","name":"Illegal
+        Pete''s - Colfax","address":"2001 E Colfax Ave, Denver, CO 80206","phone":"(720)
+        723-2703","rating":4.0,"categories":["Bars","Mexican","Breakfast \u0026 Brunch"],"image_url":"https://s3-media4.fl.yelpcdn.com/bphoto/X-sD1GncE3uJzp8r0KeubA/o.jpg"},{"id":"VryvMiOjGlSTyR6EbopvMg","name":"The
+        District","address":"1320 E 17th Ave, Denver, CO 80218","phone":"(303) 813-6688","rating":3.5,"categories":["American
+        (Traditional)","Bars","Breakfast \u0026 Brunch"],"image_url":"https://s3-media2.fl.yelpcdn.com/bphoto/eowRQnjyzkfi1p-3S6ciYg/o.jpg"},{"id":"ifFJPXzMMPMDn-RbXrcnjw","name":"Patxi''s
+        Pizza","address":"1598 E 17th Ave, Denver, CO 80218","phone":"(303) 832-8000","rating":4.0,"categories":["Pizza","Salad","Italian"],"image_url":"https://s3-media4.fl.yelpcdn.com/bphoto/c8Wh43BxSCqZOXUshfS-oQ/o.jpg"},{"id":"o-i3q1AA1QFCK9EmaQc52w","name":"Sullivan
+        Scrap Kitchen","address":"1740 E 17th Ave, Denver, CO 80218","phone":"(720)
+        242-6292","rating":4.5,"categories":["American (Traditional)","Sandwiches","Burgers"],"image_url":"https://s3-media4.fl.yelpcdn.com/bphoto/eFIseqKUaLpAKdACX7FlZQ/o.jpg"},{"id":"vyPPcw3xOiDgKiQXY2Xjxg","name":"X
+        BAR","address":"629 E Colfax Ave, Denver, CO 80203","phone":"(303) 832-2687","rating":3.5,"categories":["Gay
+        Bars"],"image_url":"https://s3-media4.fl.yelpcdn.com/bphoto/k5cA82za3C7IxQwHwuJTYg/o.jpg"},{"id":"ZntgdCiWJjAfP2N3Jht7MQ","name":"Stoney''s
+        Uptown","address":"1035 E 17th Ave, Denver, CO 80218","phone":"(720) 485-5503","rating":4.0,"categories":["Sports
+        Bars","Breakfast \u0026 Brunch","American (Traditional)"],"image_url":"https://s3-media3.fl.yelpcdn.com/bphoto/kjxdA2hU3uSQsrJpzLVMDw/o.jpg"},{"id":"5lCzYPnAoNNlAZxW3rr_RA","name":"Satchel''s
+        on 6th","address":"1710 E 6th Ave, Denver, CO 80218","phone":"(303) 399-2560","rating":4.0,"categories":["American
+        (New)","Cocktail Bars"],"image_url":"https://s3-media2.fl.yelpcdn.com/bphoto/u3xLS0XwgGLpupXFLx47Xw/o.jpg"},{"id":"7UWt_282vPsGQPtrquRR9Q","name":"Shells
+        \u0026 Sauce","address":"2600 E 12th Ave, Denver, CO 80206","phone":"(303)
+        377-2091","rating":4.0,"categories":["Italian","Bars","Salad"],"image_url":"https://s3-media1.fl.yelpcdn.com/bphoto/yRY-S3uHuPXNAQj9VvMroQ/o.jpg"},{"id":"yRRxEBnEK23ABYF-3A2h3Q","name":"Route
+        40 Cafe","address":"2550 E Colfax Ave, Denver, CO 80206","phone":"(303) 355-5445","rating":4.0,"categories":["Cafes","Burgers","Salad"],"image_url":"https://s3-media2.fl.yelpcdn.com/bphoto/ygWNZsIlEY0tdCl4Q0FqLg/o.jpg"},{"id":"OAq-C2Nb6214refR5DgrBw","name":"Uno
+        Mas Taqueria","address":"730 E 6th Ave, Denver, CO 80203","phone":"(720) 708-4623","rating":4.0,"categories":["Venues
+        \u0026 Event Spaces","Desserts","Tacos"],"image_url":"https://s3-media3.fl.yelpcdn.com/bphoto/qaVbj54012dANJxP2RmLPw/o.jpg"},{"id":"zgvqw-I07hQYhIQwSSCiQg","name":"Brothers
+        BBQ","address":"568 N Washington St, Denver, CO 80203","phone":"(720) 570-4227","rating":3.5,"categories":["Barbeque","Southern"],"image_url":"https://s3-media1.fl.yelpcdn.com/bphoto/RQMpMHPUCG9-5XQ7CjNqqA/o.jpg"},{"id":"6OQ7HXYL9TTMY7ooM2rkhA","name":"Stoney''s
+        Bar and Grill","address":"1111 Lincoln St, Denver, CO 80203","phone":"(303)
+        830-6839","rating":3.5,"categories":["American (Traditional)","Sports Bars","Music
+        Venues"],"image_url":"https://s3-media2.fl.yelpcdn.com/bphoto/6cvujifMU8X2Bo_ghadfaQ/o.jpg"},{"id":"1Tfuh19QtBcCu5p970nDuw","name":"Roostercat
+        Coffee House","address":"1045 Lincoln St, Denver, CO 80203","phone":"(720)
+        388-0356","rating":4.0,"categories":["Coffee \u0026 Tea","Cafes","Breakfast
+        \u0026 Brunch"],"image_url":"https://s3-media3.fl.yelpcdn.com/bphoto/jR8fiUtFdOi5XTuNLBExhA/o.jpg"},{"id":"tIv6hhxsLEbsTPRtqH5ehQ","name":"Little
+        Beast Street Food","address":"2730 E Colfax Ave, Denver, CO 80206","phone":"(303)
+        399-4137","rating":5.0,"categories":["Korean","Chicken Wings","Sandwiches"],"image_url":"https://s3-media3.fl.yelpcdn.com/bphoto/2jIvz4Bj2D1dQ7tQAxK3wA/o.jpg"},{"id":"IhdFeUHNdlmN22Yv3xLHEA","name":"100%
+        de Agave","address":"975 Lincoln St, Denver, CO 80203","phone":"(303) 731-1100","rating":3.5,"categories":["Mexican","Bars"],"image_url":"https://s3-media4.fl.yelpcdn.com/bphoto/8vYag7j9NzCiqZp8s3n7BQ/o.jpg"}]}'
+  recorded_at: Thu, 11 Nov 2021 01:00:00 GMT
+recorded_with: VCR 6.0.0

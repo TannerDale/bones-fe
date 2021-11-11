@@ -25,7 +25,6 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'omniauth-google-oauth2'
 gem 'figaro'
-
 gem 'webpacker', '~> 5.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'

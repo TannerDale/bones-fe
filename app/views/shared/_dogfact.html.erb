@@ -1,4 +1,4 @@
 <p>Random Dog Fact of the Day!</p>
-<% cache 'dog-fact' do %>
+<% cache 'dog-fact', expires: 1.day do %>
   <%= dog_fact %><br>
 <% end %>

@@ -98,3 +98,20 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
+
+
+Capybara.default_host = 'http://bonez.herokuapp.com'
+
+OmniAuth.config.silence_get_warning = true
+OmniAuth.config.test_mode = true
+OmniAuth.config.add_mock(:google_oauth2, {
+  :email => 'example@gmail.com',
+  :name => 'Jeffrey Dahmer',
+  :credentials => { :token => '89y123jnasd' }
+})
+
+# {
+#   google_id: auth_hash['uid'],
+#   email: auth_hash['info']['email'],
+#   token: auth_hash['credentials']['token']
+# }

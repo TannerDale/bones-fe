@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/dog_facts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 00:59:47 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"95128c4a74a76c8f9b7948a4e1dde968"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cede817a-4afe-46e7-a8e5-56adbf8c5a43
+      X-Runtime:
+      - '0.020359'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"fact":"Tired puppies get cranky just like little kids. If you have
+        a fussy puppy, try nap time."}'
+  recorded_at: Thu, 11 Nov 2021 00:59:48 GMT
+recorded_with: VCR 6.0.0

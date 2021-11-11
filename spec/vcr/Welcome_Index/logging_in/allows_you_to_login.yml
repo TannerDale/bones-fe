@@ -1,0 +1,173 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/dog_facts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 00:59:35 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"da3a5ef0e15e92ce45be08a241627a70"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a3112e14-56fa-4089-9764-17dbf9b52b2e
+      X-Runtime:
+      - '0.013173'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"fact":"In 2002 alone, more people in the U.S. were killed by dogs
+        than by sharks in the past 100 years."}'
+  recorded_at: Thu, 11 Nov 2021 00:59:36 GMT
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/user_dogs?user_id=18
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 00:59:36 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7147fc99-a00b-4e71-a17e-093bb2291a07
+      X-Runtime:
+      - '0.004323'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Thu, 11 Nov 2021 00:59:36 GMT
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/play_dates?status=invited&user_id=18
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 00:59:36 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 03bee9db-d62e-46af-be89-d8db2d105455
+      X-Runtime:
+      - '0.004543'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Thu, 11 Nov 2021 00:59:36 GMT
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/dog_facts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 00:59:36 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"7c4d621d3285bd93a610427cb820aef0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 874c74f1-154f-452a-ac92-3945d9674281
+      X-Runtime:
+      - '0.013932'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"fact":"Spiked dog collars were invented in ancient Greece and were
+        originally designed to protect dogs throats from wolf attacks."}'
+  recorded_at: Thu, 11 Nov 2021 00:59:36 GMT
+recorded_with: VCR 6.0.0

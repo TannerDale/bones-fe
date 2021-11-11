@@ -14,7 +14,11 @@ RSpec.describe "playdate#show", :vcr do
       invite_status: 'pending',
       invited_dog_id: invited_dog.id,
       creator_dog_id: host_dog.id,
-      location_id: location.id
+      location_id: location.id,
+      relationships: {
+        creator_dog: { data: { id: host_dog.id } },
+        invited_dog: { data: { id: invited_dog.id } }
+      }
     }
   end
 
