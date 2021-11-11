@@ -46,7 +46,7 @@ describe 'Dashboard Index', :vcr do
   end
 
   describe 'Shows random dog fact' do
-    it "displays random dog fact" do
+    it 'displays random dog fact' do
       expect(page).to have_content(dog_fact)
     end
   end
@@ -55,25 +55,25 @@ describe 'Dashboard Index', :vcr do
   end
 
   describe 'test nav bar links' do
-    it "links to the dashboard" do
+    it 'links to the dashboard' do
       click_link('Dashboard')
 
       expect(current_path).to eq(dashboard_path)
     end
 
-    it "links to edit profile" do
+    it 'links to edit profile' do
       click_link('Edit Profile')
 
       expect(current_path).to eq(edit_user_path(user))
     end
 
-    it "links to the homepage" do
+    it 'links to the homepage' do
       click_link('Bones Logo')
 
       expect(current_path).to eq(root_path)
     end
 
-    it "has a log out option" do
+    it 'has a log out option' do
       click_link('Logout')
 
       expect(current_path).to eq(root_path)
@@ -84,6 +84,8 @@ describe 'Dashboard Index', :vcr do
     it 'has buttons to accept or reject pending play dates' do
       expect(page).to have_button 'Accept'
       expect(page).to have_button 'Reject'
+
+      click_button 'Accept'
     end
   end
 end
