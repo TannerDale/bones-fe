@@ -10,7 +10,7 @@
 - [Setup](#setup)
 - [Schema](#schema)
 - [Wireframes](#wireframes)
-- [OAuth](#oauth)
+- [OAuth Setup](#oauth-setup)
 - [Project Board](#project-board)
 - [Technologies](#technologies)
 - [Contributors](#contributors)
@@ -33,7 +33,8 @@ This project was based off Turing's consultancy project. More details can be fou
 
 ### <ins>[Wireframes]</ins>()
 
-### <ins>OAuth</ins>
+### <ins>OAuth Setup</ins>
+![OAuth-setup](https://github.com/zquestz/omniauth-google-oauth2#installation)
 
 ### <ins>Project Board</ins>
 ![Project-Board](https://github.com/users/TannerDale/projects/5)
