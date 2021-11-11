@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   resources :play_dates, except: :destroy
 
   delete 'logout', to: 'sessions#destroy'
+  get 'logout', to: 'sessions#destroy'
 
   resources :locations, only: :index
 end
