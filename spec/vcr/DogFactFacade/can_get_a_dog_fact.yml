@@ -21,26 +21,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:47 GMT
+      - Thu, 11 Nov 2021 01:37:09 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"95128c4a74a76c8f9b7948a4e1dde968"
+      - W/"e17aee63dcfc7f6cc6172c030b65fa79"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - cede817a-4afe-46e7-a8e5-56adbf8c5a43
+      - 2f2e169b-be75-4948-8dfc-5adf36684d63
       X-Runtime:
-      - '0.020359'
+      - '0.016612'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"fact":"Tired puppies get cranky just like little kids. If you have
-        a fussy puppy, try nap time."}'
-  recorded_at: Thu, 11 Nov 2021 00:59:48 GMT
+      string: '{"fact":"Dogs who have been spayed or neutered live longer than intact
+        dogs."}'
+  recorded_at: Thu, 11 Nov 2021 01:37:10 GMT
 recorded_with: VCR 6.0.0

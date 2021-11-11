@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 01:00:00 GMT
+      - Thu, 11 Nov 2021 01:37:27 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a8b078e7-59cb-4c51-9c73-167202e20642
+      - b076007f-82a3-4ccc-afc4-150b7a7197fe
       X-Runtime:
-      - '0.553664'
+      - '0.460385'
       Transfer-Encoding:
       - chunked
       Via:
@@ -79,5 +79,5 @@ http_interactions:
         Beast Street Food","address":"2730 E Colfax Ave, Denver, CO 80206","phone":"(303)
         399-4137","rating":5.0,"categories":["Korean","Chicken Wings","Sandwiches"],"image_url":"https://s3-media3.fl.yelpcdn.com/bphoto/2jIvz4Bj2D1dQ7tQAxK3wA/o.jpg"},{"id":"IhdFeUHNdlmN22Yv3xLHEA","name":"100%
         de Agave","address":"975 Lincoln St, Denver, CO 80203","phone":"(303) 731-1100","rating":3.5,"categories":["Mexican","Bars"],"image_url":"https://s3-media4.fl.yelpcdn.com/bphoto/8vYag7j9NzCiqZp8s3n7BQ/o.jpg"}]}'
-  recorded_at: Thu, 11 Nov 2021 01:00:00 GMT
+  recorded_at: Thu, 11 Nov 2021 01:37:27 GMT
 recorded_with: VCR 6.0.0

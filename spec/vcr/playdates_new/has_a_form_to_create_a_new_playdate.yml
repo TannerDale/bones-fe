@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:32 GMT
+      - Thu, 11 Nov 2021 01:37:22 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 23d28bd8-d1cc-43af-bcfb-4c6b5dac2201
+      - e541802a-fb19-44c0-a99b-8f3a574a13f5
       X-Runtime:
-      - '0.006579'
+      - '0.009131'
       Transfer-Encoding:
       - chunked
       Via:
@@ -52,13 +52,13 @@ http_interactions:
         Terrier","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"13","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"14","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"15","type":"dog","attributes":{"name":"Zelma","size":"small","age":12,"breed":"Bluetick","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"16","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"17","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"18","type":"dog","attributes":{"name":"Orville","size":"medium","age":2,"breed":"Malinois","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"19","type":"dog","attributes":{"name":"Neal","size":"small","age":11,"breed":"Japanese
         Spaniel","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}},{"id":"20","type":"dog","attributes":{"name":"Neal","size":"small","age":11,"breed":"Japanese
         Spaniel","vaccinated":"true","sex":null,"trained":"yes","user_id":3,"description":null}}]}'
-  recorded_at: Thu, 11 Nov 2021 00:59:32 GMT
+  recorded_at: Thu, 11 Nov 2021 01:37:22 GMT
 - request:
     method: post
     uri: http://bones-be.herokuapp.com/api/v1/play_dates
     body:
       encoding: UTF-8
-      string: '{"object":{"date":"2021-11-11","time":"05:00 AM","creator_dog_id":"20","location_id":"sadfgjh","invited_dog_id":"1"},"token":"a..z","email":"ronna@sipes.co"}'
+      string: '{"object":{"date":"2021-11-11","time":"05:00 AM","creator_dog_id":"20","location_id":"sadfgjh","invited_dog_id":"1"},"token":"a..z","email":"florentino@dibbert.com"}'
     headers:
       User-Agent:
       - Faraday v1.8.0
@@ -76,7 +76,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:31 GMT
+      - Thu, 11 Nov 2021 01:37:22 GMT
       Content-Length:
       - '0'
       Connection:
@@ -84,15 +84,15 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 3df48a8e-b055-47cf-adf5-4fa9dc65829b
+      - d69418cb-82cc-4f0d-8b7f-c70d402b7f5f
       X-Runtime:
-      - '0.012162'
+      - '0.026968'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Thu, 11 Nov 2021 00:59:32 GMT
+  recorded_at: Thu, 11 Nov 2021 01:37:23 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/play_dates?status=invited&user_id=9
@@ -114,7 +114,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:32 GMT
+      - Thu, 11 Nov 2021 01:37:22 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -124,9 +124,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8b0f603b-4c1f-472a-a594-095861172150
+      - 146a0c00-96a3-47f2-a7a3-86d0d3d220bb
       X-Runtime:
-      - '0.004787'
+      - '0.006771'
       Transfer-Encoding:
       - chunked
       Via:
@@ -134,7 +134,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Thu, 11 Nov 2021 00:59:32 GMT
+  recorded_at: Thu, 11 Nov 2021 01:37:23 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/dog_facts
@@ -156,26 +156,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:32 GMT
+      - Thu, 11 Nov 2021 01:37:22 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"97802699eb886c7b2bbb3b53ca79a646"
+      - W/"489e39e3354d2d2ed61a374be0337f5e"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7207449c-c422-4715-90ae-5f24f2cd5c9a
+      - 58970d8a-8989-451b-8940-376df1bb062f
       X-Runtime:
-      - '0.014595'
+      - '0.021908'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"fact":"Dogs can be trained to detect cancer and other diseases in
-        humans."}'
-  recorded_at: Thu, 11 Nov 2021 00:59:32 GMT
+      string: '{"fact":"In Old England, the word \"hound\" was used to refer to all
+        types of dogs."}'
+  recorded_at: Thu, 11 Nov 2021 01:37:23 GMT
 recorded_with: VCR 6.0.0

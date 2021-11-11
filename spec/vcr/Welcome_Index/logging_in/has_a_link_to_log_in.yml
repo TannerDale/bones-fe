@@ -21,27 +21,25 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:35 GMT
+      - Thu, 11 Nov 2021 01:37:24 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"9c9f4171b44e5ecdc896d4687c6edfff"
+      - W/"dbdc7aaf57d0426c58ed2379a5fb1914"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f1416681-d627-4431-abba-f4cbec8f0a77
+      - dacafb27-9e7c-4a65-a4d7-9e6d1ef31a8f
       X-Runtime:
-      - '0.014742'
+      - '0.029965'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"fact":"The names of 77 ancient Egyptian dogs have been recorded.
-        The names refer to color and character, such as Blackie, Ebony, Good Herdsman,
-        Reliable, and Brave One."}'
-  recorded_at: Thu, 11 Nov 2021 00:59:35 GMT
+      string: '{"fact":"Dogs are all direct descendants of wolves."}'
+  recorded_at: Thu, 11 Nov 2021 01:37:25 GMT
 recorded_with: VCR 6.0.0

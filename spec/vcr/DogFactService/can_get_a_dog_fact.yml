@@ -21,26 +21,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:59 GMT
+      - Thu, 11 Nov 2021 01:37:25 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"055a1a407f6368d82edfd4c4f99890ad"
+      - W/"38dd57e01f1a21782c153334126a9cc0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ee104d77-674e-4456-b791-261313d55454
+      - 8b98985a-18e9-44fe-9228-bf79b7220ff4
       X-Runtime:
-      - '0.020347'
+      - '0.014929'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
-      encoding: UTF-8
-      string: '{"fact":"Search and Rescue dog training begin as games played while
-        puppies."}'
-  recorded_at: Thu, 11 Nov 2021 00:59:59 GMT
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJmYWN0IjoiRG9nc+KAmSBub3NlIHByaW50cyBhcmUgYXMgdW5pcXVlIGFzIGEgaHVtYW7igJlzIGZpbmdlciBwcmludHMsIGFuZCBjYW4gYmUgdXNlZCB0byBhY2N1cmF0ZWx5IGlkZW50aWZ5IHRoZW0uIn0=
+  recorded_at: Thu, 11 Nov 2021 01:37:26 GMT
 recorded_with: VCR 6.0.0

@@ -21,29 +21,28 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:36 GMT
+      - Thu, 11 Nov 2021 01:37:26 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"27a04d48d58811524d9dee364c3b3f77"
+      - W/"353ae190e94c99686895bcaecd53fdea"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f6463163-3522-4168-ab78-dd889a02375b
+      - 7413020f-edc5-4c55-9ced-7434844ab09a
       X-Runtime:
-      - '0.013096'
+      - '0.015370'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"fact":"The oldest known dog bones were found in Asia and date as
-        far back as 10,000 B.C. The first identifiable dog breed appeared about 9000
-        B.C. and was probably a type of Greyhound dog used for hunting."}'
-  recorded_at: Thu, 11 Nov 2021 00:59:37 GMT
+      string: '{"fact":"It is not possible to know how many puppies a dog will have
+        just by looking. The appearance can be very deceptive."}'
+  recorded_at: Thu, 11 Nov 2021 01:37:26 GMT
 - request:
     method: get
     uri: http://bones-be.herokuapp.com/api/v1/dog_facts
@@ -65,25 +64,25 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 00:59:36 GMT
+      - Thu, 11 Nov 2021 01:37:25 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"1b7d1ff13f82e700e203b5a71e9e0f07"
+      - W/"099888d3ee8fe861080fc22b5e94b28e"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5775d1d9-f140-4d9b-80f9-7d41ab604010
+      - 90f1e61b-b6ef-481f-8829-07c4b6dd104a
       X-Runtime:
-      - '0.013030'
+      - '0.020783'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"fact":"Your pup reaches his full size between 12 and 24 months."}'
-  recorded_at: Thu, 11 Nov 2021 00:59:37 GMT
+      string: '{"fact":"Dalmatians are completely white at birth."}'
+  recorded_at: Thu, 11 Nov 2021 01:37:26 GMT
 recorded_with: VCR 6.0.0
