@@ -23,8 +23,8 @@ class PlayDateFacade
 
     def play_date_dogs(data)
       {
-        creator_dog: DogFacade.find_dog(data[:creator_dog_id]),
-        invited_dog: DogFacade.find_dog(data[:invited_dog_id])
+        creator_dog: DogFacade.find_dog(data[:relationships][:creator_dog][:data][:id]),
+        invited_dog: DogFacade.find_dog(data[:relationships][:invited_dog][:data][:id])
       }
     end
 
