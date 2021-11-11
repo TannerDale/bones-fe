@@ -8,14 +8,31 @@ describe PlayDateFacade, :vcr do
   let(:params) do
     {
       date: Date.today,
-      time: "05:00 AM",
+      time: '05:00 AM',
       creator_dog_id: host_dog.id,
       location_id: location.id,
       invited_dog_id: invited_dog.id
     }
   end
+  let!(:data) do
+    { attributes:
+      {
+        id: 1,
+        date: '2021-11-20',
+        time: '10:00:00',
+        invite_status: 'pending',
+        invited_dog_id: invited_dog.id,
+        creator_dog_id: host_dog.id,
+        location_id: location.id
+      },
+      relationships: {
+        creator_dog: { data: { id: host_dog.id } },
+        invited_dog: { data: { id: invited_dog.id } }
+      }
+    }
+  end
 
-  it 'forwards the request to the client' do
+  it 'forwards the request to the client / create' do
     json = PlayDateSerializer.serialize(params)
     result = PlayDateFacade.create_play_date(json)
 
@@ -29,6 +46,23 @@ describe PlayDateFacade, :vcr do
     expect(result).to be_an Array
   end
 
-  it 'creates a poro from the returned data for a user' do
+  it 'updates play date' do
+    result = PlayDateFacade.update_play_date(3, 1)
+
+    expect(result).to be_empty
+  end
+
+  it 'all_play_date_info' do
+    result = PlayDateFacade.all_play_date_info(3)
+
+    expect(result).to be_a PlayDateWithDogsPoro
+  end
+
+  it 'can format data' do
+    allow(PlayDateService).to receive(:find_for_user).and_return([data])
+    result = PlayDateFacade.find_for_user(1)
+
+    expect(result).to be_an Array
+    expect(result.first).to be_a PlayDatePoro
   end
 end
