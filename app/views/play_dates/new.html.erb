@@ -3,14 +3,14 @@
 <%= form_with url: play_dates_path, local: true do |f| %>
   <%= f.hidden_field :location_id, value: @location %>
 
-  <%= f.label :date, "Date of Playdate" %>
+  <%= f.label :date, "Date of Playdate", class: 'form-label' %>
   <%= f.date_field :date %><br>
 
-  <%= f.label :time, "Time of Playdate" %>
+  <%= f.label :time, "Time of Playdate", class: 'form-label' %>
   <%= f.time_field :time %><br>
 
-  <%= f.label 'Who is the playdate for?' %>
+  <%= f.label 'Who is the playdate for?', class: 'form-label' %>
   <%= f.collection_select :creator_dog_id, @user_dogs, :id, :name %>
-
-  <%= f.submit "Create Playdate" %><br>
+  <br>
+  <%= f.submit "Create Playdate", id: 'submit-btn' %><br>
 <% end %>

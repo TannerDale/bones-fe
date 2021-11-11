@@ -1,12 +1,12 @@
-<h1>Welcome, <%= current_user.name %></h1>
+<h1>Pit Happens!</h1>
 
 <h3>Please update your profile!</h3>
 
 <%= form_with url: user_path(current_user), method: :patch, local: true do |f| %>
   <%= f.hidden_field :location_id, value: @location %>
 
-  <%= f.label :location, "Enter City and State (ex: Denver, CO)" %>
+  <%= f.label :location, "Enter City and State (ex: Denver, CO)", class: 'form-label' %>
   <%= f.text_field :location %><br>
 
-  <%= f.submit "Update Profile" %><br>
+  <%= f.submit "Update Profile", id: 'submit-btn' %><br>
 <% end %>
