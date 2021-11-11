@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/dog_facts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 00:59:36 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"27a04d48d58811524d9dee364c3b3f77"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f6463163-3522-4168-ab78-dd889a02375b
+      X-Runtime:
+      - '0.013096'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"fact":"The oldest known dog bones were found in Asia and date as
+        far back as 10,000 B.C. The first identifiable dog breed appeared about 9000
+        B.C. and was probably a type of Greyhound dog used for hunting."}'
+  recorded_at: Thu, 11 Nov 2021 00:59:37 GMT
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/dog_facts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 00:59:36 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"1b7d1ff13f82e700e203b5a71e9e0f07"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5775d1d9-f140-4d9b-80f9-7d41ab604010
+      X-Runtime:
+      - '0.013030'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"fact":"Your pup reaches his full size between 12 and 24 months."}'
+  recorded_at: Thu, 11 Nov 2021 00:59:37 GMT
+recorded_with: VCR 6.0.0

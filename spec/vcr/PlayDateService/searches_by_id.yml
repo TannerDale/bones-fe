@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/play_dates/4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 01:00:00 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c60de9baaafaad434d727e00710772c6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 603e4d97-26a1-4292-80c0-e8bb4744bc51
+      X-Runtime:
+      - '0.004125'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"4","type":"play_date","attributes":{"location_id":"sadfgjh","date":"2021-11-09","time":"2000-01-01T05:00:00.000Z","invite_status":null},"relationships":{"creator_dog":{"data":{"id":"1","type":"dog"}},"invited_dog":{"data":{"id":"2","type":"dog"}}}}}'
+  recorded_at: Thu, 11 Nov 2021 01:00:01 GMT
+recorded_with: VCR 6.0.0

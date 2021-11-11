@@ -1,0 +1,181 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://bones-be.herokuapp.com/api/v1/dogs
+    body:
+      encoding: UTF-8
+      string: '{"object":{"name":"Aubrey","age":"11","breed":"Sussex Spaniel","size":"small","sex":"female","vaccinated":"true","trained":"yes","description":"","user_id":4},"options":{},"context":{},"base_url":null,"_fields":{},"_include_linkages":[]}'
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 00:59:31 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 9d49f82e-2e62-4358-97be-df5e991fa5f6
+      X-Runtime:
+      - '0.009033'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Thu, 11 Nov 2021 00:59:31 GMT
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/user_dogs?user_id=4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 00:59:30 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"96465bfd6e8895196e1c105a117d1e7a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a1c20c7f-5a9e-4ac6-9c10-458445df0491
+      X-Runtime:
+      - '0.009750'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"170","type":"dog","attributes":{"name":"Sang","size":"small","age":13,"breed":"Norwich
+        Terrier","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}},{"id":"171","type":"dog","attributes":{"name":"Rosena","size":"medium","age":15,"breed":"Westhighland
+        Terrier","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}},{"id":"176","type":"dog","attributes":{"name":"Donnette","size":"medium","age":3,"breed":"Rottweiler","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}},{"id":"181","type":"dog","attributes":{"name":"Foster","size":"small","age":14,"breed":"Pug","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}},{"id":"185","type":"dog","attributes":{"name":"Pei","size":"medium","age":3,"breed":"Rat
+        Terrier","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}},{"id":"189","type":"dog","attributes":{"name":"Vannessa","size":"large","age":6,"breed":"Basset
+        Hound","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}},{"id":"193","type":"dog","attributes":{"name":"Cora","size":"large","age":4,"breed":"Cairn","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}},{"id":"197","type":"dog","attributes":{"name":"Marcela","size":"small","age":2,"breed":"English
+        Sheepdog","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}},{"id":"201","type":"dog","attributes":{"name":"Lachelle","size":"large","age":8,"breed":"Kerryblue
+        Terrier","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}},{"id":"205","type":"dog","attributes":{"name":"Marcie","size":"large","age":4,"breed":"Basset
+        Hound","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}},{"id":"209","type":"dog","attributes":{"name":"Heath","size":"medium","age":3,"breed":"Swiss
+        Mountain","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}},{"id":"213","type":"dog","attributes":{"name":"Lavona","size":"large","age":4,"breed":"Chow","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}},{"id":"215","type":"dog","attributes":{"name":"Alberto","size":"medium","age":8,"breed":"Pekinese","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}},{"id":"222","type":"dog","attributes":{"name":"Kelle","size":"small","age":3,"breed":"Airedale","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}},{"id":"226","type":"dog","attributes":{"name":"Britta","size":"small","age":15,"breed":"Pomeranian","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}},{"id":"230","type":"dog","attributes":{"name":"Woodrow","size":"large","age":12,"breed":"Irish
+        Setter","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}},{"id":"237","type":"dog","attributes":{"name":"Neville","size":"large","age":4,"breed":"Yorkshire
+        Terrier","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}},{"id":"241","type":"dog","attributes":{"name":"Calandra","size":"small","age":14,"breed":"Pekinese","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}},{"id":"245","type":"dog","attributes":{"name":"Aurelio","size":"medium","age":5,"breed":"Bouvier","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}},{"id":"249","type":"dog","attributes":{"name":"Dawn","size":"small","age":10,"breed":"Dachshund","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}},{"id":"253","type":"dog","attributes":{"name":"Georgeanna","size":"medium","age":10,"breed":"Cairn","vaccinated":"true","sex":"male","trained":"yes","user_id":4,"description":""}},{"id":"255","type":"dog","attributes":{"name":"Aubrey","size":"small","age":11,"breed":"Sussex
+        Spaniel","vaccinated":"true","sex":"female","trained":"yes","user_id":4,"description":""}}]}'
+  recorded_at: Thu, 11 Nov 2021 00:59:31 GMT
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/play_dates?status=invited&user_id=4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 00:59:31 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b919fd6b-c750-4160-816f-b6e0f7e5200a
+      X-Runtime:
+      - '0.005100'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Thu, 11 Nov 2021 00:59:31 GMT
+- request:
+    method: get
+    uri: http://bones-be.herokuapp.com/api/v1/dog_facts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 00:59:31 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"f9b20751a590defbc7b54158ae4ebc1e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4df88b2f-82fc-4fa3-850f-597065f4536d
+      X-Runtime:
+      - '0.015088'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"fact":"A Russian dog named Laika was the first animal in space, traveling
+        around Earth in 1957."}'
+  recorded_at: Thu, 11 Nov 2021 00:59:31 GMT
+recorded_with: VCR 6.0.0

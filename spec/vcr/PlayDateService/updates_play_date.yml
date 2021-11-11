@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: patch
+    uri: http://bones-be.herokuapp.com/api/v1/play_dates/3
+    body:
+      encoding: UTF-8
+      string: '{"status":1}'
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 01:00:00 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - a57386bf-8b1a-4e33-b49f-ac69f8dab1d3
+      X-Runtime:
+      - '0.007406'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Thu, 11 Nov 2021 01:00:01 GMT
+recorded_with: VCR 6.0.0
