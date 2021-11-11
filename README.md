@@ -1,37 +1,25 @@
-# README
-This README would normally document whatever steps are necessary to get the
-application up and running.
-Things you may want to cover:
-* System dependencies
-* Configuration
-* Database initialization
-* How to run the test suite
-* Services (job queues, cache servers, search engines, etc.)
-* Deployment instructions
-
-Required:
-* Screenshots
-* OAuth Details
-
-# [Bones Front-End](https://github.com/TannerDale/bones-fe)
+# [🦴🐶 Bones Front-End 🐾🦴](https://github.com/TannerDale/bones-fe)
 
 [![Build Status][travis-image]][travis-url]
 
-#### [Bones Back-End](https://github.com/TannerDale/bones-be)
+#### [🦴🐶 Bones Back-End Repo 🐾🦴](https://github.com/TannerDale/bones-be)
+#### [🦴🐶 Bones App 🐾🦴](https://bonez.herokuapp.com/)
 
 ## Table of contents
 - [Overview](#overview)
 - [Learning Goals](#learning-goals)
 - [Setup](#setup)
+- [Schema](#schema)
+- [Wireframes](#wireframes)
 - [OAuth](#oauth)
+- [Project Board](#project-board)
 - [Technologies](#technologies)
 - [Contributors](#contributors)
 
 ### <ins>Overview</ins>
 
-[Bones](https://backend.turing.io/module3/projects/viewing_party) is a web application formed from Turing's Module 3 [Consultancy Group Project](https://backend.turing.edu/module3/projects/consultancy/) that addresses the lack of ability for pet owners to meet, connect, and build relationships with others through their shared passion for their dogs and dogs in general.
-
-[Wireframes](https://backend.turing.io/module3/projects/viewing_party/wireframes)
+# BONES
+🦴 is a web application that addresses the lack of ability for pet owners to meet at dog friendly locations, connect, and build relationships with others through their shared passion for their dogs and dogs in general. Book a playdate for your furbaby! 🐶 🎾
 
 ### <ins>Project Learning Goals</ins>
 <b>Explicit Technical Expectations:</b> Below are technical goals that are being applied in this project (ordered by priority).
@@ -62,6 +50,12 @@ More details can be found [here](https://backend.turing.edu/module3/projects/con
 1. Fork and Clone the repo
 2. Install gem packages: `bundle install`
 3. Setup the database: `rails db:{drop,create,migrate}`
+
+
+### <ins>Schema</ins>
+![Schema Screenshot](https://user-images.githubusercontent.com/80985215/141348603-af7bcd77-c679-42e0-ac17-ce362a007abd.png)
+
+[Wireframes]()
 
 ### <ins>OAuth</ins>
 
