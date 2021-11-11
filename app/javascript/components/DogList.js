@@ -38,14 +38,16 @@ class DogList extends React.Component {
   dogList() {
     return this.state.dogs.map((dog) =>
       <>
-      <h3>Name: { dog.name }</h3>
-      <li>Age: { dog.age }</li>
-      <li>Sex: { dog.sex }</li>
-      <li>Breed: { dog.breed }</li>
-      <li>Size: { dog.size }</li>
-      <li>Training Status: { dog.trained }</li>
-      <li>Vaccination Status: { dog.vaccinated }</li>
+      <h3 className='dog-index'>Name: { dog.name }</h3>
+      <li className='dog-index'>Age: { dog.age }</li>
+      <li className='dog-index'>Sex: { dog.sex }</li>
+      <li className='dog-index'>Breed: { dog.breed }</li>
+      <li className='dog-index'>Size: { dog.size }</li>
+      <li className='dog-index'>Training Status: { dog.trained }</li>
+      <li className='dog-index'>Vaccination Status: { dog.vaccinated }</li>
+      <p></p>
       <a href={ `/locations?dog_id=${dog.id}` } className="btn btn-outline-primary btn-sm">Schedule Playdate with { dog.name }</a>
+      <p></p>
       <p></p>
       </>
     )
