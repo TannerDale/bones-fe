@@ -32,6 +32,7 @@ This project was based off Turing's consultancy project. More details can be fou
 ![Schema Screenshot](https://user-images.githubusercontent.com/80985215/141348603-af7bcd77-c679-42e0-ac17-ce362a007abd.png)
 
 ### <ins>[Wireframes]</ins>()
+![Wireframes](https://user-images.githubusercontent.com/80985215/141393500-becf1559-d853-41db-bcd7-e43e460f5cf8.png)
 
 ### <ins>OAuth Setup</ins>
 ![OAuth-setup](https://github.com/zquestz/omniauth-google-oauth2#installation)
