@@ -1,5 +1,5 @@
 <h1>My Playdates!</h1>
-<% @play_dates.each do |pd| %>
+<p><% @play_dates.each do |pd| %>
   <%= pd.date %><br>
    <%= link_to "Playdate with #{pd.id}", play_date_path(pd.id) %><br>
-<% end %><br>
+<% end %><br></p>
