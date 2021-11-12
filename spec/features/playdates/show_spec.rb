@@ -9,12 +9,14 @@ RSpec.describe "playdate#show", :vcr do
   let!(:play_date) do
     {
       id: 1,
-      date: '2021-11-20',
-      time: '10:00:00',
+      attributes: {
+        date: '2021-11-20',
+        time: '10:00:00',
+        location_id: location.id
+      },
       invite_status: 'pending',
       invited_dog_id: invited_dog.id,
       creator_dog_id: host_dog.id,
-      location_id: location.id,
       relationships: {
         creator_dog: { data: { id: host_dog.id } },
         invited_dog: { data: { id: invited_dog.id } }
