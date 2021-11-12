@@ -20,14 +20,14 @@
     <%= f.label 'Description', for: 'description' %>
   </div>
 
-    <%= f.label :size %>
+    <%= f.label :size, class: 'form-label' %>
     <%= f.select :size, ['small', 'medium', 'large']%>
     <br>
-    <%= f.label :vaccinated %>
+    <%= f.label :vaccinated, class: 'form-label' %>
     <%= f.select :vaccinated, [['no', 'false'], ['yes', 'true']]%>
     <br>
-    <%= f.label :trained %>
-    <%= f.select :trained, ['no', 'yes']%>
+    <%= f.label :trained, class: 'form-label' %>
+    <%= f.select :trained, ['no', 'yes']%><br>
 
-  <%= f.submit 'Add Dog', class: 'btn btn-outline-success' %>
+  <%= f.submit 'Add Dog', class: 'btn btn-outline-success', id: 'submit-btn' %>
 <% end %>

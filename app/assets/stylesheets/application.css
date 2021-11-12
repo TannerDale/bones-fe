@@ -13,3 +13,108 @@
  *= require_tree .
  *= require_self
  */
+ /* .dark-gold {color: #8E793E}
+.light-gold {color: #AD974F}
+.intellectual-grey {color: #231F20}
+.light-grey {color: #EAEAEA} */
+/* .slate {#708090} */
+/* #708090
+#647381
+#596673
+#4e5964
+#434c56
+#384048
+#2c3339
+#21262b
+#16191c
+#0b0c0e
+#000000 */
+/* #d4af37 */
+/* #8E793E */
+/* #a17f1a */
+body {
+  background-image: url("BONE.png");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-attachment: fixed;
+  background-color: 181818;
+}
+
+#card-link {
+  color: fffdd0;
+}
+
+h1 {
+  color: #a17f1a;
+}
+
+h3 {
+  color: #a17f1a;
+}
+
+h5 {
+  color: 116466;
+}
+
+p {
+  color: #a17f1a;
+}
+
+a:link {
+  color: ffcb9a;
+}
+
+a:hover {
+  color: fffdd0;
+}
+
+a:visited {
+  color: d9b08c;
+}
+
+.nav-link {
+  color: ffcb9a;
+}
+
+.nav-link:hover {
+  color: ffcb9a;
+}
+
+.nav-link:visited {
+  color: ffcb9a;
+}
+
+.card {
+  background-color: 3d3d3d;
+}
+
+.card-text {
+  color: fffdd0;
+}
+
+.form-label {
+  color: #a17f1a;
+}
+
+#submit-btn {
+  color: #a17f1a;
+}
+
+.dog-index {
+  color: #a17f1a;
+}
+
+#pending-invites {
+  border-style: solid;
+  border-color: #a17f1a;
+}
+
+.invite {
+  border-color: #a17f1a;
+  border-style: none none solid none;
+  align-content: center;
+}
+
+.invite-date {
+  color: white;
+}
