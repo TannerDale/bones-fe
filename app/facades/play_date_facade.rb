@@ -16,7 +16,7 @@ class PlayDateFacade
 
     def all_play_date_info(id)
       play_date = PlayDateService.search_by_id(id)
-      PlayDateWithDogsPoro.new(play_date.merge(play_date_dogs(play_date)))
+      PlayDateWithDogsPoro.new(format_data(play_date).merge(play_date_dogs(play_date)))
     end
 
     private
