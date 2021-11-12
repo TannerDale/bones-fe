@@ -33,12 +33,15 @@
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col" id="pending-invites">
+      <h3>Pending Invites</h3>
       <% @pending_invites&.each do |invite| %>
-        Date: <%= invite.date %><br>
-        Time: <%= invite.time %><br>
-        <%= button_to 'Accept', play_date_path(invite.id), params: { status: 1 }, method: :patch %>
-        <%= button_to 'Reject', play_date_path(invite.id), params: { status: 2 }, method: :patch %>
+        <div class="invite">
+          <p class='invite-date'>Date: <%= invite.date %><br><p/>
+          <p class='invite-date'>Time: <%= invite.time %><br><p/>
+          <%= button_to 'Accept', play_date_path(invite.id), params: { status: 1 }, method: :patch %>
+          <%= button_to 'Reject', play_date_path(invite.id), params: { status: 2 }, method: :patch %>
+        </div>
         <br>
         <br>
       <% end %>

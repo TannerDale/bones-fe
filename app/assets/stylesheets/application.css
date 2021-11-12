@@ -33,6 +33,10 @@
 /* #8E793E */
 /* #a17f1a */
 body {
+  background-image: url("BONE.png");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-attachment: fixed;
   background-color: 181818;
 }
 
@@ -98,4 +102,19 @@ a:visited {
 
 .dog-index {
   color: #a17f1a;
+}
+
+#pending-invites {
+  border-style: solid;
+  border-color: #a17f1a;
+}
+
+.invite {
+  border-color: #a17f1a;
+  border-style: none none solid none;
+  align-content: center;
+}
+
+.invite-date {
+  color: white;
 }
