@@ -67,12 +67,6 @@ describe 'Dashboard Index', :vcr do
       expect(current_path).to eq(edit_user_path(user))
     end
 
-    it 'links to the homepage' do
-      click_link('Bones Logo')
-
-      expect(current_path).to eq(root_path)
-    end
-
     it 'has a log out option' do
       click_link('Logout')
 

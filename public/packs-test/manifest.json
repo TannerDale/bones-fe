@@ -1,34 +1,34 @@
 {
-  "application.js": "/packs-test/js/application-a8d0c4011867c6add14a.js",
-  "application.js.map": "/packs-test/js/application-a8d0c4011867c6add14a.js.map",
+  "application.js": "/packs-test/js/application-e1c93f7daf88f1e7e009.js",
+  "application.js.map": "/packs-test/js/application-e1c93f7daf88f1e7e009.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs-test/js/application-a8d0c4011867c6add14a.js"
+        "/packs-test/js/application-e1c93f7daf88f1e7e009.js"
       ],
       "js.map": [
-        "/packs-test/js/application-a8d0c4011867c6add14a.js.map"
+        "/packs-test/js/application-e1c93f7daf88f1e7e009.js.map"
       ]
     },
     "hello_react": {
       "js": [
-        "/packs-test/js/hello_react-93e33938b60ef2b75df6.js"
+        "/packs-test/js/hello_react-d88386f9fdd0dab119e3.js"
       ],
       "js.map": [
-        "/packs-test/js/hello_react-93e33938b60ef2b75df6.js.map"
+        "/packs-test/js/hello_react-d88386f9fdd0dab119e3.js.map"
       ]
     },
     "server_rendering": {
       "js": [
-        "/packs-test/js/server_rendering-261005b619381d48a743.js"
+        "/packs-test/js/server_rendering-6dffe18c84b007def80d.js"
       ],
       "js.map": [
-        "/packs-test/js/server_rendering-261005b619381d48a743.js.map"
+        "/packs-test/js/server_rendering-6dffe18c84b007def80d.js.map"
       ]
     }
   },
-  "hello_react.js": "/packs-test/js/hello_react-93e33938b60ef2b75df6.js",
-  "hello_react.js.map": "/packs-test/js/hello_react-93e33938b60ef2b75df6.js.map",
-  "server_rendering.js": "/packs-test/js/server_rendering-261005b619381d48a743.js",
-  "server_rendering.js.map": "/packs-test/js/server_rendering-261005b619381d48a743.js.map"
+  "hello_react.js": "/packs-test/js/hello_react-d88386f9fdd0dab119e3.js",
+  "hello_react.js.map": "/packs-test/js/hello_react-d88386f9fdd0dab119e3.js.map",
+  "server_rendering.js": "/packs-test/js/server_rendering-6dffe18c84b007def80d.js",
+  "server_rendering.js.map": "/packs-test/js/server_rendering-6dffe18c84b007def80d.js.map"
 }
